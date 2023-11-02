@@ -1,11 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define _size(a) (int) (a).size()
-
-class %ClassName% {
+class APrimeDeletion {
 public:
   void solveOne(istream& in, ostream& out) {
+    in >> s;
+    if (s.find('1') < s.find('3')) {
+      out << 13;
+    } else {
+      out << 31;
+    }
+    out << '\n';
   }
 
   void solve(istream& in, ostream& out) {
@@ -15,4 +20,7 @@ public:
       solveOne(in, out);
     }
   }
+
+private:
+  string s;
 };
