@@ -1,6 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+template<typename U, typename V>
+ostream& operator << (ostream& out, const pair<U, V>& p) {
+  out << '{' << p.first << ", " << p.second << '}';
+  return out;
+}
+
+template<typename T_vector>
+void output_vector(ostream& out, const T_vector& v, bool add_one = false, int s = -1, int e = -1) {
+  if (s < 0) s = 0;
+  if (e < 0) e = int(v.size());
+  for (int i = s; i < e; i++) {
+    out << v[i] + (add_one ? 1 : 0) << (i < e - 1 ? ' ' : '\n');
+  }
+}
+
 struct suffix_array {
   suffix_array() = default;
 
@@ -18,8 +33,8 @@ struct suffix_array {
       new_c[p[0]] = 0;
       for (int i = 1; i < size(); i++) {
         const int j = i - 1;
-        pair<int, int> rn = { c[p[i]], c[(p[i] + (1 << k)) % size()] };
-        pair<int, int> pr = { c[p[j]], c[(p[j] + (1 << k)) % size()] };
+        const pair<int, int> rn = { c[p[i]], c[(p[i] + (1 << k)) % size()] };
+        const pair<int, int> pr = { c[p[j]], c[(p[j] + (1 << k)) % size()] };
         new_c[p[i]] = new_c[p[i - 1]] + (int) (rn != pr);
       }
       c.swap(new_c);
@@ -44,7 +59,7 @@ struct suffix_array {
 
   string longest_common_substring(const string& a, const string& b) {
     initialize(a + char(DELIM - 1) + b);
-    auto belong_to_different_strings = [&](const int ai, const int bi) {
+    auto belong_to_different_strings = [&](const int ai, const int bi) -> bool {
       const int an = int(a.size());
       return (ai <= an) != (bi <= an);
     };
@@ -114,22 +129,22 @@ struct suffix_array {
     return count;
   }
 
-  inline const vector<int>& _lcp() const {
+  [[nodiscard]] inline const vector<int>& _lcp() const {
     assert(!lcp.empty());
     return lcp;
   }
 
-  inline const vector<int>& _c() const {
+  [[nodiscard]] inline const vector<int>& _c() const {
     assert(!c.empty());
     return c;
   }
 
-  inline const vector<int>& _p() const {
+  [[nodiscard]] inline const vector<int>& _p() const {
     assert(!p.empty());
     return p;
   }
 
-  inline int size() const {
+  [[nodiscard]] inline int size() const {
     return int(s.size());
   }
 
