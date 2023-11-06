@@ -3,8 +3,7 @@ using namespace std;
 
 template<typename U, typename V>
 ostream& operator << (ostream& out, const pair<U, V>& p) {
-  out << '{' << p.first << ", " << p.second << '}';
-  return out;
+  return out << '{' << p.first << ", " << p.second << '}';
 }
 
 template<typename T_vector>
