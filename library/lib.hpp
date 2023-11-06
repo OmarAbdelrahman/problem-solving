@@ -44,19 +44,15 @@ struct suffix_array {
 
   string longest_common_substring(const string& a, const string& b) {
     initialize(a + char(DELIM - 1) + b);
-    build();
-    build_lcp();
-
     auto belong_to_different_strings = [&](const int ai, const int bi) {
       const int an = int(a.size());
       return (ai <= an) != (bi <= an);
     };
-
     string r;
     int r_size = -1;
     for (int i = 1; i < size(); i++) {
-      if (belong_to_different_strings(p[i], p[i - 1]) && lcp[i - 1] > r_size) {
-        r_size = lcp[i - 1];
+      if (belong_to_different_strings(p[i], p[i - 1]) && lcp[i] > r_size) {
+        r_size = lcp[i];
         r = s.substr(p[i], r_size);
       }
     }
