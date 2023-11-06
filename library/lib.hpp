@@ -1,12 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define _size(a) (int) (a).size()
-
 struct suffix_array {
   suffix_array() = default;
 
-  explicit suffix_array(const string &_s) {
+  explicit suffix_array(const string& _s) {
     initialize(_s);
   }
 
@@ -32,7 +30,7 @@ struct suffix_array {
     assert(!c.empty() || !p.empty() || !s.empty());
     lcp = vector<int>(size());
     int k = 0;
-    for (int i = 0; i < _size(lcp); i++) {
+    for (int i = 0; i < int(lcp.size()); i++) {
       int pi = c[i];
       if (pi == 0) continue;
       int j = p[pi - 1];
@@ -44,13 +42,13 @@ struct suffix_array {
     }
   }
 
-  string longest_common_substring(const string &a, const string &b) {
+  string longest_common_substring(const string& a, const string& b) {
     initialize(a + char(DELIM - 1) + b);
     build();
     build_lcp();
 
     auto belong_to_different_strings = [&](const int ai, const int bi) {
-      const int an = (int) a.size();
+      const int an = int(a.size());
       return (ai <= an) != (bi <= an);
     };
 
@@ -65,8 +63,8 @@ struct suffix_array {
     return r;
   }
 
-  int find_first_of(const string &substring) {
-    const int m = (int) substring.size();
+  int find_first_of(const string& substring) {
+    const int m = int(substring.size());
     int l = 0, r = size() - 1;
     while (l < r) {
       int mid = (l + r) >> 1;
@@ -83,12 +81,12 @@ struct suffix_array {
     return l;
   }
 
-  pair<int, int> find_interval_of(const string &substring) {
+  pair<int, int> find_interval_of(const string& substring) {
     const int i = find_first_of(substring);
     if (i == -1) {
       return {-1, -1};
     }
-    const int m = (int) substring.size();
+    const int m = int(substring.size());
     int l = 0, r = size() - 1;
     while (l < r) {
       int mid = (l + r) >> 1;
@@ -105,7 +103,7 @@ struct suffix_array {
     return {i, r};
   }
 
-  int occurrences_of(const string &substring) {
+  int occurrences_of(const string& substring) {
     const pair<int, int> interval = find_interval_of(substring);
     if (interval.first == -1) return 0;
     return interval.second - interval.first + 1;
@@ -120,35 +118,35 @@ struct suffix_array {
     return count;
   }
 
-  const vector<int>& _lcp() const {
+  inline const vector<int>& _lcp() const {
     assert(!lcp.empty());
     return lcp;
   }
 
-  const vector<int>& _c() const {
+  inline const vector<int>& _c() const {
     assert(!c.empty());
     return c;
   }
 
-  const vector<int>& _p() const {
+  inline const vector<int>& _p() const {
     assert(!p.empty());
     return p;
   }
 
-  int size() const {
+  inline int size() const {
     return int(s.size());
   }
 
 private:
-  void initialize(const string &_s) {
+  void initialize(const string& _s) {
     s = _s + DELIM;
     p = vector<int>(size());
     c = vector<int>(size());
     vector<int> count(300, 0);
-    for (const char &si: s) {
+    for (const char& si: s) {
       count[si]++;
     }
-    for (int i = 1; i < (int) count.size(); i++) {
+    for (int i = 1; i < int(count.size()); i++) {
       count[i] += count[i - 1];
     }
     for (int i = size() - 1; i >= 0; i--) {
@@ -189,13 +187,13 @@ struct sparse_table {
 
   explicit sparse_table(const vector<int>& _a) {
     a = _a;
-    const int n = _size(a);
-    const int lgn = (int) log2(n) + 1;
+    const int n = int(a.size());
+    const int lgn = int(log2(n)) + 1;
     lg2 = vector<int>(1 << lgn, 0);
     for (int i = 0; i < lgn; i++) {
       lg2[1 << i] = i;
     }
-    for (int i = 2; i < _size(lg2); i++) {
+    for (int i = 2; i < int(lg2.size()); i++) {
       if (lg2[i] == 0) {
         lg2[i] = lg2[i - 1];
       }
