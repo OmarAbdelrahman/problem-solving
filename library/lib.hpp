@@ -12,4 +12,5 @@ ostream& operator << (ostream& out, const vector<T>& v) {
   for (int i = 0; i < n; i++) {
     out << v[i] << " \n"[i == n - 1];
   }
+  return out;
 }
