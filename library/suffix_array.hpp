@@ -1,6 +1,67 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+struct trie_node {
+  char alphabet;
+  bool exist;
+  vector<trie_node*> child;
+
+  explicit trie_node(const char& ch): alphabet(ch), exist(false) {
+    child.assign(CHARS, nullptr);
+  }
+
+  const int CHARS = 26;
+};
+
+class trie {
+public:
+  trie() {
+    root = new trie_node('!');
+  }
+
+  void insert(const string& word) {
+    const int n = static_cast<int>(word.size());
+    trie_node* node = root;
+    for (int i = 0; i < n; i++) {
+      int which = word[i] - 'A';
+      if (node->child[which] == nullptr) {
+        node->child[which] = new trie_node(word[i]);
+      }
+      node = node->child[which];
+    }
+    node->exist = true;
+  }
+
+  bool search(const string& word) {
+    const int n = static_cast<int>(word.size());
+    trie_node* node = root;
+    for (int i = 0; i < n; i++) {
+      int which = word[i] - 'A';
+      if (node->child[which] == nullptr) {
+        return false;
+      }
+      node = node->child[which];
+    }
+    return node->exist;
+  }
+
+  bool startsWith(const string& prefix) {
+    const int n = static_cast<int>(prefix.size());
+    trie_node* node = root;
+    for (int i = 0; i < n; i++) {
+      int which = prefix[i] - 'A';
+      if (node->child[which] == nullptr) {
+        return false;
+      }
+      node = node->child[which];
+    }
+    return true;
+  }
+
+private:
+  trie_node* root;
+};
+
 class suffix_array {
 public:
   suffix_array() = default;
