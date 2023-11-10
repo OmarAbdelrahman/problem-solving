@@ -1,82 +1,21 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include "string"
+#include "vector"
 
-struct trie_node {
-  char alphabet;
-  bool exist;
-  vector<trie_node*> child;
-
-  explicit trie_node(const char& ch): alphabet(ch), exist(false) {
-    child.assign(CHARS, nullptr);
-  }
-
-  const int CHARS = 26;
-};
-
-class trie {
+class suffix_array_t {
 public:
-  trie() {
-    root = new trie_node('!');
-  }
+  suffix_array_t() = default;
 
-  void insert(const string& word) {
-    const int n = static_cast<int>(word.size());
-    trie_node* node = root;
-    for (int i = 0; i < n; i++) {
-      int which = word[i] - 'A';
-      if (node->child[which] == nullptr) {
-        node->child[which] = new trie_node(word[i]);
-      }
-      node = node->child[which];
-    }
-    node->exist = true;
-  }
-
-  bool search(const string& word) {
-    const int n = static_cast<int>(word.size());
-    trie_node* node = root;
-    for (int i = 0; i < n; i++) {
-      int which = word[i] - 'A';
-      if (node->child[which] == nullptr) {
-        return false;
-      }
-      node = node->child[which];
-    }
-    return node->exist;
-  }
-
-  bool startsWith(const string& prefix) {
-    const int n = static_cast<int>(prefix.size());
-    trie_node* node = root;
-    for (int i = 0; i < n; i++) {
-      int which = prefix[i] - 'A';
-      if (node->child[which] == nullptr) {
-        return false;
-      }
-      node = node->child[which];
-    }
-    return true;
-  }
-
-private:
-  trie_node* root;
-};
-
-class suffix_array {
-public:
-  suffix_array() = default;
-
-  explicit suffix_array(const string& _s) {
+  explicit suffix_array_t(const std::string& _s) {
     initialize(_s);
   }
 
-  string longest_common_substring(const string& a, const string& b) {
+  std::string longest_common_substring(const std::string& a, const std::string& b) {
     initialize(a + char(DELIM - 1) + b);
     auto belong_to_different_strings = [&](const int ai, const int bi) -> bool {
-      const int an = int(a.size());
+      const int an = static_cast<int>(a.size());
       return (ai <= an) != (bi <= an);
     };
-    string r;
+    std::string r;
     int r_size = -1;
     for (int i = 1; i < size(); i++) {
       if (belong_to_different_strings(p[i], p[i - 1]) && lcp[i] > r_size) {
@@ -87,8 +26,8 @@ public:
     return r;
   }
 
-  int find_first_of(const string& substring) {
-    const int m = int(substring.size());
+  int find_first_of(const std::string& substring) {
+    const int m = static_cast<int>(substring.size());
     int l = 0, r = size() - 1;
     while (l < r) {
       int mid = (l + r) >> 1;
@@ -105,12 +44,12 @@ public:
     return l;
   }
 
-  pair<int, int> find_interval_of(const string& substring) {
+  std::pair<int, int> find_interval_of(const std::string& substring) {
     const int i = find_first_of(substring);
     if (i == -1) {
       return {-1, -1};
     }
-    const int m = int(substring.size());
+    const int m = static_cast<int>(substring.size());
     int l = 0, r = size() - 1;
     while (l < r) {
       int mid = (l + r) >> 1;
@@ -127,46 +66,52 @@ public:
     return {i, r};
   }
 
-  int occurrences_of(const string& substring) {
-    const pair<int, int> interval = find_interval_of(substring);
+  int occurrences_of(const std::string& substring) {
+    const std::pair<int, int> interval = find_interval_of(substring);
     if (interval.first == -1) return 0;
     return interval.second - interval.first + 1;
   }
 
-  int64_t count_different_substrings() {
+  int64_t count_distinct_substrings() {
     assert(!p.empty() || !lcp.empty());
     int64_t count = 0;
     for (int i = 1; i < size(); i++) {
-      count += (int64_t) size() - 1 - p[i] - lcp[i - 1];
+      count += (int64_t) size() - 1 - p[i] - lcp[i];
     }
     return count;
   }
 
-  [[nodiscard]] inline const vector<int>& _lcp() const {
-    assert(!lcp.empty());
-    return lcp;
-  }
-
-  [[nodiscard]] inline const vector<int>& _c() const {
-    assert(!c.empty());
-    return c;
-  }
-
-  [[nodiscard]] inline const vector<int>& _p() const {
+  inline std::string suffix(const int& at) {
     assert(!p.empty());
-    return p;
+    return s.substr(p[at]);
   }
 
-  [[nodiscard]] inline int size() const {
-    return int(s.size());
+  inline int suffix_pos(const int& at) const {
+    assert(!c.empty());
+    return c[at];
+  }
+
+  [[nodiscard]] inline const std::vector<int>& _lcp() const { return lcp; }
+  [[nodiscard]] inline const std::vector<int>& _c() const { return c; }
+  [[nodiscard]] inline const std::vector<int>& _p() const { return p; }
+  [[nodiscard]] inline int size() const { return static_cast<int>(s.size()); }
+
+  int& operator[](const int& at) {
+    assert(!p.empty() && at >= 0 && at < size());
+    return p[at];
+  }
+
+  const int& operator[](const int& at) const {
+    assert(!p.empty() && at >= 0 && at < size());
+    return p[at];
   }
 
 private:
-  void initialize(const string& _s) {
+  void initialize(const std::string& _s) {
     s = _s + DELIM;
-    p = vector<int>(size());
-    c = vector<int>(size());
-    vector<int> count(300, 0);
+    p = std::vector<int>(size());
+    c = std::vector<int>(size());
+    std::vector<int> count(300, 0);
     for (const char& si: s) {
       count[si]++;
     }
@@ -190,12 +135,12 @@ private:
         p[i] = (p[i] - (1 << k) + size()) % size();
       }
       count_sort();
-      vector<int> new_c(size());
+      std::vector<int> new_c(size());
       new_c[p[0]] = 0;
       for (int i = 1; i < size(); i++) {
         const int j = i - 1;
-        const pair<int, int> rn = { c[p[i]], c[(p[i] + (1 << k)) % size()] };
-        const pair<int, int> pr = { c[p[j]], c[(p[j] + (1 << k)) % size()] };
+        const std::pair<int, int> rn = { c[p[i]], c[(p[i] + (1 << k)) % size()] };
+        const std::pair<int, int> pr = { c[p[j]], c[(p[j] + (1 << k)) % size()] };
         new_c[p[i]] = new_c[p[i - 1]] + (int) (rn != pr);
       }
       c.swap(new_c);
@@ -203,8 +148,8 @@ private:
   }
 
   void build_lcp() {
-    assert(!c.empty() || !p.empty() || !s.empty());
-    lcp = vector<int>(size());
+    assert(!c.empty() || !p.empty());
+    lcp = std::vector<int>(size());
     int k = 0;
     for (int i = 0; i < int(lcp.size()); i++) {
       int pi = c[i];
@@ -214,28 +159,28 @@ private:
         k++;
       }
       lcp[pi] = k;
-      k = max(k - 1, 0);
+      k = std::max(k - 1, 0);
     }
   }
 
   void count_sort() {
-    vector<int> count(size(), 0);
+    std::vector<int> count(size(), 0);
     for (const int& ci: c) {
       count[ci]++;
     }
     for (int i = 1; i < size(); i++) {
       count[i] += count[i - 1];
     }
-    vector<int> new_p(size());
+    std::vector<int> new_p(size());
     for (int i = size() - 1; i >= 0; i--) {
       new_p[--count[c[p[i]]]] = p[i];
     }
     p.swap(new_p);
   }
 
-  vector<int> lcp;
-  vector<int> p, c;
-  string s;
+  std::vector<int> lcp;
+  std::vector<int> p, c;
+  std::string s;
 
   const char DELIM = char(31);
 };
