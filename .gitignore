@@ -1,5 +1,5 @@
-.idea
-output/
-testrunner/
-cmake-build-debug/
-CMakeLists.txt
+/kattis/in.txt
+/kattis/out.txt
+/output/in.txt
+/output/notes.txt
+/output/out.txt

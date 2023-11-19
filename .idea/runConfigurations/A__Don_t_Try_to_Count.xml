@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Don't Try to Count" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ADontTryToCount" cppPath="tasks/ADontTryToCount.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="12&#10;1 5&#10;a&#10;aaaaa&#10;5 5&#10;eforc&#10;force&#10;2 5&#10;ab&#10;ababa&#10;3 5&#10;aba&#10;ababa&#10;4 3&#10;babb&#10;bbb&#10;5 1&#10;aaaaa&#10;a&#10;4 2&#10;aabb&#10;ba&#10;2 8&#10;bk&#10;kbkbkbkb&#10;12 2&#10;fjdgmujlcont&#10;tf&#10;2 2&#10;aa&#10;aa&#10;3 5&#10;abb&#10;babba&#10;1 19&#10;m&#10;mmmmmmmmmmmmmmmmmmm&#10;" output="3&#10;1&#10;2&#10;-1&#10;1&#10;0&#10;1&#10;3&#10;1&#10;0&#10;2&#10;5&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

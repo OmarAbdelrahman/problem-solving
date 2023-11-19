@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Vasilije in Cacak" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CVasilijeInCacak" cppPath="tasks/CVasilijeInCacak.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="12&#10;5 3 10&#10;5 3 3&#10;10 10 55&#10;6 5 20&#10;2 1 26&#10;187856 87856 2609202300&#10;200000 190000 19000000000&#10;28 5 2004&#10;2 2 2006&#10;9 6 40&#10;47202 32455 613407217&#10;185977 145541 15770805980&#10;" output="YES&#10;NO&#10;YES&#10;YES&#10;NO&#10;NO&#10;YES&#10;NO&#10;NO&#10;NO&#10;YES&#10;YES&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

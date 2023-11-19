@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Two Binary Strings" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BTwoBinaryStrings" cppPath="tasks/BTwoBinaryStrings.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="7&#10;01010001&#10;01110101&#10;01001&#10;01001&#10;000101&#10;010111&#10;00001&#10;01111&#10;011&#10;001&#10;001001&#10;011011&#10;010001&#10;011011&#10;" output="YES&#10;YES&#10;YES&#10;NO&#10;NO&#10;NO&#10;YES&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,5 +1,9 @@
 #include "string"
 #include "vector"
+#include "cstring"
+#include "cstdint"
+#include "cassert"
+#include "algorithm"
 
 class suffix_array_t {
 public:
@@ -73,12 +77,19 @@ public:
   }
 
   int64_t count_distinct_substrings() {
-    assert(!p.empty() || !lcp.empty());
+    assert(!p.empty() && !lcp.empty());
     int64_t count = 0;
     for (int i = 1; i < size(); i++) {
       count += (int64_t) size() - 1 - p[i] - lcp[i];
     }
     return count;
+  }
+
+  std::string longest_repeated_substring() {
+    assert(!lcp.empty() && !p.empty());
+    const auto where = max_element(std::begin(lcp), std::end(lcp));
+    const auto at = where - std::begin(lcp);
+    return s.substr(p[at], *where);
   }
 
   inline std::string suffix(const int& at) {
@@ -91,6 +102,7 @@ public:
     return c[at];
   }
 
+  [[nodiscard]] inline const std::string& str() const { return s; }
   [[nodiscard]] inline const std::vector<int>& _lcp() const { return lcp; }
   [[nodiscard]] inline const std::vector<int>& _c() const { return c; }
   [[nodiscard]] inline const std::vector<int>& _p() const { return p; }

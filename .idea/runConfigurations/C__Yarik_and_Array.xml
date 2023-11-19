@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Yarik and Array" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CYarikAndArray" cppPath="tasks/CYarikAndArray.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="7&#10;5&#10;1 2 3 4 5&#10;4&#10;9 9 8 8&#10;6&#10;-1 4 -1 0 5 -4&#10;4&#10;-1 2 4 -3&#10;1&#10;-1000&#10;3&#10;101 -99 101&#10;20&#10;-10 5 -8 10 6 -10 7 9 -2 -6 7 2 -4 6 -1 7 -6 -7 4 1&#10;" output="15&#10;17&#10;8&#10;4&#10;-1000&#10;101&#10;10&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

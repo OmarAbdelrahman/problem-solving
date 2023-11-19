@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Qingshan Loves Strings" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BQingshanLovesStrings" cppPath="tasks/BQingshanLovesStrings.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;1 1&#10;1&#10;0&#10;3 3&#10;111&#10;010&#10;3 2&#10;111&#10;00&#10;6 7&#10;101100&#10;1010101&#10;10 2&#10;1001001000&#10;10&#10;" output="Yes&#10;Yes&#10;No&#10;No&#10;No&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

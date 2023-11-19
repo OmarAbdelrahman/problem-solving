@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Helmets in Night Light" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BHelmetsInNightLight" cppPath="tasks/BHelmetsInNightLight.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;6 3&#10;2 3 2 1 1 3&#10;4 3 2 6 3 6&#10;1 100000&#10;100000&#10;1&#10;4 94&#10;1 4 2 3&#10;103 96 86 57&#10;" output="16&#10;100000&#10;265&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

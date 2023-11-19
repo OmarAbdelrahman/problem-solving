@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Points and Minimum Distance" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BPointsAndMinimumDistance" cppPath="tasks/BPointsAndMinimumDistance.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2&#10;2&#10;15 1 10 5&#10;3&#10;10 30 20 20 30 10&#10;" output="9&#10;10 1&#10;15 5&#10;20&#10;20 20&#10;10 30&#10;10 30&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

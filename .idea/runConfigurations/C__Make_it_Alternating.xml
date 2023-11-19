@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Make it Alternating" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CMakeItAlternating" cppPath="tasks/CMakeItAlternating.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;10010&#10;111&#10;0101&#10;" output="1 2&#10;2 6&#10;0 1&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

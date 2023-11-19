@@ -2,8 +2,19 @@
 #include "vector"
 
 template<typename U, typename V>
+std::istream& operator >> (std::istream& in, std::pair<U, V>& p) {
+  return in >> p.first >> p.second;
+}
+
+template<typename U, typename V>
 std::ostream& operator << (std::ostream& out, const std::pair<U, V>& p) {
   return out << p.first << ' ' << p.second;
+}
+
+template<typename T>
+std::istream& operator >> (std::istream& in, std::vector<T>& v) {
+  for (auto& vi : v) in >> vi;
+  return in;
 }
 
 template<typename T>
