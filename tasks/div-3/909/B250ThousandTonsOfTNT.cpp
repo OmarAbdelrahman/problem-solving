@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../library/lib.hpp"
+#include "../../../library/lib.hpp"
 
 #define _size(a) (int) (a).size()
 
