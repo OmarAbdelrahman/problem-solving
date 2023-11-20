@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.obj"
-  "CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.obj.d"
-  "CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.obj"
-  "CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.obj.d"
+  "CMakeFiles/test.dir/tasks/ADominoPiling.cpp.obj"
+  "CMakeFiles/test.dir/tasks/ADominoPiling.cpp.obj.d"
   "CMakeFiles/test.dir/tasks/DBorders.cpp.obj"
   "CMakeFiles/test.dir/tasks/DBorders.cpp.obj.d"
   "libtest.dll.a"

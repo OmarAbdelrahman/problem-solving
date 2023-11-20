@@ -215,53 +215,29 @@ output/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/output/main.cpp.s
 .PHONY : output/main.cpp.s
 
-tasks/AMilicaAndString.obj: tasks/AMilicaAndString.cpp.obj
-.PHONY : tasks/AMilicaAndString.obj
+tasks/ADominoPiling.obj: tasks/ADominoPiling.cpp.obj
+.PHONY : tasks/ADominoPiling.obj
 
 # target to build an object file
-tasks/AMilicaAndString.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.obj
-.PHONY : tasks/AMilicaAndString.cpp.obj
+tasks/ADominoPiling.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ADominoPiling.cpp.obj
+.PHONY : tasks/ADominoPiling.cpp.obj
 
-tasks/AMilicaAndString.i: tasks/AMilicaAndString.cpp.i
-.PHONY : tasks/AMilicaAndString.i
-
-# target to preprocess a source file
-tasks/AMilicaAndString.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.i
-.PHONY : tasks/AMilicaAndString.cpp.i
-
-tasks/AMilicaAndString.s: tasks/AMilicaAndString.cpp.s
-.PHONY : tasks/AMilicaAndString.s
-
-# target to generate assembly for a file
-tasks/AMilicaAndString.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.s
-.PHONY : tasks/AMilicaAndString.cpp.s
-
-tasks/BMilenaAndAdmirer.obj: tasks/BMilenaAndAdmirer.cpp.obj
-.PHONY : tasks/BMilenaAndAdmirer.obj
-
-# target to build an object file
-tasks/BMilenaAndAdmirer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.obj
-.PHONY : tasks/BMilenaAndAdmirer.cpp.obj
-
-tasks/BMilenaAndAdmirer.i: tasks/BMilenaAndAdmirer.cpp.i
-.PHONY : tasks/BMilenaAndAdmirer.i
+tasks/ADominoPiling.i: tasks/ADominoPiling.cpp.i
+.PHONY : tasks/ADominoPiling.i
 
 # target to preprocess a source file
-tasks/BMilenaAndAdmirer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.i
-.PHONY : tasks/BMilenaAndAdmirer.cpp.i
+tasks/ADominoPiling.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ADominoPiling.cpp.i
+.PHONY : tasks/ADominoPiling.cpp.i
 
-tasks/BMilenaAndAdmirer.s: tasks/BMilenaAndAdmirer.cpp.s
-.PHONY : tasks/BMilenaAndAdmirer.s
+tasks/ADominoPiling.s: tasks/ADominoPiling.cpp.s
+.PHONY : tasks/ADominoPiling.s
 
 # target to generate assembly for a file
-tasks/BMilenaAndAdmirer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.s
-.PHONY : tasks/BMilenaAndAdmirer.cpp.s
+tasks/ADominoPiling.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ADominoPiling.cpp.s
+.PHONY : tasks/ADominoPiling.cpp.s
 
 tasks/DBorders.obj: tasks/DBorders.cpp.obj
 .PHONY : tasks/DBorders.obj
@@ -329,12 +305,9 @@ help:
 	@echo ... output/main.obj
 	@echo ... output/main.i
 	@echo ... output/main.s
-	@echo ... tasks/AMilicaAndString.obj
-	@echo ... tasks/AMilicaAndString.i
-	@echo ... tasks/AMilicaAndString.s
-	@echo ... tasks/BMilenaAndAdmirer.obj
-	@echo ... tasks/BMilenaAndAdmirer.i
-	@echo ... tasks/BMilenaAndAdmirer.s
+	@echo ... tasks/ADominoPiling.obj
+	@echo ... tasks/ADominoPiling.i
+	@echo ... tasks/ADominoPiling.s
 	@echo ... tasks/DBorders.obj
 	@echo ... tasks/DBorders.i
 	@echo ... tasks/DBorders.s

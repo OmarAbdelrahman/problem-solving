@@ -1,4 +1,4 @@
-#include "../tasks/div-2/910/BMilenaAndAdmirer.cpp"
+#include "../tasks/div-2/A/ADominoPiling.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ namespace jhelper {
 
 int main() {
 	std::vector<jhelper::Test> tests = {
-		{"4\n3\n1 3 2\n4\n1 2 3 4\n3\n3 2 1\n7\n1 4 4 3 5 7 6\n", "1\n0\n3\n9\n", true, true},
+		{"2 4\n", "4\n", true, true},{"3 3\n", "4\n", true, true},
 	};
 	bool allOK = true;
 	int testID = 0;
@@ -47,7 +47,7 @@ int main() {
 			std::stringstream in(test.input);
 			std::ostringstream out;
 			std::clock_t start = std::clock();
-			BMilenaAndAdmirer solver(in, out);
+			ADominoPiling solver(in, out);
       solver.solve();
 			std::clock_t finish = std::clock();
 			double currentTime = double(finish - start) / CLOCKS_PER_SEC;

@@ -13,7 +13,7 @@ std::ostream& operator << (std::ostream& out, const std::pair<U, V>& p) {
 
 template<typename T>
 std::istream& operator >> (std::istream& in, std::vector<T>& v) {
-  for (auto& vi : v) in >> vi;
+  for (auto& it : v) in >> it;
   return in;
 }
 

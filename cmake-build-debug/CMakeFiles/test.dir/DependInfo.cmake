@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/omara/CLionProjects/problem-solving/tasks/AMilicaAndString.cpp" "CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.obj.d"
-  "C:/Users/omara/CLionProjects/problem-solving/tasks/BMilenaAndAdmirer.cpp" "CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/ADominoPiling.cpp" "CMakeFiles/test.dir/tasks/ADominoPiling.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/ADominoPiling.cpp.obj.d"
   "C:/Users/omara/CLionProjects/problem-solving/tasks/DBorders.cpp" "CMakeFiles/test.dir/tasks/DBorders.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/DBorders.cpp.obj.d"
   )
 
