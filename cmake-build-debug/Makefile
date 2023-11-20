@@ -215,77 +215,53 @@ output/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/output/main.cpp.s
 .PHONY : output/main.cpp.s
 
-tasks/AGameWithIntegers.obj: tasks/AGameWithIntegers.cpp.obj
-.PHONY : tasks/AGameWithIntegers.obj
+tasks/AMilicaAndString.obj: tasks/AMilicaAndString.cpp.obj
+.PHONY : tasks/AMilicaAndString.obj
 
 # target to build an object file
-tasks/AGameWithIntegers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGameWithIntegers.cpp.obj
-.PHONY : tasks/AGameWithIntegers.cpp.obj
+tasks/AMilicaAndString.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.obj
+.PHONY : tasks/AMilicaAndString.cpp.obj
 
-tasks/AGameWithIntegers.i: tasks/AGameWithIntegers.cpp.i
-.PHONY : tasks/AGameWithIntegers.i
+tasks/AMilicaAndString.i: tasks/AMilicaAndString.cpp.i
+.PHONY : tasks/AMilicaAndString.i
 
 # target to preprocess a source file
-tasks/AGameWithIntegers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGameWithIntegers.cpp.i
-.PHONY : tasks/AGameWithIntegers.cpp.i
+tasks/AMilicaAndString.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.i
+.PHONY : tasks/AMilicaAndString.cpp.i
 
-tasks/AGameWithIntegers.s: tasks/AGameWithIntegers.cpp.s
-.PHONY : tasks/AGameWithIntegers.s
+tasks/AMilicaAndString.s: tasks/AMilicaAndString.cpp.s
+.PHONY : tasks/AMilicaAndString.s
 
 # target to generate assembly for a file
-tasks/AGameWithIntegers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGameWithIntegers.cpp.s
-.PHONY : tasks/AGameWithIntegers.cpp.s
+tasks/AMilicaAndString.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.s
+.PHONY : tasks/AMilicaAndString.cpp.s
 
-tasks/B250ThousandTonsOfTNT.obj: tasks/B250ThousandTonsOfTNT.cpp.obj
-.PHONY : tasks/B250ThousandTonsOfTNT.obj
+tasks/BMilenaAndAdmirer.obj: tasks/BMilenaAndAdmirer.cpp.obj
+.PHONY : tasks/BMilenaAndAdmirer.obj
 
 # target to build an object file
-tasks/B250ThousandTonsOfTNT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/B250ThousandTonsOfTNT.cpp.obj
-.PHONY : tasks/B250ThousandTonsOfTNT.cpp.obj
+tasks/BMilenaAndAdmirer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.obj
+.PHONY : tasks/BMilenaAndAdmirer.cpp.obj
 
-tasks/B250ThousandTonsOfTNT.i: tasks/B250ThousandTonsOfTNT.cpp.i
-.PHONY : tasks/B250ThousandTonsOfTNT.i
-
-# target to preprocess a source file
-tasks/B250ThousandTonsOfTNT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/B250ThousandTonsOfTNT.cpp.i
-.PHONY : tasks/B250ThousandTonsOfTNT.cpp.i
-
-tasks/B250ThousandTonsOfTNT.s: tasks/B250ThousandTonsOfTNT.cpp.s
-.PHONY : tasks/B250ThousandTonsOfTNT.s
-
-# target to generate assembly for a file
-tasks/B250ThousandTonsOfTNT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/B250ThousandTonsOfTNT.cpp.s
-.PHONY : tasks/B250ThousandTonsOfTNT.cpp.s
-
-tasks/CYarikAndArray.obj: tasks/CYarikAndArray.cpp.obj
-.PHONY : tasks/CYarikAndArray.obj
-
-# target to build an object file
-tasks/CYarikAndArray.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/CYarikAndArray.cpp.obj
-.PHONY : tasks/CYarikAndArray.cpp.obj
-
-tasks/CYarikAndArray.i: tasks/CYarikAndArray.cpp.i
-.PHONY : tasks/CYarikAndArray.i
+tasks/BMilenaAndAdmirer.i: tasks/BMilenaAndAdmirer.cpp.i
+.PHONY : tasks/BMilenaAndAdmirer.i
 
 # target to preprocess a source file
-tasks/CYarikAndArray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/CYarikAndArray.cpp.i
-.PHONY : tasks/CYarikAndArray.cpp.i
+tasks/BMilenaAndAdmirer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.i
+.PHONY : tasks/BMilenaAndAdmirer.cpp.i
 
-tasks/CYarikAndArray.s: tasks/CYarikAndArray.cpp.s
-.PHONY : tasks/CYarikAndArray.s
+tasks/BMilenaAndAdmirer.s: tasks/BMilenaAndAdmirer.cpp.s
+.PHONY : tasks/BMilenaAndAdmirer.s
 
 # target to generate assembly for a file
-tasks/CYarikAndArray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/CYarikAndArray.cpp.s
-.PHONY : tasks/CYarikAndArray.cpp.s
+tasks/BMilenaAndAdmirer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.s
+.PHONY : tasks/BMilenaAndAdmirer.cpp.s
 
 tasks/DBorders.obj: tasks/DBorders.cpp.obj
 .PHONY : tasks/DBorders.obj
@@ -353,15 +329,12 @@ help:
 	@echo ... output/main.obj
 	@echo ... output/main.i
 	@echo ... output/main.s
-	@echo ... tasks/AGameWithIntegers.obj
-	@echo ... tasks/AGameWithIntegers.i
-	@echo ... tasks/AGameWithIntegers.s
-	@echo ... tasks/B250ThousandTonsOfTNT.obj
-	@echo ... tasks/B250ThousandTonsOfTNT.i
-	@echo ... tasks/B250ThousandTonsOfTNT.s
-	@echo ... tasks/CYarikAndArray.obj
-	@echo ... tasks/CYarikAndArray.i
-	@echo ... tasks/CYarikAndArray.s
+	@echo ... tasks/AMilicaAndString.obj
+	@echo ... tasks/AMilicaAndString.i
+	@echo ... tasks/AMilicaAndString.s
+	@echo ... tasks/BMilenaAndAdmirer.obj
+	@echo ... tasks/BMilenaAndAdmirer.i
+	@echo ... tasks/BMilenaAndAdmirer.s
 	@echo ... tasks/DBorders.obj
 	@echo ... tasks/DBorders.i
 	@echo ... tasks/DBorders.s

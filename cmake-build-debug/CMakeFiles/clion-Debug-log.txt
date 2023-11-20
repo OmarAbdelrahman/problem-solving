@@ -8,5 +8,5 @@ CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
 
 
 -- Configuring done (0.1s)
--- Generating done (0.1s)
+-- Generating done (0.0s)
 -- Build files have been written to: C:/Users/omara/CLionProjects/problem-solving/cmake-build-debug

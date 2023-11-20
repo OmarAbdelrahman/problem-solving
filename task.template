@@ -21,6 +21,6 @@ public:
     : in(in), out(out) { }
 
 private:
-  istream& in;
   ostream& out;
+  istream& in;
 };

@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/omara/CLionProjects/problem-solving/tasks/AGameWithIntegers.cpp" "CMakeFiles/test.dir/tasks/AGameWithIntegers.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/AGameWithIntegers.cpp.obj.d"
-  "C:/Users/omara/CLionProjects/problem-solving/tasks/B250ThousandTonsOfTNT.cpp" "CMakeFiles/test.dir/tasks/B250ThousandTonsOfTNT.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/B250ThousandTonsOfTNT.cpp.obj.d"
-  "C:/Users/omara/CLionProjects/problem-solving/tasks/CYarikAndArray.cpp" "CMakeFiles/test.dir/tasks/CYarikAndArray.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/CYarikAndArray.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/AMilicaAndString.cpp" "CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/AMilicaAndString.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/BMilenaAndAdmirer.cpp" "CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/BMilenaAndAdmirer.cpp.obj.d"
   "C:/Users/omara/CLionProjects/problem-solving/tasks/DBorders.cpp" "CMakeFiles/test.dir/tasks/DBorders.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/DBorders.cpp.obj.d"
   )
 

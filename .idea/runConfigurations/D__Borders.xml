@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D. Borders" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="DBorders" cppPath="tasks/DBorders.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="ababb&#10;" output="20&#10;" active="true" />
+      <test input="hhya&#10;" output="11&#10;" active="true" />
+      <test input="aaazaaa&#10;" output="50&#10;" active="true" />
+      <test input="a&#10;" output="1&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

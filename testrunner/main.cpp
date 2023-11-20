@@ -1,4 +1,4 @@
-#include "../tasks/CYarikAndArray.cpp"
+#include "../tasks/div-2/910/BMilenaAndAdmirer.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ namespace jhelper {
 
 int main() {
 	std::vector<jhelper::Test> tests = {
-		{"7\n5\n1 2 3 4 5\n4\n9 9 8 8\n6\n-1 4 -1 0 5 -4\n4\n-1 2 4 -3\n1\n-1000\n3\n101 -99 101\n20\n-10 5 -8 10 6 -10 7 9 -2 -6 7 2 -4 6 -1 7 -6 -7 4 1\n", "15\n17\n8\n4\n-1000\n101\n10\n", true, true},
+		{"4\n3\n1 3 2\n4\n1 2 3 4\n3\n3 2 1\n7\n1 4 4 3 5 7 6\n", "1\n0\n3\n9\n", true, true},
 	};
 	bool allOK = true;
 	int testID = 0;
@@ -47,7 +47,7 @@ int main() {
 			std::stringstream in(test.input);
 			std::ostringstream out;
 			std::clock_t start = std::clock();
-			CYarikAndArray solver(in, out);
+			BMilenaAndAdmirer solver(in, out);
       solver.solve();
 			std::clock_t finish = std::clock();
 			double currentTime = double(finish - start) / CLOCKS_PER_SEC;

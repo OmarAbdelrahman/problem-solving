@@ -5,8 +5,6 @@
  */
 
 #include <bits/stdc++.h>
-#include "iostream"
-#include "vector"
 
 template<typename U, typename V>
 std::istream& operator >> (std::istream& in, std::pair<U, V>& p) {
@@ -63,20 +61,26 @@ void print_pretty_pair(std::ostream& out, const std::pair<U, V>& p, const bool& 
 
 using namespace std;
 
-class CYarikAndArray {
+class BMilenaAndAdmirer {
 public:
   void solveOne() {
     int n;
     in >> n;
-    vector<int> a(n);
+    vector<int64_t> a(n);
     in >> a;
-    int result = a[0], total = a[0];
-    for (int i = 1; i < n; i++) {
-      if (abs(a[i]) % 2 == abs(a[i - 1]) % 2) {
-        total = 0;
+    int64_t result = 0;
+    for (int i = n - 2; i >= 0; i--) {
+      if (a[i] <= a[i + 1]) {
+        continue;
       }
-      total = max(a[i], total + a[i]);
-      result = max(result, total);
+      if (a[i] % a[i + 1] == 0) {
+        result += a[i] / a[i + 1] - 1;
+        a[i] = a[i + 1];
+      } else {
+        int64_t k = a[i] / a[i + 1] + 1;
+        result += k - 1;
+        a[i] /= k;
+      }
     }
     out << result << '\n';
   }
@@ -89,18 +93,18 @@ public:
     }
   }
 
-  CYarikAndArray(istream& in, ostream& out)
+  BMilenaAndAdmirer(istream& in, ostream& out)
     : in(in), out(out) { }
 
 private:
-  istream& in;
   ostream& out;
+  istream& in;
 };
 
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
-  CYarikAndArray solver(cin, cout);
+  BMilenaAndAdmirer solver(cin, cout);
   solver.solve();
   return 0;
 }
