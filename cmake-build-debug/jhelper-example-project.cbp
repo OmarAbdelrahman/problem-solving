@@ -235,7 +235,13 @@
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/output/main.cpp">
 			<Option target="output"/>
 		</Unit>
-		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/ADominoPiling.cpp">
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/ACalculatingFunction.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/AGeorgeAndAccommodation.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/AInSearchOfAnEasyProblem.cpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/DBorders.cpp">

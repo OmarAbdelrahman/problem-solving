@@ -10,12 +10,13 @@ public:
   void solveOne() {
     string s;
     in >> s;
+    const int64_t n = int64_t(s.size());
     suffix_array_t sa(s);
     const vector<int>& lcp = sa._lcp();
-    for (int i = 0; i < sa.size(); i++) {
-      out << i << ' ' << lcp[i] << ' ' << sa[i] << ' ' << sa.suffix(i) << endl;
+    int64_t result = n * (n + 1) / 2;
+    for (int i = 1; i < sa.size(); i++) {
+      result += lcp[i] * (lcp[i] + 1) / 2;
     }
-    int64_t result = 0;
     out << result << '\n';
   }
 

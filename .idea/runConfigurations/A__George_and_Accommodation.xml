@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. George and Accommodation" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AGeorgeAndAccommodation" cppPath="tasks/AGeorgeAndAccommodation.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;1 1&#10;2 2&#10;3 3&#10;" output="0&#10;" active="true" />
+      <test input="3&#10;1 10&#10;0 10&#10;10 10&#10;" output="2&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

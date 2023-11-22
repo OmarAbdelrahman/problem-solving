@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Elephant" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AElephant" cppPath="tasks/AElephant.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;" output="1&#10;" active="true" />
+      <test input="12&#10;" output="3&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

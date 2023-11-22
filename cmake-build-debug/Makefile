@@ -215,29 +215,77 @@ output/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/output/main.cpp.s
 .PHONY : output/main.cpp.s
 
-tasks/ADominoPiling.obj: tasks/ADominoPiling.cpp.obj
-.PHONY : tasks/ADominoPiling.obj
+tasks/ACalculatingFunction.obj: tasks/ACalculatingFunction.cpp.obj
+.PHONY : tasks/ACalculatingFunction.obj
 
 # target to build an object file
-tasks/ADominoPiling.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ADominoPiling.cpp.obj
-.PHONY : tasks/ADominoPiling.cpp.obj
+tasks/ACalculatingFunction.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj
+.PHONY : tasks/ACalculatingFunction.cpp.obj
 
-tasks/ADominoPiling.i: tasks/ADominoPiling.cpp.i
-.PHONY : tasks/ADominoPiling.i
+tasks/ACalculatingFunction.i: tasks/ACalculatingFunction.cpp.i
+.PHONY : tasks/ACalculatingFunction.i
 
 # target to preprocess a source file
-tasks/ADominoPiling.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ADominoPiling.cpp.i
-.PHONY : tasks/ADominoPiling.cpp.i
+tasks/ACalculatingFunction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.i
+.PHONY : tasks/ACalculatingFunction.cpp.i
 
-tasks/ADominoPiling.s: tasks/ADominoPiling.cpp.s
-.PHONY : tasks/ADominoPiling.s
+tasks/ACalculatingFunction.s: tasks/ACalculatingFunction.cpp.s
+.PHONY : tasks/ACalculatingFunction.s
 
 # target to generate assembly for a file
-tasks/ADominoPiling.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ADominoPiling.cpp.s
-.PHONY : tasks/ADominoPiling.cpp.s
+tasks/ACalculatingFunction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.s
+.PHONY : tasks/ACalculatingFunction.cpp.s
+
+tasks/AGeorgeAndAccommodation.obj: tasks/AGeorgeAndAccommodation.cpp.obj
+.PHONY : tasks/AGeorgeAndAccommodation.obj
+
+# target to build an object file
+tasks/AGeorgeAndAccommodation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj
+.PHONY : tasks/AGeorgeAndAccommodation.cpp.obj
+
+tasks/AGeorgeAndAccommodation.i: tasks/AGeorgeAndAccommodation.cpp.i
+.PHONY : tasks/AGeorgeAndAccommodation.i
+
+# target to preprocess a source file
+tasks/AGeorgeAndAccommodation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.i
+.PHONY : tasks/AGeorgeAndAccommodation.cpp.i
+
+tasks/AGeorgeAndAccommodation.s: tasks/AGeorgeAndAccommodation.cpp.s
+.PHONY : tasks/AGeorgeAndAccommodation.s
+
+# target to generate assembly for a file
+tasks/AGeorgeAndAccommodation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.s
+.PHONY : tasks/AGeorgeAndAccommodation.cpp.s
+
+tasks/AInSearchOfAnEasyProblem.obj: tasks/AInSearchOfAnEasyProblem.cpp.obj
+.PHONY : tasks/AInSearchOfAnEasyProblem.obj
+
+# target to build an object file
+tasks/AInSearchOfAnEasyProblem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj
+.PHONY : tasks/AInSearchOfAnEasyProblem.cpp.obj
+
+tasks/AInSearchOfAnEasyProblem.i: tasks/AInSearchOfAnEasyProblem.cpp.i
+.PHONY : tasks/AInSearchOfAnEasyProblem.i
+
+# target to preprocess a source file
+tasks/AInSearchOfAnEasyProblem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.i
+.PHONY : tasks/AInSearchOfAnEasyProblem.cpp.i
+
+tasks/AInSearchOfAnEasyProblem.s: tasks/AInSearchOfAnEasyProblem.cpp.s
+.PHONY : tasks/AInSearchOfAnEasyProblem.s
+
+# target to generate assembly for a file
+tasks/AInSearchOfAnEasyProblem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.s
+.PHONY : tasks/AInSearchOfAnEasyProblem.cpp.s
 
 tasks/DBorders.obj: tasks/DBorders.cpp.obj
 .PHONY : tasks/DBorders.obj
@@ -305,9 +353,15 @@ help:
 	@echo ... output/main.obj
 	@echo ... output/main.i
 	@echo ... output/main.s
-	@echo ... tasks/ADominoPiling.obj
-	@echo ... tasks/ADominoPiling.i
-	@echo ... tasks/ADominoPiling.s
+	@echo ... tasks/ACalculatingFunction.obj
+	@echo ... tasks/ACalculatingFunction.i
+	@echo ... tasks/ACalculatingFunction.s
+	@echo ... tasks/AGeorgeAndAccommodation.obj
+	@echo ... tasks/AGeorgeAndAccommodation.i
+	@echo ... tasks/AGeorgeAndAccommodation.s
+	@echo ... tasks/AInSearchOfAnEasyProblem.obj
+	@echo ... tasks/AInSearchOfAnEasyProblem.i
+	@echo ... tasks/AInSearchOfAnEasyProblem.s
 	@echo ... tasks/DBorders.obj
 	@echo ... tasks/DBorders.i
 	@echo ... tasks/DBorders.s
