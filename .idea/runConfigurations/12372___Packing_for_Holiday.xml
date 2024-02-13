@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="12372 - Packing for Holiday" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="PackingForHoliday" cppPath="tasks/PackingForHoliday.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2&#10;20 20 20&#10;1 2 21&#10;" output="Case 1: good&#10;Case 2: bad&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

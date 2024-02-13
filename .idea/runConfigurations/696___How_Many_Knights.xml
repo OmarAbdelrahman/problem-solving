@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="696 - How Many Knights" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="HowManyKnights" cppPath="tasks/HowManyKnights.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2 3&#10;5 5&#10;4 7&#10;0 0&#10;" output="4 knights may be placed on a 2 row 3 column board.&#10;13 knights may be placed on a 5 row 5 column board.&#10;14 knights may be placed on a 4 row 7 column board.&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

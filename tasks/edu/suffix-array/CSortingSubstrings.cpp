@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 #include "../../../library/suffix_array.hpp"
 #include "../../../library/sparse_table.hpp"
-#include "../../../library/lib.hpp"
+#include "../../../library/pair_io.hpp"
+#include "../../../library/vector_io.hpp"
 using namespace std;
 
 class CSortingSubstrings {
@@ -10,9 +11,7 @@ public:
     in >> s;
     in >> n;
     subs = vector<pair<int, int>>(n);
-    for (auto& [x, y] : subs) {
-      in >> x >> y;
-    }
+    in >> subs;
     suffix_array_t sa(s);
     sparse_table<int> spt(sa._lcp(), [&](const int& a, const int& b) -> int { return min(a, b); });
     sort(begin(subs), end(subs), [&](const auto& p1, const auto& p2) -> bool {

@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Matching Arrays" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CMatchingArrays" cppPath="tasks/CMatchingArrays.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="7&#10;1 0&#10;1&#10;2&#10;1 1&#10;1&#10;2&#10;3 0&#10;2 4 3&#10;4 1 2&#10;3 1&#10;2 4 3&#10;4 1 2&#10;3 2&#10;2 4 3&#10;4 1 2&#10;3 3&#10;2 4 3&#10;4 1 2&#10;5 2&#10;6 4 5 6 2&#10;9 7 9 1 1&#10;" output="YES&#10;2&#10;NO&#10;NO&#10;YES&#10;2 4 1&#10;YES&#10;4 1 2&#10;NO&#10;YES&#10;1 9 9 7 1&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

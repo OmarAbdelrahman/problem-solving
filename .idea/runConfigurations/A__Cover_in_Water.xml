@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Cover in Water" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ACoverInWater" cppPath="tasks/ACoverInWater.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;3&#10;...&#10;7&#10;##....#&#10;7&#10;..#.#..&#10;4&#10;####&#10;10&#10;#...#..#.#&#10;" output="2&#10;2&#10;5&#10;0&#10;2&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

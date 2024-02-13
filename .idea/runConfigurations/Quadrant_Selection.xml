@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Quadrant Selection" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="QuadrantSelection" cppPath="tasks/QuadrantSelection.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="10&#10;6&#10;" output="1&#10;" active="true" />
+      <test input="9&#10;-13&#10;" output="4&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

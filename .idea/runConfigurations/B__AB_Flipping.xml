@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. AB Flipping" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BABFlipping" cppPath="tasks/BABFlipping.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;2&#10;AB&#10;4&#10;BBBA&#10;4&#10;AABB&#10;" output="1&#10;0&#10;3&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

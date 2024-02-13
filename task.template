@@ -10,7 +10,7 @@ public:
   void solve() {
     int nt;
     in >> nt;
-    for (int _ = 0; _ < nt; _++) {
+    for (int _ = 1; _ <= nt; _++) {
       solveOne();
     }
   }

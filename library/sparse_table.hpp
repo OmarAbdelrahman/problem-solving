@@ -1,10 +1,8 @@
-#include <bits/stdc++.h>
-
 template <typename T, class F = std::function<T(const T&, const T&)>>
 class sparse_table {
 public:
   sparse_table(const std::vector<T>& a, const F& f) : func(f) {
-    n = static_cast<int>(a.size());
+    n = std::ssize(a);
     int max_log = 32 - __builtin_clz(n);
     mat.resize(max_log);
     mat[0] = a;

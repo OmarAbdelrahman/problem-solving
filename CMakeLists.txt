@@ -1,15 +1,11 @@
 cmake_minimum_required(VERSION 2.8.4)
 project(jhelper-example-project)
 
-add_executable(output output/main.cpp
-        library/suffix_array.hpp
-        library/sparse_table.hpp
-        library/trie.hpp
-)
+add_executable(output output/main.cpp)
 add_executable(kattis kattis/main.cpp)
 add_executable(testrunner testrunner/main.cpp)
 file(GLOB TASKS "tasks/*.cpp")
-file(GLOB_RECURSE HEADERS "library/*.hpp" )
+file(GLOB_RECURSE HEADERS "library/*.hpp")
 
 ADD_DEFINITIONS(-std=c++20)
 

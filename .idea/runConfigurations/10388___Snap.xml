@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="10388 - Snap" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Snap" cppPath="tasks/Snap.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="1&#10;ABCDA&#10;CBADC&#10;" output="Snap! for Jane: BCBA&#10;Snap! for Jane: DADCBCBA&#10;Snap! for John: CBAC&#10;Snap! for John: ADADCBAC&#10;John wins.&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

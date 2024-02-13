@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Not Quite Latin Square" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BNotQuiteLatinSquare" cppPath="tasks/BNotQuiteLatinSquare.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;ABC&#10;C?B&#10;BCA&#10;BCA&#10;CA?&#10;ABC&#10;?AB&#10;BCA&#10;ABC&#10;" output="A&#10;B&#10;C&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

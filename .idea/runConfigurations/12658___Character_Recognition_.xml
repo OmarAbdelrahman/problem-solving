@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="12658 - Character Recognition?" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CharacterRecognition" cppPath="tasks/CharacterRecognition.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;.*..***.***.&#10;.*....*...*.&#10;.*..***.***.&#10;.*..*.....*.&#10;.*..***.***.&#10;" output="123&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

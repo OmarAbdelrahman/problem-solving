@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D. Unnatural Language Processing" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="DUnnaturalLanguageProcessing" cppPath="tasks/DUnnaturalLanguageProcessing.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="6&#10;8&#10;bacedbab&#10;4&#10;baba&#10;13&#10;daddecabeddad&#10;3&#10;dac&#10;6&#10;dacdac&#10;22&#10;dababbabababbabbababba&#10;" output="ba.ced.bab&#10;ba.ba&#10;dad.de.ca.bed.dad&#10;dac&#10;dac.dac&#10;da.bab.ba.ba.bab.bab.ba.bab.ba&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

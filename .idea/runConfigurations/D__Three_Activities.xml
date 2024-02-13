@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D. Three Activities" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="DThreeActivities" cppPath="tasks/DThreeActivities.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;3&#10;1 10 1&#10;10 1 1&#10;1 1 10&#10;4&#10;30 20 10 1&#10;30 5 15 20&#10;30 25 10 10&#10;10&#10;5 19 12 3 18 18 6 17 10 13&#10;15 17 19 11 16 3 11 17 17 17&#10;1 17 18 10 15 8 17 3 13 12&#10;10&#10;17 5 4 18 12 4 11 2 16 16&#10;8 4 14 19 3 12 6 7 5 16&#10;3 4 8 11 10 8 10 2 20 3&#10;" output="30&#10;75&#10;55&#10;56&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

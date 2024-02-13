@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Chip and Ribbon" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BChipAndRibbon" cppPath="tasks/BChipAndRibbon.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;4&#10;1 2 2 1&#10;5&#10;1 0 1 0 1&#10;5&#10;5 4 3 2 1&#10;1&#10;12&#10;" output="1&#10;2&#10;4&#10;11&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

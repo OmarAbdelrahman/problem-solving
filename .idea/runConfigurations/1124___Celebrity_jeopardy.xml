@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="1124 - Celebrity jeopardy" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CelebrityJeopardy" cppPath="tasks/CelebrityJeopardy.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="Y = 3&#10;X=9&#10;" output="Y = 3&#10;X=9&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

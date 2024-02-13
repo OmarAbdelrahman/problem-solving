@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="278 - Chess" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Chess" cppPath="tasks/Chess.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2&#10;r 6 7&#10;k 8 8&#10;" output="6&#10;32&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

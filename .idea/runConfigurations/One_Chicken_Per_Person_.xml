@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="One Chicken Per Person!" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="OneChickenPerPerson" cppPath="tasks/OneChickenPerPerson.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="20 100&#10;" output="Dr. Chaz will have 80 pieces of chicken left over!&#10;" active="true" />
+      <test input="2 3&#10;" output="Dr. Chaz will have 1 piece of chicken left over!&#10;" active="true" />
+      <test input="10 1&#10;" output="Dr. Chaz needs 9 more pieces of chicken!&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,4 +1,4 @@
-#include "../tasks/div-2/A/ACalculatingFunction.cpp"
+#include "../tasks/BEqualize.cpp"
 
 #include <iostream>
 #include <fstream>
@@ -29,7 +29,7 @@ namespace jhelper {
 
 int main() {
 	std::vector<jhelper::Test> tests = {
-		{"4\n", "2\n", true, true},{"5\n", "-3\n", true, true},
+		{"7\n2\n1 2\n4\n7 1 4 1\n3\n103 102 104\n5\n1 101 1 100 1\n5\n1 10 100 1000 1\n2\n3 1\n3\n1000000000 999999997 999999999\n", "2\n2\n3\n2\n1\n1\n2\n", true, true},
 	};
 	bool allOK = true;
 	int testID = 0;
@@ -47,7 +47,7 @@ int main() {
 			std::stringstream in(test.input);
 			std::ostringstream out;
 			std::clock_t start = std::clock();
-			ACalculatingFunction solver(in, out);
+			BEqualize solver(in, out);
       solver.solve();
 			std::clock_t finish = std::clock();
 			double currentTime = double(finish - start) / CLOCKS_PER_SEC;

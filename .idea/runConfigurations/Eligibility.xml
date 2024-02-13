@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Eligibility" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Eligibility" cppPath="tasks/Eligibility.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;EligibleContestant 2013/09/01 1995/03/12 10&#10;IneligibleContestant 2009/09/01 1990/12/12 50&#10;PetitionContestant 2009/09/01 1990/12/12 35&#10;" output="EligibleContestant eligible&#10;IneligibleContestant ineligible&#10;PetitionContestant coach petitions&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Rook" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ARook" cppPath="tasks/ARook.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="1&#10;d5&#10;" output="d1&#10;d2&#10;b5&#10;g5&#10;h5&#10;d3&#10;e5&#10;f5&#10;d8&#10;a5&#10;d6&#10;d7&#10;c5&#10;d4&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

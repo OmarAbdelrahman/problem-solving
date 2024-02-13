@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="12279 - Emoogle Balance" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="EmoogleBalance" cppPath="tasks/EmoogleBalance.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;3 4 0 0 1&#10;4&#10;2 0 0 0&#10;7&#10;1 2 3 4 5 0 0&#10;0&#10;" output="Case 1: 1&#10;Case 2: -2&#10;Case 3: 3&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

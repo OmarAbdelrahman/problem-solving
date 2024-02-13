@@ -215,77 +215,149 @@ output/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\output.dir\build.make CMakeFiles/output.dir/output/main.cpp.s
 .PHONY : output/main.cpp.s
 
-tasks/ACalculatingFunction.obj: tasks/ACalculatingFunction.cpp.obj
-.PHONY : tasks/ACalculatingFunction.obj
+tasks/A2023.obj: tasks/A2023.cpp.obj
+.PHONY : tasks/A2023.obj
 
 # target to build an object file
-tasks/ACalculatingFunction.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj
-.PHONY : tasks/ACalculatingFunction.cpp.obj
+tasks/A2023.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/A2023.cpp.obj
+.PHONY : tasks/A2023.cpp.obj
 
-tasks/ACalculatingFunction.i: tasks/ACalculatingFunction.cpp.i
-.PHONY : tasks/ACalculatingFunction.i
+tasks/A2023.i: tasks/A2023.cpp.i
+.PHONY : tasks/A2023.i
 
 # target to preprocess a source file
-tasks/ACalculatingFunction.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.i
-.PHONY : tasks/ACalculatingFunction.cpp.i
+tasks/A2023.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/A2023.cpp.i
+.PHONY : tasks/A2023.cpp.i
 
-tasks/ACalculatingFunction.s: tasks/ACalculatingFunction.cpp.s
-.PHONY : tasks/ACalculatingFunction.s
+tasks/A2023.s: tasks/A2023.cpp.s
+.PHONY : tasks/A2023.s
 
 # target to generate assembly for a file
-tasks/ACalculatingFunction.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.s
-.PHONY : tasks/ACalculatingFunction.cpp.s
+tasks/A2023.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/A2023.cpp.s
+.PHONY : tasks/A2023.cpp.s
 
-tasks/AGeorgeAndAccommodation.obj: tasks/AGeorgeAndAccommodation.cpp.obj
-.PHONY : tasks/AGeorgeAndAccommodation.obj
+tasks/ARectangleCutting.obj: tasks/ARectangleCutting.cpp.obj
+.PHONY : tasks/ARectangleCutting.obj
 
 # target to build an object file
-tasks/AGeorgeAndAccommodation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj
-.PHONY : tasks/AGeorgeAndAccommodation.cpp.obj
+tasks/ARectangleCutting.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj
+.PHONY : tasks/ARectangleCutting.cpp.obj
 
-tasks/AGeorgeAndAccommodation.i: tasks/AGeorgeAndAccommodation.cpp.i
-.PHONY : tasks/AGeorgeAndAccommodation.i
+tasks/ARectangleCutting.i: tasks/ARectangleCutting.cpp.i
+.PHONY : tasks/ARectangleCutting.i
 
 # target to preprocess a source file
-tasks/AGeorgeAndAccommodation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.i
-.PHONY : tasks/AGeorgeAndAccommodation.cpp.i
+tasks/ARectangleCutting.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.i
+.PHONY : tasks/ARectangleCutting.cpp.i
 
-tasks/AGeorgeAndAccommodation.s: tasks/AGeorgeAndAccommodation.cpp.s
-.PHONY : tasks/AGeorgeAndAccommodation.s
+tasks/ARectangleCutting.s: tasks/ARectangleCutting.cpp.s
+.PHONY : tasks/ARectangleCutting.s
 
 # target to generate assembly for a file
-tasks/AGeorgeAndAccommodation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.s
-.PHONY : tasks/AGeorgeAndAccommodation.cpp.s
+tasks/ARectangleCutting.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.s
+.PHONY : tasks/ARectangleCutting.cpp.s
 
-tasks/AInSearchOfAnEasyProblem.obj: tasks/AInSearchOfAnEasyProblem.cpp.obj
-.PHONY : tasks/AInSearchOfAnEasyProblem.obj
+tasks/AWeGotEverythingCovered.obj: tasks/AWeGotEverythingCovered.cpp.obj
+.PHONY : tasks/AWeGotEverythingCovered.obj
 
 # target to build an object file
-tasks/AInSearchOfAnEasyProblem.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj
-.PHONY : tasks/AInSearchOfAnEasyProblem.cpp.obj
+tasks/AWeGotEverythingCovered.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj
+.PHONY : tasks/AWeGotEverythingCovered.cpp.obj
 
-tasks/AInSearchOfAnEasyProblem.i: tasks/AInSearchOfAnEasyProblem.cpp.i
-.PHONY : tasks/AInSearchOfAnEasyProblem.i
+tasks/AWeGotEverythingCovered.i: tasks/AWeGotEverythingCovered.cpp.i
+.PHONY : tasks/AWeGotEverythingCovered.i
 
 # target to preprocess a source file
-tasks/AInSearchOfAnEasyProblem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.i
-.PHONY : tasks/AInSearchOfAnEasyProblem.cpp.i
+tasks/AWeGotEverythingCovered.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.i
+.PHONY : tasks/AWeGotEverythingCovered.cpp.i
 
-tasks/AInSearchOfAnEasyProblem.s: tasks/AInSearchOfAnEasyProblem.cpp.s
-.PHONY : tasks/AInSearchOfAnEasyProblem.s
+tasks/AWeGotEverythingCovered.s: tasks/AWeGotEverythingCovered.cpp.s
+.PHONY : tasks/AWeGotEverythingCovered.s
 
 # target to generate assembly for a file
-tasks/AInSearchOfAnEasyProblem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.s
-.PHONY : tasks/AInSearchOfAnEasyProblem.cpp.s
+tasks/AWeGotEverythingCovered.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.s
+.PHONY : tasks/AWeGotEverythingCovered.cpp.s
+
+tasks/BABalancedProblemset.obj: tasks/BABalancedProblemset.cpp.obj
+.PHONY : tasks/BABalancedProblemset.obj
+
+# target to build an object file
+tasks/BABalancedProblemset.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj
+.PHONY : tasks/BABalancedProblemset.cpp.obj
+
+tasks/BABalancedProblemset.i: tasks/BABalancedProblemset.cpp.i
+.PHONY : tasks/BABalancedProblemset.i
+
+# target to preprocess a source file
+tasks/BABalancedProblemset.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.i
+.PHONY : tasks/BABalancedProblemset.cpp.i
+
+tasks/BABalancedProblemset.s: tasks/BABalancedProblemset.cpp.s
+.PHONY : tasks/BABalancedProblemset.s
+
+# target to generate assembly for a file
+tasks/BABalancedProblemset.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.s
+.PHONY : tasks/BABalancedProblemset.cpp.s
+
+tasks/BEqualize.obj: tasks/BEqualize.cpp.obj
+.PHONY : tasks/BEqualize.obj
+
+# target to build an object file
+tasks/BEqualize.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BEqualize.cpp.obj
+.PHONY : tasks/BEqualize.cpp.obj
+
+tasks/BEqualize.i: tasks/BEqualize.cpp.i
+.PHONY : tasks/BEqualize.i
+
+# target to preprocess a source file
+tasks/BEqualize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BEqualize.cpp.i
+.PHONY : tasks/BEqualize.cpp.i
+
+tasks/BEqualize.s: tasks/BEqualize.cpp.s
+.PHONY : tasks/BEqualize.s
+
+# target to generate assembly for a file
+tasks/BEqualize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/BEqualize.cpp.s
+.PHONY : tasks/BEqualize.cpp.s
+
+tasks/CDidWeGetEverythingCovered.obj: tasks/CDidWeGetEverythingCovered.cpp.obj
+.PHONY : tasks/CDidWeGetEverythingCovered.obj
+
+# target to build an object file
+tasks/CDidWeGetEverythingCovered.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj
+.PHONY : tasks/CDidWeGetEverythingCovered.cpp.obj
+
+tasks/CDidWeGetEverythingCovered.i: tasks/CDidWeGetEverythingCovered.cpp.i
+.PHONY : tasks/CDidWeGetEverythingCovered.i
+
+# target to preprocess a source file
+tasks/CDidWeGetEverythingCovered.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.i
+.PHONY : tasks/CDidWeGetEverythingCovered.cpp.i
+
+tasks/CDidWeGetEverythingCovered.s: tasks/CDidWeGetEverythingCovered.cpp.s
+.PHONY : tasks/CDidWeGetEverythingCovered.s
+
+# target to generate assembly for a file
+tasks/CDidWeGetEverythingCovered.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.s
+.PHONY : tasks/CDidWeGetEverythingCovered.cpp.s
 
 tasks/DBorders.obj: tasks/DBorders.cpp.obj
 .PHONY : tasks/DBorders.obj
@@ -310,6 +382,30 @@ tasks/DBorders.s: tasks/DBorders.cpp.s
 tasks/DBorders.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/DBorders.cpp.s
 .PHONY : tasks/DBorders.cpp.s
+
+tasks/FGreetings.obj: tasks/FGreetings.cpp.obj
+.PHONY : tasks/FGreetings.obj
+
+# target to build an object file
+tasks/FGreetings.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/FGreetings.cpp.obj
+.PHONY : tasks/FGreetings.cpp.obj
+
+tasks/FGreetings.i: tasks/FGreetings.cpp.i
+.PHONY : tasks/FGreetings.i
+
+# target to preprocess a source file
+tasks/FGreetings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/FGreetings.cpp.i
+.PHONY : tasks/FGreetings.cpp.i
+
+tasks/FGreetings.s: tasks/FGreetings.cpp.s
+.PHONY : tasks/FGreetings.s
+
+# target to generate assembly for a file
+tasks/FGreetings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/tasks/FGreetings.cpp.s
+.PHONY : tasks/FGreetings.cpp.s
 
 testrunner/main.obj: testrunner/main.cpp.obj
 .PHONY : testrunner/main.obj
@@ -353,18 +449,30 @@ help:
 	@echo ... output/main.obj
 	@echo ... output/main.i
 	@echo ... output/main.s
-	@echo ... tasks/ACalculatingFunction.obj
-	@echo ... tasks/ACalculatingFunction.i
-	@echo ... tasks/ACalculatingFunction.s
-	@echo ... tasks/AGeorgeAndAccommodation.obj
-	@echo ... tasks/AGeorgeAndAccommodation.i
-	@echo ... tasks/AGeorgeAndAccommodation.s
-	@echo ... tasks/AInSearchOfAnEasyProblem.obj
-	@echo ... tasks/AInSearchOfAnEasyProblem.i
-	@echo ... tasks/AInSearchOfAnEasyProblem.s
+	@echo ... tasks/A2023.obj
+	@echo ... tasks/A2023.i
+	@echo ... tasks/A2023.s
+	@echo ... tasks/ARectangleCutting.obj
+	@echo ... tasks/ARectangleCutting.i
+	@echo ... tasks/ARectangleCutting.s
+	@echo ... tasks/AWeGotEverythingCovered.obj
+	@echo ... tasks/AWeGotEverythingCovered.i
+	@echo ... tasks/AWeGotEverythingCovered.s
+	@echo ... tasks/BABalancedProblemset.obj
+	@echo ... tasks/BABalancedProblemset.i
+	@echo ... tasks/BABalancedProblemset.s
+	@echo ... tasks/BEqualize.obj
+	@echo ... tasks/BEqualize.i
+	@echo ... tasks/BEqualize.s
+	@echo ... tasks/CDidWeGetEverythingCovered.obj
+	@echo ... tasks/CDidWeGetEverythingCovered.i
+	@echo ... tasks/CDidWeGetEverythingCovered.s
 	@echo ... tasks/DBorders.obj
 	@echo ... tasks/DBorders.i
 	@echo ... tasks/DBorders.s
+	@echo ... tasks/FGreetings.obj
+	@echo ... tasks/FGreetings.i
+	@echo ... tasks/FGreetings.s
 	@echo ... testrunner/main.obj
 	@echo ... testrunner/main.i
 	@echo ... testrunner/main.s

@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="License to Launch" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="LicenseToLaunch" cppPath="tasks/LicenseToLaunch.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;3 4 1 7 2&#10;" output="2&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Filip" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Filip" cppPath="tasks/Filip.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="734 893&#10;" output="437&#10;" active="true" />
+      <test input="221 231&#10;" output="132&#10;" active="true" />
+      <test input="839 237&#10;" output="938&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

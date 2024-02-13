@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Problemsolving Log" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AProblemsolvingLog" cppPath="tasks/AProblemsolvingLog.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;6&#10;ACBCBC&#10;7&#10;AAAAFPC&#10;22&#10;FEADBBDFFEDFFFDHHHADCC&#10;" output="3&#10;1&#10;4&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

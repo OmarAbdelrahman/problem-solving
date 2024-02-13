@@ -1,6 +1,3 @@
-#include "vector"
-#include "string"
-
 struct trie_node_t {
   char alphabet;
   bool exist;

@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Line Them Up" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="LineThemUp" cppPath="tasks/LineThemUp.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;JOE&#10;BOB&#10;ANDY&#10;AL&#10;ADAM&#10;" output="DECREASING&#10;" active="true" />
+      <test input="11&#10;HOPE&#10;ALI&#10;BECKY&#10;JULIE&#10;MEGHAN&#10;LAUREN&#10;MORGAN&#10;CARLI&#10;MEGAN&#10;ALEX&#10;TOBIN&#10;" output="NEITHER&#10;" active="true" />
+      <test input="4&#10;GEORGE&#10;JOHN&#10;PAUL&#10;RINGO&#10;" output="INCREASING&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

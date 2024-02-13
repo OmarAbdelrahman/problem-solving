@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Boss Battle" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BossBattle" cppPath="tasks/BossBattle.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;" output="2&#10;" active="true" />
+      <test input="7&#10;" output="5&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

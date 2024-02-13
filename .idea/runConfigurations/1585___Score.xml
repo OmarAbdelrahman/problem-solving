@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="1585 - Score" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Score" cppPath="tasks/Score.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;OOXXOXXOOO&#10;OOXXOOXXOO&#10;OXOXOXOXOXOXOX&#10;OOOOOOOOOO&#10;OOOOXOOOOXOOOOX&#10;" output="10&#10;9&#10;7&#10;55&#10;30&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

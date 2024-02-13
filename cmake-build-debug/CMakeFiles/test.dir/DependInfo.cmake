@@ -8,10 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/omara/CLionProjects/problem-solving/tasks/ACalculatingFunction.cpp" "CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj.d"
-  "C:/Users/omara/CLionProjects/problem-solving/tasks/AGeorgeAndAccommodation.cpp" "CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj.d"
-  "C:/Users/omara/CLionProjects/problem-solving/tasks/AInSearchOfAnEasyProblem.cpp" "CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/A2023.cpp" "CMakeFiles/test.dir/tasks/A2023.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/A2023.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/ARectangleCutting.cpp" "CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/AWeGotEverythingCovered.cpp" "CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/BABalancedProblemset.cpp" "CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/BEqualize.cpp" "CMakeFiles/test.dir/tasks/BEqualize.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/BEqualize.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/CDidWeGetEverythingCovered.cpp" "CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj.d"
   "C:/Users/omara/CLionProjects/problem-solving/tasks/DBorders.cpp" "CMakeFiles/test.dir/tasks/DBorders.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/DBorders.cpp.obj.d"
+  "C:/Users/omara/CLionProjects/problem-solving/tasks/FGreetings.cpp" "CMakeFiles/test.dir/tasks/FGreetings.cpp.obj" "gcc" "CMakeFiles/test.dir/tasks/FGreetings.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

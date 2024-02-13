@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Shuffling Along" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ShufflingAlong" cppPath="tasks/ShufflingAlong.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="8 out&#10;" output="3&#10;" active="true" />
+      <test input="8 in&#10;" output="6&#10;" active="true" />
+      <test input="52 out&#10;" output="8&#10;" active="true" />
+      <test input="53 out&#10;" output="52&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

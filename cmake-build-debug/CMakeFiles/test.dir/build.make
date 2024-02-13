@@ -68,52 +68,94 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/ACalculatingFunction.cpp
-CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj -MF CMakeFiles\test.dir\tasks\ACalculatingFunction.cpp.obj.d -o CMakeFiles\test.dir\tasks\ACalculatingFunction.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\ACalculatingFunction.cpp
+CMakeFiles/test.dir/tasks/A2023.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tasks/A2023.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/A2023.cpp
+CMakeFiles/test.dir/tasks/A2023.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tasks/A2023.cpp.obj"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/A2023.cpp.obj -MF CMakeFiles\test.dir\tasks\A2023.cpp.obj.d -o CMakeFiles\test.dir\tasks\A2023.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\A2023.cpp
 
-CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.i"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\ACalculatingFunction.cpp > CMakeFiles\test.dir\tasks\ACalculatingFunction.cpp.i
+CMakeFiles/test.dir/tasks/A2023.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/A2023.cpp.i"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\A2023.cpp > CMakeFiles\test.dir\tasks\A2023.cpp.i
 
-CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.s"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\ACalculatingFunction.cpp -o CMakeFiles\test.dir\tasks\ACalculatingFunction.cpp.s
+CMakeFiles/test.dir/tasks/A2023.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/A2023.cpp.s"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\A2023.cpp -o CMakeFiles\test.dir\tasks\A2023.cpp.s
 
-CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/AGeorgeAndAccommodation.cpp
-CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj -MF CMakeFiles\test.dir\tasks\AGeorgeAndAccommodation.cpp.obj.d -o CMakeFiles\test.dir\tasks\AGeorgeAndAccommodation.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\AGeorgeAndAccommodation.cpp
+CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/ARectangleCutting.cpp
+CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj -MF CMakeFiles\test.dir\tasks\ARectangleCutting.cpp.obj.d -o CMakeFiles\test.dir\tasks\ARectangleCutting.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\ARectangleCutting.cpp
 
-CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.i"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\AGeorgeAndAccommodation.cpp > CMakeFiles\test.dir\tasks\AGeorgeAndAccommodation.cpp.i
+CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.i"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\ARectangleCutting.cpp > CMakeFiles\test.dir\tasks\ARectangleCutting.cpp.i
 
-CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.s"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\AGeorgeAndAccommodation.cpp -o CMakeFiles\test.dir\tasks\AGeorgeAndAccommodation.cpp.s
+CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.s"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\ARectangleCutting.cpp -o CMakeFiles\test.dir\tasks\ARectangleCutting.cpp.s
 
-CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/AInSearchOfAnEasyProblem.cpp
-CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj -MF CMakeFiles\test.dir\tasks\AInSearchOfAnEasyProblem.cpp.obj.d -o CMakeFiles\test.dir\tasks\AInSearchOfAnEasyProblem.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\AInSearchOfAnEasyProblem.cpp
+CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/AWeGotEverythingCovered.cpp
+CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj -MF CMakeFiles\test.dir\tasks\AWeGotEverythingCovered.cpp.obj.d -o CMakeFiles\test.dir\tasks\AWeGotEverythingCovered.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\AWeGotEverythingCovered.cpp
 
-CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.i"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\AInSearchOfAnEasyProblem.cpp > CMakeFiles\test.dir\tasks\AInSearchOfAnEasyProblem.cpp.i
+CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.i"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\AWeGotEverythingCovered.cpp > CMakeFiles\test.dir\tasks\AWeGotEverythingCovered.cpp.i
 
-CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.s"
-	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\AInSearchOfAnEasyProblem.cpp -o CMakeFiles\test.dir\tasks\AInSearchOfAnEasyProblem.cpp.s
+CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.s"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\AWeGotEverythingCovered.cpp -o CMakeFiles\test.dir\tasks\AWeGotEverythingCovered.cpp.s
+
+CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/BABalancedProblemset.cpp
+CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj -MF CMakeFiles\test.dir\tasks\BABalancedProblemset.cpp.obj.d -o CMakeFiles\test.dir\tasks\BABalancedProblemset.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\BABalancedProblemset.cpp
+
+CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.i"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\BABalancedProblemset.cpp > CMakeFiles\test.dir\tasks\BABalancedProblemset.cpp.i
+
+CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.s"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\BABalancedProblemset.cpp -o CMakeFiles\test.dir\tasks\BABalancedProblemset.cpp.s
+
+CMakeFiles/test.dir/tasks/BEqualize.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tasks/BEqualize.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/BEqualize.cpp
+CMakeFiles/test.dir/tasks/BEqualize.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/tasks/BEqualize.cpp.obj"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/BEqualize.cpp.obj -MF CMakeFiles\test.dir\tasks\BEqualize.cpp.obj.d -o CMakeFiles\test.dir\tasks\BEqualize.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\BEqualize.cpp
+
+CMakeFiles/test.dir/tasks/BEqualize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/BEqualize.cpp.i"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\BEqualize.cpp > CMakeFiles\test.dir\tasks\BEqualize.cpp.i
+
+CMakeFiles/test.dir/tasks/BEqualize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/BEqualize.cpp.s"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\BEqualize.cpp -o CMakeFiles\test.dir\tasks\BEqualize.cpp.s
+
+CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/CDidWeGetEverythingCovered.cpp
+CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj -MF CMakeFiles\test.dir\tasks\CDidWeGetEverythingCovered.cpp.obj.d -o CMakeFiles\test.dir\tasks\CDidWeGetEverythingCovered.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\CDidWeGetEverythingCovered.cpp
+
+CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.i"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\CDidWeGetEverythingCovered.cpp > CMakeFiles\test.dir\tasks\CDidWeGetEverythingCovered.cpp.i
+
+CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.s"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\CDidWeGetEverythingCovered.cpp -o CMakeFiles\test.dir\tasks\CDidWeGetEverythingCovered.cpp.s
 
 CMakeFiles/test.dir/tasks/DBorders.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tasks/DBorders.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/DBorders.cpp
 CMakeFiles/test.dir/tasks/DBorders.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/tasks/DBorders.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/tasks/DBorders.cpp.obj"
 	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/DBorders.cpp.obj -MF CMakeFiles\test.dir\tasks\DBorders.cpp.obj.d -o CMakeFiles\test.dir\tasks\DBorders.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\DBorders.cpp
 
 CMakeFiles/test.dir/tasks/DBorders.cpp.i: cmake_force
@@ -124,25 +166,47 @@ CMakeFiles/test.dir/tasks/DBorders.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/DBorders.cpp.s"
 	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\DBorders.cpp -o CMakeFiles\test.dir\tasks\DBorders.cpp.s
 
+CMakeFiles/test.dir/tasks/FGreetings.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tasks/FGreetings.cpp.obj: C:/Users/omara/CLionProjects/problem-solving/tasks/FGreetings.cpp
+CMakeFiles/test.dir/tasks/FGreetings.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/tasks/FGreetings.cpp.obj"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tasks/FGreetings.cpp.obj -MF CMakeFiles\test.dir\tasks\FGreetings.cpp.obj.d -o CMakeFiles\test.dir\tasks\FGreetings.cpp.obj -c C:\Users\omara\CLionProjects\problem-solving\tasks\FGreetings.cpp
+
+CMakeFiles/test.dir/tasks/FGreetings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/tasks/FGreetings.cpp.i"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\omara\CLionProjects\problem-solving\tasks\FGreetings.cpp > CMakeFiles\test.dir\tasks\FGreetings.cpp.i
+
+CMakeFiles/test.dir/tasks/FGreetings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/tasks/FGreetings.cpp.s"
+	"C:\PROGRA~1\JetBrains\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\omara\CLionProjects\problem-solving\tasks\FGreetings.cpp -o CMakeFiles\test.dir\tasks\FGreetings.cpp.s
+
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj" \
-"CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj" \
-"CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj" \
-"CMakeFiles/test.dir/tasks/DBorders.cpp.obj"
+"CMakeFiles/test.dir/tasks/A2023.cpp.obj" \
+"CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj" \
+"CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj" \
+"CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj" \
+"CMakeFiles/test.dir/tasks/BEqualize.cpp.obj" \
+"CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj" \
+"CMakeFiles/test.dir/tasks/DBorders.cpp.obj" \
+"CMakeFiles/test.dir/tasks/FGreetings.cpp.obj"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test.exe: CMakeFiles/test.dir/tasks/ACalculatingFunction.cpp.obj
-test.exe: CMakeFiles/test.dir/tasks/AGeorgeAndAccommodation.cpp.obj
-test.exe: CMakeFiles/test.dir/tasks/AInSearchOfAnEasyProblem.cpp.obj
+test.exe: CMakeFiles/test.dir/tasks/A2023.cpp.obj
+test.exe: CMakeFiles/test.dir/tasks/ARectangleCutting.cpp.obj
+test.exe: CMakeFiles/test.dir/tasks/AWeGotEverythingCovered.cpp.obj
+test.exe: CMakeFiles/test.dir/tasks/BABalancedProblemset.cpp.obj
+test.exe: CMakeFiles/test.dir/tasks/BEqualize.cpp.obj
+test.exe: CMakeFiles/test.dir/tasks/CDidWeGetEverythingCovered.cpp.obj
 test.exe: CMakeFiles/test.dir/tasks/DBorders.cpp.obj
+test.exe: CMakeFiles/test.dir/tasks/FGreetings.cpp.obj
 test.exe: CMakeFiles/test.dir/build.make
 test.exe: CMakeFiles/test.dir/linkLibs.rsp
 test.exe: CMakeFiles/test.dir/objects1.rsp
 test.exe: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\omara\CLionProjects\problem-solving\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

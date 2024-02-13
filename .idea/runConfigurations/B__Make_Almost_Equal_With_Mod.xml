@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Make Almost Equal With Mod" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BMakeAlmostEqualWithMod" cppPath="tasks/BMakeAlmostEqualWithMod.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;4&#10;8 15 22 30&#10;5&#10;60 90 98 120 308&#10;6&#10;328 769 541 986 215 734&#10;5&#10;1000 2000 7000 11000 16000&#10;2&#10;2 1&#10;" output="7&#10;30&#10;3&#10;5000&#10;1000000000000000000&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

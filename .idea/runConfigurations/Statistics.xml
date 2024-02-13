@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Statistics" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Statistics" cppPath="tasks/Statistics.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2 4 10&#10;9 2 5 6 4 5 9 2 1 4&#10;7 6 10 1 2 5 10 9&#10;1 9&#10;" output="Case 1: 4 10 6&#10;Case 2: 1 9 8&#10;Case 3: 1 10 9&#10;Case 4: 9 9 0&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

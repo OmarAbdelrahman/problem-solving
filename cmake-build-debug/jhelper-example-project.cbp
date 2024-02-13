@@ -217,34 +217,61 @@
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/kattis/main.cpp">
 			<Option target="kattis"/>
 		</Unit>
-		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/lib.hpp">
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/array_io.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/debug.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/deque_io.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/io_utils.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/pair_io.hpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/sparse_table.hpp">
-			<Option target="output"/>
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/string_utils.hpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/suffix_array.hpp">
-			<Option target="output"/>
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/trie.hpp">
-			<Option target="output"/>
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/library/vector_io.hpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/output/main.cpp">
 			<Option target="output"/>
 		</Unit>
-		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/ACalculatingFunction.cpp">
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/A2023.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/AGeorgeAndAccommodation.cpp">
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/ARectangleCutting.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/AInSearchOfAnEasyProblem.cpp">
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/AWeGotEverythingCovered.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/BABalancedProblemset.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/BEqualize.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/CDidWeGetEverythingCovered.cpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/DBorders.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/tasks/FGreetings.cpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="C:/Users/omara/CLionProjects/problem-solving/testrunner/main.cpp">

@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Equalize" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BEqualize" cppPath="tasks/BEqualize.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="7&#10;2&#10;1 2&#10;4&#10;7 1 4 1&#10;3&#10;103 102 104&#10;5&#10;1 101 1 100 1&#10;5&#10;1 10 100 1000 1&#10;2&#10;3 1&#10;3&#10;1000000000 999999997 999999999&#10;" output="2&#10;2&#10;3&#10;2&#10;1&#10;1&#10;2&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,6 +1,6 @@
 CMakeFiles/testrunner.dir/testrunner/main.cpp.obj: \
  C:\Users\omara\CLionProjects\problem-solving\testrunner\main.cpp \
- C:/Users/omara/CLionProjects/problem-solving/tasks/ACalculatingFunction.cpp \
+ C:/Users/omara/CLionProjects/problem-solving/tasks/BEqualize.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/stdc++.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -361,4 +361,6 @@ CMakeFiles/testrunner.dir/testrunner/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory_resource \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/barrier \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/latch \
- C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/syncstream
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/syncstream \
+ C:/Users/omara/CLionProjects/problem-solving/library/vector_io.hpp \
+ C:/Users/omara/CLionProjects/problem-solving/library/debug.hpp

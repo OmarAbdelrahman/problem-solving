@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../../../library/lib.hpp"
+#include "../../../library/vector_io.hpp"
 
 #define _size(a) (int) (a).size()
 

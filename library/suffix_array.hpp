@@ -1,10 +1,3 @@
-#include "string"
-#include "vector"
-#include "cstring"
-#include "cstdint"
-#include "cassert"
-#include "algorithm"
-
 class suffix_array_t {
 public:
   suffix_array_t() = default;
@@ -16,7 +9,7 @@ public:
   std::string longest_common_substring(const std::string& a, const std::string& b) {
     initialize(a + char(DELIM - 1) + b);
     auto belong_to_different_strings = [&](const int ai, const int bi) -> bool {
-      const int an = static_cast<int>(a.size());
+      const uint32_t an = std::size(a);
       return (ai <= an) != (bi <= an);
     };
     std::string r;
@@ -31,7 +24,7 @@ public:
   }
 
   int find_first_of(const std::string& substring) {
-    const int m = static_cast<int>(substring.size());
+    const uint32_t m = std::size(substring);
     int l = 0, r = size() - 1;
     while (l < r) {
       int mid = (l + r) >> 1;
@@ -53,7 +46,7 @@ public:
     if (i == -1) {
       return {-1, -1};
     }
-    const int m = static_cast<int>(substring.size());
+    const uint32_t m = std::size(substring);
     int l = 0, r = size() - 1;
     while (l < r) {
       int mid = (l + r) >> 1;
@@ -106,7 +99,7 @@ public:
   [[nodiscard]] inline const std::vector<int>& _lcp() const { return lcp; }
   [[nodiscard]] inline const std::vector<int>& _c() const { return c; }
   [[nodiscard]] inline const std::vector<int>& _p() const { return p; }
-  [[nodiscard]] inline int size() const { return static_cast<int>(s.size()); }
+  [[nodiscard]] inline int size() const { return static_cast<int>(std::ssize(s)); }
 
   int& operator[](const int& at) {
     assert(!p.empty() && at >= 0 && at < size());
@@ -127,7 +120,7 @@ private:
     for (const char& si: s) {
       count[si]++;
     }
-    for (int i = 1; i < int(count.size()); i++) {
+    for (int i = 1; i < std::size(count); i++) {
       count[i] += count[i - 1];
     }
     for (int i = size() - 1; i >= 0; i--) {
@@ -163,7 +156,7 @@ private:
     assert(!c.empty() || !p.empty());
     lcp = std::vector<int>(size());
     int k = 0;
-    for (int i = 0; i < int(lcp.size()); i++) {
+    for (int i = 0; i < std::size(lcp); i++) {
       int pi = c[i];
       if (pi == 0) continue;
       int j = p[pi - 1];

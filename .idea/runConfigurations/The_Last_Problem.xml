@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="The Last Problem" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="TheLastProblem" cppPath="tasks/TheLastProblem.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="Twilight&#10;" output="Thank you, Twilight, and farewell!&#10;" active="true" />
+      <test input="Luster&#10;" output="Thank you, Luster, and farewell!&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#include "../../library/suffix_array.hpp"
-#include "../../library/lib.hpp"
 using namespace std;
 
 class CMediumDesign {

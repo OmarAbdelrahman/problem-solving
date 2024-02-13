@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Anji's Binary Tree" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CAnjisBinaryTree" cppPath="tasks/CAnjisBinaryTree.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;3&#10;LRU&#10;2 3&#10;0 0&#10;0 0&#10;3&#10;ULR&#10;3 2&#10;0 0&#10;0 0&#10;2&#10;LU&#10;0 2&#10;0 0&#10;4&#10;RULR&#10;3 0&#10;0 0&#10;0 4&#10;2 0&#10;7&#10;LLRRRLU&#10;5 2&#10;3 6&#10;0 0&#10;7 0&#10;4 0&#10;0 0&#10;0 0&#10;" output="0&#10;1&#10;1&#10;3&#10;1&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Help a PhD candidate out!" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="HelpAPhDCandidateOut" cppPath="tasks/HelpAPhDCandidateOut.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;2+2&#10;1+2&#10;P=NP&#10;0+0&#10;" output="4&#10;3&#10;skipped&#10;0&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

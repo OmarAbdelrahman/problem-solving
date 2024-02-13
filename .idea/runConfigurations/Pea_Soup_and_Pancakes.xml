@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Pea Soup and Pancakes" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="PeaSoupAndPancakes" cppPath="tasks/PeaSoupAndPancakes.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2&#10;2&#10;q&#10;potatoes&#10;salad&#10;3&#10;nymble&#10;pancakes&#10;pea soup&#10;punsch&#10;" output="nymble&#10;" active="true" />
+      <test input="4&#10;2&#10;asian wok house&#10;paa soup&#10;pancakes&#10;2&#10;kebab kitchen&#10;pea  soup&#10;pancakes&#10;2&#10;la campus&#10;tasty pea soup&#10;pancakes&#10;3&#10;slime stand&#10;slime&#10;pea soup and pancakes&#10;slime&#10;" output="Anywhere is fine I guess&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

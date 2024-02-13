@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Grouping Increases" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CGroupingIncreases" cppPath="tasks/CGroupingIncreases.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;5&#10;1 2 3 4 5&#10;8&#10;8 2 3 1 1 7 4 3&#10;5&#10;3 3 3 3 3&#10;1&#10;1&#10;2&#10;2 1&#10;" output="3&#10;1&#10;0&#10;0&#10;0&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

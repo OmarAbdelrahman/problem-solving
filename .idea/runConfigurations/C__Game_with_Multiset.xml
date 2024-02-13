@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Game with Multiset" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CGameWithMultiset" cppPath="tasks/CGameWithMultiset.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;1 0&#10;1 0&#10;1 0&#10;2 3&#10;2 4&#10;" output="YES&#10;NO&#10;" active="true" />
+      <test input="7&#10;1 0&#10;1 1&#10;1 2&#10;1 10&#10;2 4&#10;2 6&#10;2 7&#10;" output="YES&#10;YES&#10;YES&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

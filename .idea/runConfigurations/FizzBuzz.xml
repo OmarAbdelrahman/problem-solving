@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FizzBuzz" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="FizzBuzz" cppPath="tasks/FizzBuzz.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2 3 7&#10;" output="1&#10;Fizz&#10;Buzz&#10;Fizz&#10;5&#10;FizzBuzz&#10;7&#10;" active="true" />
+      <test input="2 4 7&#10;" output="1&#10;Fizz&#10;3&#10;FizzBuzz&#10;5&#10;Fizz&#10;7&#10;" active="true" />
+      <test input="3 5 7&#10;" output="1&#10;2&#10;Fizz&#10;4&#10;Buzz&#10;Fizz&#10;7&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

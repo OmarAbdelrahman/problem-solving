@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Find pairs" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="FindPairs" cppPath="tasks/FindPairs.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;1 2 3&#10;" output="6&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

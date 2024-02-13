@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="12250 - Language Detection" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="LanguageDetection" cppPath="tasks/LanguageDetection.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="HELLO&#10;HOLA&#10;HALLO&#10;BONJOUR&#10;CIAO&#10;ZDRAVSTVUJTE&#10;#&#10;" output="Case 1: ENGLISH&#10;Case 2: SPANISH&#10;Case 3: GERMAN&#10;Case 4: FRENCH&#10;Case 5: ITALIAN&#10;Case 6: RUSSIAN&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

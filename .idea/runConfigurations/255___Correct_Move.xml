@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="255 - Correct Move" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CorrectMove" cppPath="tasks/CorrectMove.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input=" 17 17 49&#10; 17 49 56&#10; 17 49 9&#10; 17 49 17&#10; 17 49 25&#10; 17 49 33&#10; 17 49 41&#10; 17 49 49&#10; 56 48 49&#10;" output="Illegal state&#10;Illegal move&#10;Illegal move&#10;Illegal move&#10;Move not allowed&#10;Continue&#10;Continue&#10;Illegal move&#10;Stop&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

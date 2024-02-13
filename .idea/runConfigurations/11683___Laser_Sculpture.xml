@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="11683 - Laser Sculpture" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="LaserSculpture" cppPath="tasks/LaserSculpture.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5 8&#10;1 2 3 2 0 3 4 5&#10;3 3&#10;1 0 2&#10;4 3&#10;4 4 1&#10;0&#10;" output="7&#10;3&#10;3&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

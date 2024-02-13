@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Arranging Cats" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BArrangingCats" cppPath="tasks/BArrangingCats.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="6&#10;5&#10;10010&#10;00001&#10;1&#10;1&#10;1&#10;3&#10;000&#10;111&#10;4&#10;0101&#10;1010&#10;3&#10;100&#10;101&#10;8&#10;10011001&#10;11111110&#10;" output="2&#10;0&#10;3&#10;2&#10;1&#10;4&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

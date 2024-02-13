@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Amalgamated Artichokes" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AmalgamatedArtichokes" cppPath="tasks/AmalgamatedArtichokes.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="42 1 23 4 8 10&#10;" output="104.855110477&#10;" active="true" />
+      <test input="100 7 615 998 801 3&#10;" output="0.00&#10;" active="true" />
+      <test input="100 432 406 867 60 1000&#10;" output="399.303813&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

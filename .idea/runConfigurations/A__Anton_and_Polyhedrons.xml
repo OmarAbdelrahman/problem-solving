@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Anton and Polyhedrons" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AAntonAndPolyhedrons" cppPath="tasks/AAntonAndPolyhedrons.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;Icosahedron&#10;Cube&#10;Tetrahedron&#10;Dodecahedron&#10;" output="42&#10;" active="true" />
+      <test input="3&#10;Dodecahedron&#10;Octahedron&#10;Octahedron&#10;" output="28&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

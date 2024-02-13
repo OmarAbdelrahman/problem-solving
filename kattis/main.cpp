@@ -1,12 +1,22 @@
-#include <iostream>
-#include <vector>
-#include <fstream>
-#include <cassert>
-#include <unordered_map>
-#include "../library/lib.hpp"
+#include <bits/stdc++.h>
+#include "../library/vector_io.hpp"
+#include "../library/pair_io.hpp"
 #include "../library/suffix_array.hpp"
+#include "../library/array_io.hpp"
 
 using namespace std;
+
+//template<class T, class S>
+//ostream& operator << (ostream &o, const pair<T, S> &p) {
+//  return o << '(' << p.first << ", " << p.second << ')';
+//}
+//template<template<class, class...> class T, class... A>
+//typename enable_if<!is_same<T<A...>, string>(), ostream&>::type
+//operator << (ostream &o, T<A...> V) {
+//  o << '[';
+//  for(auto a : V) o << a << ", ";
+//  return o << ']';
+//}
 
 void solve(istream& in, ostream& out) {
   for (int n; in >> n; ) {
@@ -36,17 +46,36 @@ void solve(istream& in, ostream& out) {
     for (string s; q-- != 0; ) {
       in >> s;
       out << s << endl;
-      print_pretty_pair(out, sa.find_interval_of(s), true);
+      print_pretty_pair(out, sa.find_interval_of(s));
     }
   }
 }
 
+inline bool is_perfect_square(int64_t x) {
+  int64_t sr = int64_t(round(sqrt(x)));
+  return (sr * sr == x);
+}
+
 int main() {
-  cin.tie(nullptr)->sync_with_stdio(false);
-  ifstream fin(R"(C:\Users\omara\CLionProjects\problem-solving\kattis\in.txt)");
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+  /*ifstream fin(R"(C:\Users\omara\CLionProjects\problem-solving\kattis\in.txt)");
   istream& in(std::cin);
   ostream& out(std::cout);
   solve(fin, out);
-  fin.close();
+  fin.close();*/
+
+  for (int dx = -1; dx <= 1; dx++) {
+    for (int dy = -1; dy <= 1; dy++) {
+      if ((dx == 0) ^ (dy == 0)) {
+        cout << "a= ";
+        print_pretty_pair<int, int>(cout, {dx, dy});
+      }
+      if (dx != 0 && dy != 0) {
+        cout << "b= ";
+        print_pretty_pair<int, int>(cout, {dx, dy});
+      }
+    }
+  }
   return 0;
 }

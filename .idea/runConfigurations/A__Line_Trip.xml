@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Line Trip" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ALineTrip" cppPath="tasks/ALineTrip.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;3 7&#10;1 2 5&#10;3 6&#10;1 2 5&#10;1 10&#10;7&#10;" output="4&#10;3&#10;7&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

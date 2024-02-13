@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Bijele" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Bijele" cppPath="tasks/Bijele.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="0 1 2 2 2 7&#10;" output="1 0 0 0 0 1&#10;" active="true" />
+      <test input="2 1 2 1 2 1&#10;" output="-1 0 0 1 0 7&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
