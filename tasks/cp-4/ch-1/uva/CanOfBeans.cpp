@@ -2,8 +2,8 @@
 #include <iostream>
 #include <algorithm>
 #include <iomanip>
-#include <set>
 #include <vector>
+#include <queue>
 
 class CanOfBeans {
 public:
@@ -15,8 +15,8 @@ public:
       : month(m), day(d), year(y) { }
  
     bool leap() const {
-      if (year % INT64_C(400) == 0) return true;
-      return year % INT64_C(4) == 0 && year % INT64_C(100) != 0;
+      if (year % 400 == 0) return true;
+      return year % 4 == 0 && year % 100 != 0;
     }
  
     int64_t days_in_month() const {
@@ -54,9 +54,9 @@ public:
     }
 
     bool operator <(const date_t& other) const {
-      if (year != other.year) return year < other.year;
-      if (month != other.month) return month < other.month;
-      return day < other.day;
+      if (year != other.year) return year > other.year;
+      if (month != other.month) return month > other.month;
+      return day > other.day;
     }
 
     friend std::istream& operator>>(std::istream& i, date_t& date) {
@@ -75,7 +75,7 @@ public:
   void solveOne(int64_t c, int64_t x, int64_t y, int64_t z) {
     std::vector<int64_t> a = {x, y, z};
     std::sort(a.begin(), a.end());
-    std::set<date_t> q;
+    std::priority_queue<date_t> q;
 
     do {
       date_t date(a[0], a[1], c * 100 + a[2]);
@@ -87,7 +87,7 @@ public:
     if (q.empty()) {
       out << -1 << '\n';
     } else {
-      out << *q.begin() << '\n';
+      out << q.top() << '\n';
     }
   }
 
