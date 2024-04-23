@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-
-using namespace std;
+#include <iostream>
 
 class %ClassName% {
 public:
@@ -15,10 +13,10 @@ public:
     }
   }
 
-  %ClassName%(istream& in, ostream& out)
+  %ClassName%(std::istream& in, std::ostream& out)
     : in(in), out(out) { }
 
 private:
-  ostream& out;
-  istream& in;
+  std::istream& in;
+  std::ostream& out;
 };

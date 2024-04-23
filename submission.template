@@ -1,9 +1,9 @@
 %Code%
 
 int main() {
-  ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-  %ClassName% solver(cin, cout);
+  std::ios::sync_with_stdio(false);
+  std::cin.tie(nullptr);
+  %ClassName% solver(std::cin, std::cout);
   solver.solve();
   return 0;
 }
