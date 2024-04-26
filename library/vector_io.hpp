@@ -25,7 +25,7 @@ void print_vector_h(std::ostream& out, const T_vector& v, const bool& new_line =
 }
 
 template<typename T_vector>
-void print_vector_v(std::ostream& out, const T_vector& v, const bool& new_line = true) {
+void print_vector_v(std::ostream& out, const T_vector& v, const bool& new_line = false) {
   const uint32_t n = std::size(v);
   for (int i = 0; i < n; i++) {
     out << v[i] << '\n';

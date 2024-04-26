@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-#include "../library/vector_io.hpp"
-#include "../library/debug.hpp"
+#include "../../library/vector_io.hpp"
+#include "../../library/debug.hpp"
 
 using namespace std;
 
