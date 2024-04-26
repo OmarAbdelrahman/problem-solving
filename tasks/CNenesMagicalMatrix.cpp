@@ -1,6 +1,6 @@
 #include <iostream>
 
-class %ClassName% {
+class CNenesMagicalMatrix {
 public:
   void solveOne() {
   }
@@ -13,7 +13,7 @@ public:
     }
   }
 
-  %ClassName%(std::istream& in, std::ostream& out)
+  CNenesMagicalMatrix(std::istream& in, std::ostream& out)
     : in(in), out(out) { }
 
 private:

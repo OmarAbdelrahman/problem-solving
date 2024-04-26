@@ -12,4 +12,5 @@ std::string to_debug(T x, std::string s) requires(not std::ranges::range<T>) {
   [&]<std::size_t... I>(std::index_sequence<I...>) { ((s += ", " + to_debug(std::get<I>(x))), ...); }(std::make_index_sequence<size>());
   return "(" + s.substr(s.empty() ? 0 : 2) + ")";
 }
-#define debug(...) cerr << __FILE__ ":" << __LINE__ << ": (" #__VA_ARGS__ ") = " << to_debug(tuple(__VA_ARGS__)) << "\n"
+
+#define debug(...) std::cerr << __FILE__ ":" << __LINE__ << ": (" #__VA_ARGS__ ") = " << to_debug(std::tuple(__VA_ARGS__)) << "\n"
