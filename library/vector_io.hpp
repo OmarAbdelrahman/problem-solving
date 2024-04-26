@@ -15,7 +15,7 @@ std::ostream& operator << (std::ostream& out, const std::vector<T>& v) {
 }
 
 template<typename T_vector>
-void print_vector_h(std::ostream& out, const T_vector& v, const bool& new_line = true) {
+void print_vector_h(std::ostream& out, const T_vector& v, const bool& new_line = false) {
   const std::size_t n = std::size(v);
   for (std::size_t i = 0; i < n; i++) {
     if (i > 0) out << ' ';
