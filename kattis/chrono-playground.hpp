@@ -5,7 +5,7 @@
 #include <chrono>
 #include <iomanip>
 
-void chrono_duration_playground() {
+void chrono_main() {
   // optional second template argument defines the unit type in seconds
   std::chrono::duration<int> twenty_seconds(20);
   std::chrono::seconds twenty_seconds_2(20);

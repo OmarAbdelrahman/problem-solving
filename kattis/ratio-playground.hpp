@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ratio>
 
-void ratio_playground() {
+void ratio_main() {
   std::ratio<5, 3> five_thirds;
   std::cout << five_thirds.num << '/' << five_thirds.den << '\n';
 
