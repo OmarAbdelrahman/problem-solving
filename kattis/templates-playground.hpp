@@ -1,6 +1,12 @@
 #include <type_traits>
 #include <iostream>
 
+template<typename T1, typename T2>
+std::common_type_t<T1, T2> t_max(T1 a, T1 b)
+{
+  return b < a ? a : b;
+}
+
 void integral_const_and_bool_const()
 {
   std::cout << std::boolalpha;
