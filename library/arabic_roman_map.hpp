@@ -1,5 +1,6 @@
 struct arabic_roman_map {
   arabic_roman_map() {
+    m_arabic[""] = 0;
     m_roman[1] = "I", m_roman[5] = "V";
     m_arabic[m_roman[1]] = 1, m_arabic[m_roman[5]] = 5;
     m_roman[10] = "X", m_roman[50] = "L";
@@ -56,12 +57,20 @@ struct arabic_roman_map {
     return m_arabic[roman];
   }
 
-  const std::string& operator[](const int& arabic) const {
+  const std::string& operator[](const int arabic) const {
     return m_roman.at(arabic);
   }
 
-  std::string& operator[](const int& arabic) {
+  std::string& operator[](const int arabic) {
     return m_roman[arabic];
+  }
+
+  bool roman_exists(const std::string& roman) {
+    return m_arabic.find(roman) != m_arabic.end();
+  }
+
+  bool arabic_exists(const int arabic) {
+    return m_roman.find(arabic) != m_roman.end();
   }
 
 private:
