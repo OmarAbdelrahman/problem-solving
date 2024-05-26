@@ -2,7 +2,7 @@
 #include <string>
 #include <cctype>
 
-#include "../library/char_utils.hpp"
+#include "../../../../library/char_utils.hpp"
 
 class PigLatin {
 public:

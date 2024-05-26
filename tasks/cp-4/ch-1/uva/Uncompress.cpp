@@ -2,7 +2,7 @@
 #include <string>
 #include <deque>
 
-#include "../library/char_utils.hpp"
+#include "../../../../library/char_utils.hpp"
 
 class Uncompress {
 public:
