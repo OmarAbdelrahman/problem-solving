@@ -6,3 +6,5 @@
 /output/out.txt
 /output/main.cpp
 /testrunner/main.cpp
+/.idea
+/cmake-build-debug
