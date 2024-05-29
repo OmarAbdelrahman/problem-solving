@@ -1,5 +1,13 @@
 #include <type_traits>
 #include <iostream>
+#include <cstddef>
+
+struct S
+{
+  void f1();
+  void f2() &&;
+  // void f3() &; not-allowed <- still not fully understand the explanation.
+};
 
 template<typename T1, typename T2>
 std::common_type_t<T1, T2> t_max(T1 a, T1 b)

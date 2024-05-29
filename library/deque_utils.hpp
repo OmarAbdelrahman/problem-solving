@@ -32,3 +32,24 @@ void print_deque_v(std::ostream& out, const T_deque& d, const bool& new_line = t
   }
   if (new_line) out << '\n';
 }
+
+template<typename T>
+inline void operator += (std::deque<T>& d, const T& x) {
+  for (T& di : d) di += x;
+}
+
+template<typename T>
+inline void operator -= (std::deque<T>& d, const T& x) {
+  for (T& di : d) di -= x;
+}
+
+template<typename T>
+inline void operator *= (std::deque<T>& d, const T& x) {
+  for (T& di : d) di *= x;
+}
+
+template<typename T>
+inline void operator /= (std::deque<T>& d, const T& x) {
+  assert(x != 0);
+  for (T& di : d) di /= x;
+}

@@ -2,7 +2,7 @@
 #include "../../../library/suffix_array.hpp"
 #include "../../../library/sparse_table.hpp"
 #include "../../../library/pair_io.hpp"
-#include "../../../library/vector_io.hpp"
+#include "../../../library/vector_utils.hpp"
 using namespace std;
 
 class CSortingSubstrings {

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include "../library/suffix_array.hpp"
 #include "../library/sparse_table.hpp"
-#include "../library/vector_io.hpp"
+#include "../library/vector_utils.hpp"
 #include "../library/pair_io.hpp"
 #include "../library/string_utils.hpp"
 #include "../library/io_utils.hpp"
