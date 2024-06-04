@@ -14,3 +14,7 @@ inline static T power(const T& a, const T& b) {
 inline int negative_mod(const int a, const int b) {
   return (a % b + b) % b;
 }
+
+[[nodiscard]] constexpr auto floor_modulo(auto dividend, auto divisor) {
+  return ((dividend % divisor) + divisor) % divisor;
+}
