@@ -1,3 +1,9 @@
+const std::size_t ALPHABETS = 26;
+
+const std::string SMALL_ALPHA = "abcdefghijklmnopqrstuvwxyz";
+const std::string CAPITAL_ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const std::string VOWELS = "aeiou";
+
 inline char to_lower(const char ch) {
   return static_cast<char>(std::tolower(static_cast<unsigned char>(ch)));
 }
