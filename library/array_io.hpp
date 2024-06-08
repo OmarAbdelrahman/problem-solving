@@ -1,6 +1,6 @@
 template<typename T, std::size_t Size>
 std::istream& operator >> (std::istream& in, std::array<T, Size>& a) {
-  for (auto& it : a) in >> it;
+  for (T& it : a) in >> it;
   return in;
 }
 
