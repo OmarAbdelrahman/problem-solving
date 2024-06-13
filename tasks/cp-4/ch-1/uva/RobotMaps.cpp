@@ -3,8 +3,8 @@
 #include <array>
 #include <tuple>
 
-#include "../library/adhoc_utils.hpp"
-#include "../library/array_io.hpp"
+#include "../../../../library/adhoc_utils.hpp"
+#include "../../../../library/array_io.hpp"
 
 class RobotMaps {
 public:
