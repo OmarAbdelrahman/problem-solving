@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include "../../../library/suffix_array.hpp"
 #include "../../../library/sparse_table.hpp"
-#include "../../../library/pair_io.hpp"
+#include "../../../library/pair_utils.hpp"
 #include "../../../library/vector_utils.hpp"
 using namespace std;
 
