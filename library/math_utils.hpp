@@ -1,5 +1,5 @@
 template<class T>
-inline static T power(const T& a, const T& b) {
+inline static T power(const T a, const T b) {
   assert(b >= 0);
   T x = a, res = 1;
   T p = b;
@@ -9,6 +9,16 @@ inline static T power(const T& a, const T& b) {
     p >>= 1;
   }
   return res;
+}
+
+template<class T>
+inline static T gcd(T a, T b) {
+  while (b > 0) {
+    T t = a % b;
+    a = b;
+    b = t;
+  }
+  return a;
 }
 
 inline int negative_mod(const int a, const int b) {
@@ -46,3 +56,35 @@ std::vector<int> pre_compute_sum_of_digits_sum_to(const int n) {
   return sum;
 }
 
+struct fraction_t {
+  int p;
+  int q;
+
+  fraction_t(): p(0), q(1) { }
+
+  fraction_t(int _p, int _q) {
+    int g = gcd(_p, _q);
+    _p /= g;
+    _q /= g;
+    if (_q < 0) {
+      _p = -_p;
+      _q = -_q;
+    }
+    p = _p;
+    q = _q;
+  }
+
+  fraction_t& operator += (const fraction_t& other) {
+    p += other.p;
+    q += other.q;
+    return *this;
+  }
+
+  fraction_t median(const fraction_t& f) const {
+    return fraction_t(p + f.p, q + f.q);
+  }
+
+  bool operator < (const fraction_t& other) const {
+    return p * other.q < other.p * q;
+  }
+};
