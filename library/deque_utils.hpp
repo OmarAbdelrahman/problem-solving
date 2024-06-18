@@ -6,7 +6,7 @@ std::istream& operator >> (std::istream& in, std::deque<T>& d) {
 
 template<typename T>
 std::ostream& operator << (std::ostream& out, const std::deque<T>& d) {
-  const std::size_t n = std::size(d);
+  const std::size_t n = d.size();
   for (std::size_t i = 0; i < n; i++) {
     if (i > 0) out << ' ';
     out << d[i];
@@ -15,8 +15,8 @@ std::ostream& operator << (std::ostream& out, const std::deque<T>& d) {
 }
 
 template<typename T_deque>
-void print_deque_h(std::ostream& out, const T_deque& d, const bool& new_line = true) {
-  const std::size_t n = std::size(d);
+void print_deque_h(std::ostream& out, const T_deque& d, const bool new_line = true) {
+  const std::size_t n = d.size();
   for (std::size_t i = 0; i < n; i++) {
     if (i > 0) out << ' ';
     out << d[i];
@@ -25,8 +25,8 @@ void print_deque_h(std::ostream& out, const T_deque& d, const bool& new_line = t
 }
 
 template<typename T_deque>
-void print_deque_v(std::ostream& out, const T_deque& d, const bool& new_line = true) {
-  const std::size_t n = std::size(d);
+void print_deque_v(std::ostream& out, const T_deque& d, const bool new_line = true) {
+  const std::size_t n = d.size();
   for (std::size_t i = 0; i < n; i++) {
     out << d[i] << '\n';
   }
@@ -34,22 +34,22 @@ void print_deque_v(std::ostream& out, const T_deque& d, const bool& new_line = t
 }
 
 template<typename T>
-inline void operator += (std::deque<T>& d, const T& x) {
+inline void operator += (std::deque<T>& d, const T x) {
   for (T& di : d) di += x;
 }
 
 template<typename T>
-inline void operator -= (std::deque<T>& d, const T& x) {
+inline void operator -= (std::deque<T>& d, const T x) {
   for (T& di : d) di -= x;
 }
 
 template<typename T>
-inline void operator *= (std::deque<T>& d, const T& x) {
+inline void operator *= (std::deque<T>& d, const T x) {
   for (T& di : d) di *= x;
 }
 
 template<typename T>
-inline void operator /= (std::deque<T>& d, const T& x) {
+inline void operator /= (std::deque<T>& d, const T x) {
   assert(x != 0);
   for (T& di : d) di /= x;
 }

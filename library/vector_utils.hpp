@@ -32,22 +32,22 @@ void print_vector_v(std::ostream& out, const T_vector& v, const bool new_line = 
 }
 
 template<typename T>
-inline void operator += (std::vector<T>& v, const T& x) {
+inline void operator += (std::vector<T>& v, const T x) {
   for (T& vi : v) vi += x;
 }
 
 template<typename T>
-inline void operator -= (std::vector<T>& v, const T& x) {
+inline void operator -= (std::vector<T>& v, const T x) {
   for (T& vi : v) vi -= x;
 }
 
 template<typename T>
-inline void operator *= (std::vector<T>& v, const T& x) {
+inline void operator *= (std::vector<T>& v, const T x) {
   for (T& vi : v) vi *= x;
 }
 
 template<typename T>
-inline void operator /= (std::vector<T>& v, const T& x) {
+inline void operator /= (std::vector<T>& v, const T x) {
   assert(x != 0);
   for (T& vi : v) vi /= x;
 }
