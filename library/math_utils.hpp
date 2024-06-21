@@ -21,8 +21,8 @@ inline static T gcd(T a, T b) {
   return a;
 }
 
-inline int negative_mod(const int a, const int b) {
-  return (a % b + b) % b;
+inline int negative_mod(const int a, const int mod) {
+  return (a % mod + mod) % mod;
 }
 
 [[nodiscard]] constexpr auto floor_modulo(auto dividend, auto divisor) {
