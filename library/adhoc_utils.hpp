@@ -1,3 +1,34 @@
+using position = std::tuple<int, int>;
+using directions = std::vector<position>;
+
 // N, E, S, W
-std::array<std::tuple<int, int>, 4> _dir_4 = { { {-1, 0}, {0, 1}, {1, 0}, {0, -1} } };
-std::array<std::tuple<int, int>, 8> _dir_8 = { { {-1, 0}, {0, 1}, {1, 0}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1} } };
+directions _simple_adjacent = { { {-1, 0}, {0, 1}, {1, 0}, {0, -1} } };
+directions _all_adjacent = { { {-1, 0}, {0, 1}, {1, 0}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1} }};
+
+inline bool inside(const int i, const int j, const int height, const int width) {
+  return i >= 0 && i < height && j >= 0 && j < width;
+}
+
+template<class Fun>
+void for_each_knight(const int x, const int y, const int height, const int width, Fun apply) {
+  for (int dx = -2; dx <= 2; dx++) {
+    for (int dy = -2; dy <= 2; dy++) {
+      if (std::abs(dx * dy) == 2) {
+        const int nx = x + dx;
+        const int ny = y + dy;
+        if (inside(nx, ny, height, width))
+          apply(nx, ny);
+      }
+    }
+  }
+}
+
+template<class Fun>
+void for_each_direction(const int x, const int y, const int height, const int width, const directions& dirs, Fun apply) {
+  for (const auto& dir : dirs) {
+    const int nx = x + std::get<0>(dir);
+    const int ny = y + std::get<1>(dir);
+    if (inside(nx, ny, height, width))
+      apply(nx, ny);
+  }
+}
