@@ -72,22 +72,8 @@ struct matrix {
     }
   }
 
-  void rotate_90_clockwise() {
-    transpose();
-    const int mid = cols / 2;
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < mid; j++) {
-        std::swap(values[i][j], values[i][cols - j - 1]);
-      }
-    }
-  }
-
-  void rotate_90_anti_clockwise() {
-    transpose();
-    const int mid = rows / 2;
-    for (int i = 0; i < mid; i++) {
-      std::swap(values[i], values[rows - i - 1]);
-    }
+  inline void rotate(const bool clockwise = true) {
+    if (clockwise) rotate_90_clockwise(); else rotate_90_anti_clockwise();
   }
 
   void reflect() {
@@ -199,7 +185,6 @@ struct matrix {
         out << values[i][j] << " \n"[j == cols - 1];
       }
     }
-    out << '\n';
   }
 
   template<class U>
@@ -211,6 +196,25 @@ struct matrix {
       }
     }
     return in;
+  }
+
+private:
+  void rotate_90_clockwise() {
+    transpose();
+    const int mid = cols / 2;
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < mid; j++) {
+        std::swap(values[i][j], values[i][cols - j - 1]);
+      }
+    }
+  }
+
+  void rotate_90_anti_clockwise() {
+    transpose();
+    const int mid = rows / 2;
+    for (int i = 0; i < mid; i++) {
+      std::swap(values[i], values[rows - i - 1]);
+    }
   }
 
 private:
