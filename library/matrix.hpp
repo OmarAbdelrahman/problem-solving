@@ -18,6 +18,10 @@ struct matrix {
     init(_rows, _cols, value);
   }
 
+  matrix(const std::vector<std::string>& _values) {
+    init(_values);
+  }
+
   template<class U>
   explicit matrix(const std::vector<std::vector<U>>& _values) {
     init(_values);
@@ -34,6 +38,17 @@ struct matrix {
     rows = _rows;
     cols = _cols;
     values.assign(rows, std::vector<T>(cols, value));
+  }
+
+  void init(const std::vector<std::string>& _values) {
+    const int _rows = _values.size();
+    const int _cols = _values[0].size();
+    values = std::vector<std::vector<char>>(_rows);
+    for (int i = 0; i < _rows; i++) {
+      values[i] = std::vector<char>(_values[i].begin(), _values[i].end());
+    }
+    rows = _rows;
+    cols = _cols;
   }
 
   template<class U>
@@ -76,14 +91,17 @@ struct matrix {
     if (clockwise) rotate_90_clockwise(); else rotate_90_anti_clockwise();
   }
 
-  void reflect() {
-    assert(is_square());
+  void reflect_vertically() {
     const int mid = cols / 2;
     for (int i = 0; i < mid; i++) {
       for (int j = 0; j < rows; j++) {
         std::swap(values[j][i], values[j][rows - i - 1]);
       }
     }
+  }
+
+  void reflect_horizontally() {
+    std::reverse(values.begin(), values.end());
   }
 
   template<class U>
@@ -180,9 +198,18 @@ struct matrix {
   }
 
   void print(std::ostream& out) const {
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
-        out << values[i][j] << " \n"[j == cols - 1];
+    if (std::is_same<T, char>::value) {
+      for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+          out << values[i][j];
+        }
+        out << '\n';
+      }
+    } else {
+      for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+          out << values[i][j] << " \n"[j == cols - 1];
+        }
       }
     }
   }
