@@ -69,6 +69,11 @@ struct matrix {
   inline int cols_count() const { return cols; }
   inline bool is_square() const { return rows == cols; }
 
+  inline bool inside(const int i, const int j) const {
+    assert(!values.empty());
+    return 0 <= i && i < rows && 0 <= j && j < cols;
+  }
+
   void transpose() {
     if (is_square()) {
       for (int i = 0; i < rows; i++) {
