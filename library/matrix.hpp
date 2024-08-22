@@ -69,9 +69,15 @@ struct matrix {
   inline int cols_count() const { return cols; }
   inline bool is_square() const { return rows == cols; }
 
-  inline bool inside(const int i, const int j) const {
+  inline bool contains_pos(const int i, const int j) const {
     assert(!values.empty());
     return 0 <= i && i < rows && 0 <= j && j < cols;
+  }
+  inline bool contains_pos(const std::pair<int, int>& p) const {
+    return contains_pos(p.first, p.second);
+  }
+  inline bool contains_pos(const std::tuple<int, int>& t) const {
+    return contains_pos(std::get<0>(t), std::get<1>(t));
   }
 
   void transpose() {
@@ -107,6 +113,18 @@ struct matrix {
 
   void reflect_horizontally() {
     std::reverse(values.begin(), values.end());
+  }
+
+  std::pair<int, int> find_first_of(const T value) const {
+    assert(!values.empty());
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        if (values[i][j] == value) {
+          return {i, j};
+        }
+      }
+    }
+    return {-1, -1};
   }
 
   template<class U>
@@ -197,6 +215,11 @@ struct matrix {
   std::vector<T>& operator[](const int at) { return values[at]; }
   const std::vector<T>& operator[](const int at) const { return values[at]; }
 
+  T& operator[](const std::pair<int, int>& at) { return values[at.first][at.second]; }
+  const T& operator[](const std::pair<int, int>& at) const { return values[at.first][at.second]; }
+  T& operator[](const std::tuple<int, int>& at) { return values[std::get<0>(at)][std::get<1>(at)]; }
+  const T& operator[](const std::tuple<int, int>& at) const { return values[std::get<0>(at)][std::get<1>(at)]; }
+
   template<class U>
   bool operator==(const matrix<U>& other) const {
     return values == other.values;
@@ -222,9 +245,17 @@ struct matrix {
   template<class U>
   friend std::istream& operator>>(std::istream& in, matrix<U>& mat) {
     assert(!mat.values.empty());
-    for (int i = 0; i < mat.rows; i++) {
-      for (int j = 0; j < mat.cols; j++) {
-        in >> mat[i][j];
+    if (std::is_same<T, char>::value) {
+      for (int i = 0; i < mat.rows; i++) {
+        std::string chars;
+        in >> chars;
+        mat[i] = std::vector<char>(chars.begin(), chars.end());
+      }
+    } else {
+      for (int i = 0; i < mat.rows; i++) {
+        for (int j = 0; j < mat.cols; j++) {
+          in >> mat[i][j];
+        }
       }
     }
     return in;
