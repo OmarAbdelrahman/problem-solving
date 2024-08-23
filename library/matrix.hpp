@@ -59,10 +59,23 @@ struct matrix {
   }
 
   template<class U>
-  void fill(const U value) {
+  inline void fill(const U value) {
     for (auto& row : values) {
       std::fill(row.begin(), row.end(), value);
     }
+  }
+
+  template<class F>
+  inline void for_each(F&& f) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        f(values[i][j]);
+  }
+  template<class F>
+  inline void for_each_with_indices(F&& f) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        f(i, j, values[i][j]);
   }
 
   inline int rows_count() const { return rows; }
@@ -127,53 +140,42 @@ struct matrix {
     return {-1, -1};
   }
 
-  template<class U>
-  matrix<T> operator*(const matrix<U>& other) const {
-    assert(cols == other.cols);
-    matrix<T> product(rows, other.cols);
+  template<class U> matrix<T>& operator+=(const U u) {
     for (int i = 0; i < rows; i++) {
       for (int j = 0; j < cols; j++) {
-        if (values[i][j] != 0) {
-          for (int k = 0; k < other.cols; k++) {
-            product[i][k] += values[i][j] * other[j][k];
-          }
-        }
-      }
-    }
-    return product;
-  }
-
-  template<class U>
-  matrix<T>& operator*=(const matrix<U>& other) {
-    return *this = *this * other;
-  }
-
-  template<class U>
-  std::vector<T> operator*(const std::vector<U>& column) const {
-    assert(cols == int(column.size()));
-    std::vector<T> product(rows);
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
-        product[i] += values[i][j] * column[j];
-      }
-    }
-    return product;
-  }
-
-  template<class U>
-  matrix<T>& operator*=(const U mult) {
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
-        values[i][j] *= mult;
+        values[i][j] += u;
       }
     }
     return *this;
   }
-
-  template<class U>
-  matrix<T> operator*(const U mult) const {
-    return matrix<T>(*this) *= mult;
+  template<class U> matrix<T>& operator-=(const U u) {
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        values[i][j] -= u;
+      }
+    }
+    return *this;
   }
+  template<class U> matrix<T>& operator*=(const U u) {
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        values[i][j] *= u;
+      }
+    }
+    return *this;
+  }
+  template<class U> matrix<T>& operator/=(const U u) {
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        values[i][j] /= u;
+      }
+    }
+    return *this;
+  }
+  template<class U> matrix<T> operator+(const U u) const { return matrix<T>(*this) += u; }
+  template<class U> matrix<T> operator-(const U u) const { return matrix<T>(*this) -= u; }
+  template<class U> matrix<T> operator*(const U u) const { return matrix<T>(*this) *= u; }
+  template<class U> matrix<T> operator/(const U u) const { return matrix<T>(*this) /= u; }
 
   template<class U>
   matrix<T>& operator+=(const matrix<U>& other) {
@@ -195,9 +197,51 @@ struct matrix {
     }
     return *this;
   }
+  template<class U>
+  matrix<T>& operator/=(const matrix<U>& other) const {
+    assert(rows == other.rows && cols == other.cols);
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        values[i][j] /= other[i][j];
+      }
+    }
+    return *this;
+  }
 
   template<class U> matrix<T> operator+(const matrix<U>& other) const { return matrix<T>(*this) += other; }
   template<class U> matrix<T> operator-(const matrix<U>& other) const { return matrix<T>(*this) -= other; }
+  template<class U> matrix<T> operator/(const matrix<U>& other) const { return matrix<T>(*this) /= other; }
+
+  template<class U>
+  matrix<T> operator*(const matrix<U>& other) const {
+    assert(cols == other.cols);
+    matrix<T> product(rows, other.cols);
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        if (values[i][j] != 0) {
+          for (int k = 0; k < other.cols; k++) {
+            product[i][k] += values[i][j] * other[j][k];
+          }
+        }
+      }
+    }
+    return product;
+  }
+  template<class U>
+  matrix<T>& operator*=(const matrix<U>& other) {
+    return *this = *this * other;
+  }
+  template<class U>
+  std::vector<T> operator*(const std::vector<U>& column) const {
+    assert(cols == int(column.size()));
+    std::vector<T> product(rows);
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        product[i] += values[i][j] * column[j];
+      }
+    }
+    return product;
+  }
 
   matrix<T> power(int p) const {
     assert(p >= 0);
@@ -221,11 +265,11 @@ struct matrix {
   const T& operator[](const std::tuple<int, int>& at) const { return values[std::get<0>(at)][std::get<1>(at)]; }
 
   template<class U>
-  bool operator==(const matrix<U>& other) const {
+  inline bool operator==(const matrix<U>& other) const {
     return values == other.values;
   }
 
-  void print(std::ostream& out) const {
+  inline void print(std::ostream& out) const {
     if (std::is_same<T, char>::value) {
       for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
