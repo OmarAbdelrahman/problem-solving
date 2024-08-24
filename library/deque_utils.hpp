@@ -94,7 +94,7 @@ template<class T, class F> inline void deque_for_each_with_index(const std::dequ
 template<class T>
 inline void pretty_print_deque(std::ostream& out, const std::deque<T>& ts) {
   out << '[';
-  deque_for_each_with_index(ts, [&](const std::size_t at, const T &t) {
+  deque_for_each_with_index(ts, [&](const std::size_t at, const T& t) {
     out << t;
     if (at < ts.size() - 1) out << ", ";
   });

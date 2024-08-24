@@ -94,7 +94,7 @@ template<class T, class F> inline void vector_for_each_with_index(const std::vec
 template<class T>
 inline void pretty_print_vector(std::ostream& out, const std::vector<T>& ts) {
   out << '[';
-  vector_for_each_with_index(ts, [&](const std::size_t at, const T &t) {
+  vector_for_each_with_index(ts, [&](const std::size_t at, const T& t) {
     out << t;
     if (at < ts.size() - 1) out << ", ";
   });
