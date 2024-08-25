@@ -3,9 +3,7 @@ struct matrix {
 
   static matrix<T> Identity(const int n) {
     matrix<T> identity(n);
-    for (int i = 0; i < n; i++) {
-      identity[i][i] = 1;
-    }
+    for (int i = 0; i < n; i++) identity[i][i] = 1;
     return identity;
   }
 
@@ -60,22 +58,100 @@ struct matrix {
 
   template<class U>
   inline void fill(const U value) {
-    for (auto& row : values) {
+    for (auto& row : values)
       std::fill(row.begin(), row.end(), value);
-    }
   }
 
-  template<class F>
-  inline void for_each(F&& f) {
+  template<class Fun>
+  inline void for_each(Fun&& f) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         f(values[i][j]);
   }
-  template<class F>
-  inline void for_each_with_indices(F&& f) {
+  template<class Fun>
+  inline void for_each_with_indices(Fun&& f) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         f(i, j, values[i][j]);
+  }
+  template<class Pred>
+  inline bool for_all(Pred&& pred) const {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        if (!pred(values[i][j]))
+          return false;
+    return true;
+  }
+  template<class Pred>
+  inline bool for_all_with_indices(Pred&& pred) const {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        if (!pred(i, j, values[i][j]))
+          return false;
+    return true;
+  }
+  template<class Pred>
+  inline bool any_of(Pred&& pred) const {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        if (pred(values[i][j]))
+          return true;
+    return false;
+  }
+  template<class Pred>
+  inline bool any_of_with_indices(Pred&& pred) const {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        if (pred(i, j, values[i][j]))
+          return true;
+    return false;
+  }
+
+  inline int count(const T value) const {
+    int cnt = 0;
+    for (const auto& row : values)
+      cnt += std::count(row.begin(), row.end(), value);
+    return cnt;
+  }
+  template<class Pred>
+  inline int count_if(Pred&& pred) const {
+    int cnt = 0;
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        cnt += pred(values[i][j]);
+    return cnt;
+  }
+  template<class Pred>
+  inline int count_if_with_indices(Pred&& pred) const {
+    int cnt = 0;
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        cnt += pred(i, j, values[i][j]);
+    return cnt;
+  }
+
+  std::pair<int, int> find_first_of(const T value) const {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        if (values[i][j] == value)
+          return {i, j};
+    return {-1, -1};
+  }
+  template<class Pred>
+  std::pair<int, int> find_first_if(Pred&& pred) const {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        if (pred(values[i][j]))
+          return {i, j};
+    return {-1, -1};
+  }
+  template<class Pred>
+  std::pair<int, int> find_first_if_with_indices(Pred&& pred) const {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        if (pred(i, j, values[i][j]))
+          return {i, j};
+    return {-1, -1};
   }
 
   inline int rows_count() const { return rows; }
@@ -95,18 +171,14 @@ struct matrix {
 
   void transpose() {
     if (is_square()) {
-      for (int i = 0; i < rows; i++) {
-        for (int j = i + 1; j < cols; j++) {
+      for (int i = 0; i < rows; i++)
+        for (int j = i + 1; j < cols; j++)
           std::swap(values[i][j], values[j][i]);
-        }
-      }
     } else {
       matrix<T> t(cols, rows);
-      for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+      for (int i = 0; i < rows; i++)
+        for (int j = 0; j < cols; j++)
           t[j][i] = values[i][j];
-        }
-      }
       *this = t;
     }
   }
@@ -117,59 +189,37 @@ struct matrix {
 
   void reflect_vertically() {
     const int mid = cols / 2;
-    for (int i = 0; i < mid; i++) {
-      for (int j = 0; j < rows; j++) {
+    for (int i = 0; i < mid; i++)
+      for (int j = 0; j < rows; j++)
         std::swap(values[j][i], values[j][rows - i - 1]);
-      }
-    }
   }
 
   void reflect_horizontally() {
     std::reverse(values.begin(), values.end());
   }
 
-  std::pair<int, int> find_first_of(const T value) const {
-    assert(!values.empty());
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
-        if (values[i][j] == value) {
-          return {i, j};
-        }
-      }
-    }
-    return {-1, -1};
-  }
-
   template<class U> matrix<T>& operator+=(const U u) {
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
         values[i][j] += u;
-      }
-    }
     return *this;
   }
   template<class U> matrix<T>& operator-=(const U u) {
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
         values[i][j] -= u;
-      }
-    }
     return *this;
   }
   template<class U> matrix<T>& operator*=(const U u) {
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
         values[i][j] *= u;
-      }
-    }
     return *this;
   }
   template<class U> matrix<T>& operator/=(const U u) {
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
         values[i][j] /= u;
-      }
-    }
     return *this;
   }
   template<class U> matrix<T> operator+(const U u) const { return matrix<T>(*this) += u; }
@@ -180,31 +230,25 @@ struct matrix {
   template<class U>
   matrix<T>& operator+=(const matrix<U>& other) {
     assert(rows == other.rows && cols == other.cols);
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
         values[i][j] += other[i][j];
-      }
-    }
     return *this;
   }
   template<class U>
   matrix<T>& operator-=(const matrix<U>& other) const {
     assert(rows == other.rows && cols == other.cols);
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
         values[i][j] -= other[i][j];
-      }
-    }
     return *this;
   }
   template<class U>
   matrix<T>& operator/=(const matrix<U>& other) const {
     assert(rows == other.rows && cols == other.cols);
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
         values[i][j] /= other[i][j];
-      }
-    }
     return *this;
   }
 
@@ -216,15 +260,11 @@ struct matrix {
   matrix<T> operator*(const matrix<U>& other) const {
     assert(cols == other.cols);
     matrix<T> product(rows, other.cols);
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
-        if (values[i][j] != 0) {
-          for (int k = 0; k < other.cols; k++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
+        if (values[i][j] != 0)
+          for (int k = 0; k < other.cols; k++)
             product[i][k] += values[i][j] * other[j][k];
-          }
-        }
-      }
-    }
     return product;
   }
   template<class U>
@@ -235,11 +275,9 @@ struct matrix {
   std::vector<T> operator*(const std::vector<U>& column) const {
     assert(cols == int(column.size()));
     std::vector<T> product(rows);
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < cols; j++)
         product[i] += values[i][j] * column[j];
-      }
-    }
     return product;
   }
 
@@ -269,25 +307,41 @@ struct matrix {
     return values == other.values;
   }
 
-  inline void print(std::ostream& out) const {
+  inline void pretty_print(std::ostream& out) const {
     if (std::is_same<T, char>::value) {
       for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+        out << '[';
+        for (int j = 0; j < cols; j++)
           out << values[i][j];
-        }
-        out << '\n';
+        out << "]\n";
       }
     } else {
       for (int i = 0; i < rows; i++) {
+        out << '[';
         for (int j = 0; j < cols; j++) {
-          out << values[i][j] << " \n"[j == cols - 1];
+           out << values[i][j];
+           if (j < cols - 1) out << ", ";
         }
+        out << "]\n";
       }
     }
   }
 
-  template<class U>
-  friend std::istream& operator>>(std::istream& in, matrix<U>& mat) {
+  inline void print(std::ostream& out) const {
+    if (std::is_same<T, char>::value) {
+      for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++)
+          out << values[i][j];
+        out << '\n';
+      }
+    } else {
+      for (int i = 0; i < rows; i++)
+        for (int j = 0; j < cols; j++)
+          out << values[i][j] << " \n"[j == cols - 1];
+    }
+  }
+
+  friend std::istream& operator>>(std::istream& in, matrix<T>& mat) {
     assert(!mat.values.empty());
     if (std::is_same<T, char>::value) {
       for (int i = 0; i < mat.rows; i++) {
@@ -296,11 +350,9 @@ struct matrix {
         mat[i] = std::vector<char>(chars.begin(), chars.end());
       }
     } else {
-      for (int i = 0; i < mat.rows; i++) {
-        for (int j = 0; j < mat.cols; j++) {
+      for (int i = 0; i < mat.rows; i++)
+        for (int j = 0; j < mat.cols; j++)
           in >> mat[i][j];
-        }
-      }
     }
     return in;
   }
@@ -309,19 +361,16 @@ private:
   void rotate_90_clockwise() {
     transpose();
     const int mid = cols / 2;
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < mid; j++) {
+    for (int i = 0; i < rows; i++)
+      for (int j = 0; j < mid; j++)
         std::swap(values[i][j], values[i][cols - j - 1]);
-      }
-    }
   }
 
   void rotate_90_anti_clockwise() {
     transpose();
     const int mid = rows / 2;
-    for (int i = 0; i < mid; i++) {
+    for (int i = 0; i < mid; i++)
       std::swap(values[i], values[rows - i - 1]);
-    }
   }
 
 private:
