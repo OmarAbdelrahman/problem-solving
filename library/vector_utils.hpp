@@ -20,22 +20,22 @@ template<class T, class U> inline void operator/=(std::vector<T>& ts, const U u)
 
 template<class T, class U>
 inline std::vector<T> operator+(const std::vector<T>& ts, const U u) {
-  std::vector<T> uts(ts.begin(), ts.end());
+  std::vector<T> uts(ts);
   return uts += u, uts;
 }
 template<class T, class U>
 inline std::vector<T> operator-(const std::vector<T>& ts, const U u) {
-  std::vector<T> uts(ts.begin(), ts.end());
+  std::vector<T> uts(ts);
   return uts -= u, uts;
 }
 template<class T, class U>
 inline std::vector<T> operator*(const std::vector<T>& ts, const U u) {
-  std::vector<T> uts(ts.begin(), ts.end());
+  std::vector<T> uts(ts);
   return uts *= u, uts;
 }
 template<class T, class U>
 inline std::vector<T> operator/(const std::vector<T>& ts, const U u) {
-  std::vector<T> uts(ts.begin(), ts.end());
+  std::vector<T> uts(ts);
   return uts /= u, uts;
 }
 
@@ -62,22 +62,22 @@ inline void operator/=(std::vector<U>& us, const std::vector<V>& vs) {
 
 template<class U, class V>
 inline std::vector<U> operator+(const std::vector<U>& us, const std::vector<V>& vs) {
-  std::vector<U> res(us.begin(), us.end());
+  std::vector<U> res(us);
   return res += vs, res;
 }
 template<class U, class V>
 inline std::vector<U> operator-(const std::vector<U>& us, const std::vector<V>& vs) {
-  std::vector<U> res(us.begin(), us.end());
+  std::vector<U> res(us);
   return res -= vs, res;
 }
 template<class U, class V>
 inline std::vector<U> operator*(const std::vector<U>& us, const std::vector<V>& vs) {
-  std::vector<U> res(us.begin(), us.end());
+  std::vector<U> res(us);
   return res *= vs, res;
 }
 template<class U, class V>
 inline std::vector<U> operator/(const std::vector<U>& us, const std::vector<V>& vs) {
-  std::vector<U> res(us.begin(), us.end());
+  std::vector<U> res(us);
   return res /= vs, res;
 }
 
