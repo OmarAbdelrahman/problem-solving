@@ -3,7 +3,6 @@ inline std::istream& operator>>(std::istream& in, std::vector<T>& ts) {
   for (T& t : ts) in >> t;
   return in;
 }
-
 template<class T>
 inline std::ostream& operator<<(std::ostream& out, const std::vector<T>& ts) {
   const std::size_t n = ts.size();
@@ -20,22 +19,22 @@ template<class T, class U> inline void operator*=(std::vector<T>& ts, const U u)
 template<class T, class U> inline void operator/=(std::vector<T>& ts, const U u) { for (T& t : ts) t /= u; }
 
 template<class T, class U>
-inline std::vector<U> operator+(const std::vector<T>& ts, const U u) {
+inline std::vector<T> operator+(const std::vector<T>& ts, const U u) {
   std::vector<T> uts(ts.begin(), ts.end());
   return uts += u, uts;
 }
 template<class T, class U>
-inline std::vector<U> operator-(const std::vector<T>& ts, const U u) {
+inline std::vector<T> operator-(const std::vector<T>& ts, const U u) {
   std::vector<T> uts(ts.begin(), ts.end());
   return uts -= u, uts;
 }
 template<class T, class U>
-inline std::vector<U> operator*(const std::vector<T>& ts, const U u) {
+inline std::vector<T> operator*(const std::vector<T>& ts, const U u) {
   std::vector<T> uts(ts.begin(), ts.end());
   return uts *= u, uts;
 }
 template<class T, class U>
-inline std::vector<U> operator/(const std::vector<T>& ts, const U u) {
+inline std::vector<T> operator/(const std::vector<T>& ts, const U u) {
   std::vector<T> uts(ts.begin(), ts.end());
   return uts /= u, uts;
 }
