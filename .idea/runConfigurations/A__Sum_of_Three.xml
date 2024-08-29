@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Sum of Three" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ASumOfThree" cppPath="tasks/ASumOfThree.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="4&#10;10&#10;4&#10;15&#10;9&#10;" output="YES&#10;4 5 1&#10;NO&#10;YES&#10;2 8 5&#10;NO&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

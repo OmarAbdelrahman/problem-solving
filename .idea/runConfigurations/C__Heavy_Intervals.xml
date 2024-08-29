@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="C. Heavy Intervals" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CHeavyIntervals" cppPath="tasks/CHeavyIntervals.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="2&#10;2&#10;8 3&#10;12 23&#10;100 100&#10;4&#10;20 1 2 5&#10;30 4 3 10&#10;2 3 2 3&#10;" output="2400&#10;42&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

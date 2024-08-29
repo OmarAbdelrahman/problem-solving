@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Bela" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Bela" cppPath="tasks/Bela.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="2 S&#10;TH&#10;9C&#10;KS&#10;QS&#10;JS&#10;TD&#10;AD&#10;JH&#10;" output="60&#10;" active="true" />
-      <test input="4 H&#10;AH&#10;KH&#10;QH&#10;JH&#10;TH&#10;9H&#10;8H&#10;7H&#10;AS&#10;KS&#10;QS&#10;JS&#10;TS&#10;9S&#10;8S&#10;7S&#10;" output="92&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

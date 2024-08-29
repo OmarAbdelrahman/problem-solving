@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="11507 - Bender B. Rodríguez Problem" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BenderBRodrguezProblem" cppPath="tasks/BenderBRodrguezProblem.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="3&#10;+z -z&#10;3&#10;+z +y&#10;2&#10;+z&#10;4&#10;+z +y +z&#10;5&#10;No +z No No&#10;0&#10;" output="+x&#10;+z&#10;+z&#10;-x&#10;+z&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

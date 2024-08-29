@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="B. Three Threadlets" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BThreeThreadlets" cppPath="tasks/BThreeThreadlets.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="15&#10;1 3 2&#10;5 5 5&#10;6 36 12&#10;7 8 7&#10;6 3 3&#10;4 4 12&#10;12 6 8&#10;1000000000 1000000000 1000000000&#10;3 7 1&#10;9 9 1&#10;9 3 6&#10;2 8 2&#10;5 3 10&#10;8 4 8&#10;2 8 4&#10;" output="YES&#10;YES&#10;NO&#10;NO&#10;YES&#10;YES&#10;NO&#10;YES&#10;NO&#10;NO&#10;YES&#10;YES&#10;NO&#10;YES&#10;NO&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

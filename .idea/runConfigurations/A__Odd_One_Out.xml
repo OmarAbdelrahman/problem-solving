@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Odd One Out" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AOddOneOut" cppPath="tasks/AOddOneOut.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="10&#10;1 2 2&#10;4 3 4&#10;5 5 6&#10;7 8 8&#10;9 0 9&#10;3 6 3&#10;2 8 2&#10;5 7 7&#10;7 7 5&#10;5 7 5&#10;" output="1&#10;3&#10;6&#10;7&#10;0&#10;6&#10;8&#10;5&#10;5&#10;7&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

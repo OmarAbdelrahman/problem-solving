@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="G. Bicycles" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="GBicycles" cppPath="tasks/GBicycles.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="3&#10;5 5&#10;1 2 2&#10;3 2 1&#10;2 4 5&#10;2 5 7&#10;4 5 1&#10;5 2 1 3 3&#10;5 10&#10;1 2 5&#10;1 3 5&#10;1 4 4&#10;1 5 8&#10;2 3 6&#10;2 4 3&#10;2 5 2&#10;3 4 1&#10;3 5 8&#10;4 5 2&#10;7 2 8 4 1&#10;7 10&#10;3 2 8&#10;2 1 4&#10;2 5 7&#10;2 6 4&#10;7 1 2&#10;4 3 5&#10;6 4 2&#10;6 7 1&#10;6 7 4&#10;4 5 9&#10;7 6 5 4 3 2 1&#10;" output="19&#10;36&#10;14&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

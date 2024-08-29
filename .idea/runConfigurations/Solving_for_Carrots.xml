@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Solving for Carrots" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="SolvingForCarrots" cppPath="tasks/SolvingForCarrots.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="2 1&#10;carrots?&#10;bunnies&#10;" output="1&#10;" active="true" />
-      <test input="1 5&#10;sovl problmz&#10;" output="5&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

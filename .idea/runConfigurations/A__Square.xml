@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Square" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ASquare" cppPath="tasks/ASquare.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="3&#10;1 2&#10;4 5&#10;1 5&#10;4 2&#10;-1 1&#10;1 -1&#10;1 1&#10;-1 -1&#10;45 11&#10;45 39&#10;17 11&#10;17 39&#10;" output="9&#10;4&#10;784&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

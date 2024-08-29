@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Game with Integers" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AGameWithIntegers" cppPath="tasks/AGameWithIntegers.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="6&#10;1&#10;3&#10;5&#10;100&#10;999&#10;1000&#10;" output="First&#10;Second&#10;First&#10;First&#10;Second&#10;First&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A Different Problem" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ADifferentProblem" cppPath="tasks/ADifferentProblem.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="10 12&#10;71293781758123 72784&#10;1 12345677654321&#10;" output="2&#10;71293781685339&#10;12345677654320&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

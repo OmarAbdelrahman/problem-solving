@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="B. Plus-Minus Split" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BPlusMinusSplit" cppPath="tasks/BPlusMinusSplit.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="5&#10;1&#10;+&#10;5&#10;-----&#10;6&#10;+-+-+-&#10;10&#10;--+++++++-&#10;20&#10;+---++++-+++++---++-&#10;" output="1&#10;5&#10;0&#10;4&#10;4&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="B. Aleksa and Stack" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BAleksaAndStack" cppPath="tasks/BAleksaAndStack.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="3&#10;3&#10;6&#10;7&#10;" output="6 8 12&#10;7 11 14 20 22 100&#10;9 15 18 27 36 90 120&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

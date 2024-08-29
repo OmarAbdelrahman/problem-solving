@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ACM Contest Scoring" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ACMContestScoring" cppPath="tasks/ACMContestScoring.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="3 E right&#10;10 A wrong&#10;30 C wrong&#10;50 B wrong&#10;100 A wrong&#10;200 A right&#10;250 C wrong&#10;300 D right&#10;-1&#10;" output="3 543&#10;" active="true" />
-      <test input="7 H right&#10;15 B wrong&#10;30 E wrong&#10;35 E right&#10;80 B wrong&#10;80 B right&#10;100 D wrong&#10;100 C wrong&#10;300 C right&#10;300 D wrong&#10;-1&#10;" output="4 502&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

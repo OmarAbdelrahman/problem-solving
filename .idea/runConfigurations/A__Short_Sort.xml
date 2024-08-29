@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Short Sort" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AShortSort" cppPath="tasks/AShortSort.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="6&#10;abc&#10;acb&#10;bac&#10;bca&#10;cab&#10;cba&#10;" output="YES&#10;YES&#10;YES&#10;NO&#10;NO&#10;YES&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

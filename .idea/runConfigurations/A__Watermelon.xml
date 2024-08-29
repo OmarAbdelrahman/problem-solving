@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Watermelon" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AWatermelon" cppPath="tasks/AWatermelon.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="8&#10;" output="YES&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

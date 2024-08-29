@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="C. Add, Divide and Floor" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CAddDivideAndFloor" cppPath="tasks/CAddDivideAndFloor.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="4&#10;1&#10;10&#10;2&#10;4 6&#10;6&#10;2 1 2 1 2 1&#10;2&#10;0 32&#10;" output="0&#10;2&#10;2 5&#10;1&#10;1&#10;6&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

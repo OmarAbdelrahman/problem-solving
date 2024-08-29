@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="489 - Hangman Judge" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="HangmanJudge" cppPath="tasks/HangmanJudge.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="1&#10;cheese&#10;chese&#10;2&#10;cheese&#10;abcdefg&#10;3&#10;cheese&#10;abcdefgij&#10;-1&#10;" output="Round 1&#10;You win.&#10;Round 2&#10;You chickened out.&#10;Round 3&#10;You lose.&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

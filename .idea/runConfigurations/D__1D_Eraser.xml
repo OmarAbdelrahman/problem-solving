@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="D. 1D Eraser" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="D1DEraser" cppPath="tasks/D1DEraser.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="8&#10;6 3&#10;WBWWWB&#10;7 3&#10;WWBWBWW&#10;5 4&#10;BWBWB&#10;5 5&#10;BBBBB&#10;8 2&#10;BWBWBBBB&#10;10 2&#10;WBBWBBWBBW&#10;4 1&#10;BBBB&#10;3 2&#10;WWW&#10;" output="2&#10;1&#10;2&#10;1&#10;4&#10;3&#10;4&#10;0&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Rectangle Cutting" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ARectangleCutting" cppPath="tasks/ARectangleCutting.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="7&#10;1 1&#10;2 1&#10;2 6&#10;3 2&#10;2 2&#10;2 4&#10;6 3&#10;" output="No&#10;No&#10;Yes&#10;Yes&#10;Yes&#10;Yes&#10;No&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

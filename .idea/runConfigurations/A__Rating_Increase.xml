@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Rating Increase" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ARatingIncrease" cppPath="tasks/ARatingIncrease.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="5&#10;20002001&#10;391125&#10;200200&#10;2001000&#10;12&#10;" output="2000 2001&#10;39 1125&#10;-1&#10;200 1000&#10;1 2&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

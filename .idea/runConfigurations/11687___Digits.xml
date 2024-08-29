@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="11687 - Digits" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Digits" cppPath="tasks/Digits.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="42&#10;END&#10;" output="3&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

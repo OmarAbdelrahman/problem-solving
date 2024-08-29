@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="C. Removal of Unattractive Pairs" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="CRemovalOfUnattractivePairs" cppPath="tasks/CRemovalOfUnattractivePairs.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="10&#10;4&#10;aabc&#10;5&#10;abaca&#10;10&#10;avbvvcvvvd&#10;7&#10;abcdefg&#10;5&#10;dabbb&#10;8&#10;aacebeaa&#10;7&#10;bbbbacc&#10;6&#10;dacfcc&#10;6&#10;fdfcdc&#10;9&#10;dbdcfbbdc&#10;" output="0&#10;1&#10;2&#10;1&#10;1&#10;0&#10;1&#10;0&#10;0&#10;1&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

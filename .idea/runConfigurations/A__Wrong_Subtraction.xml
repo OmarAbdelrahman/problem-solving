@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Wrong Subtraction" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AWrongSubtraction" cppPath="tasks/AWrongSubtraction.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="512 4&#10;" output="50&#10;" active="true" />
-      <test input="1000000000 9&#10;" output="1&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="13025 - Back to the Past" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BackToThePast" cppPath="tasks/BackToThePast.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="&#10;" output="October 30, 2015 Friday&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

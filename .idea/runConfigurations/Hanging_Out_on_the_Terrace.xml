@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Hanging Out on the Terrace" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="HangingOutOnTheTerrace" cppPath="tasks/HangingOutOnTheTerrace.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="4 5&#10;enter 3&#10;enter 2&#10;leave 1&#10;enter 1&#10;enter 2&#10;" output="2&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

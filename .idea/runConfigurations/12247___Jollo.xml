@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="12247 - Jollo" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="Jollo" cppPath="tasks/Jollo.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="28 51 29 50 52&#10;50 26 19 10 27&#10;10 20 30 24 26&#10;46 48 49 47 50&#10;0 0 0 0 0&#10;" output="30&#10;-1&#10;21&#10;51&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

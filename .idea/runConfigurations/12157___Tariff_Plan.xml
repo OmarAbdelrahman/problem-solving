@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="12157 - Tariff Plan" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="TariffPlan" cppPath="tasks/TariffPlan.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="3&#10;2&#10;61 10&#10;3&#10;40 40 40&#10;2&#10;60 65&#10;" output="Case 1: Mile 40&#10;Case 2: Juice 45&#10;Case 3: Mile Juice 60&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

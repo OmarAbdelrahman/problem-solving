@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Wallet Exchange" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AWalletExchange" cppPath="tasks/AWalletExchange.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="10&#10;1 1&#10;1 4&#10;5 3&#10;4 5&#10;11 9&#10;83 91&#10;1032 9307&#10;839204 7281&#10;1000000000 1000000000&#10;53110 2024&#10;" output="Bob&#10;Alice&#10;Bob&#10;Alice&#10;Bob&#10;Bob&#10;Alice&#10;Alice&#10;Bob&#10;Bob&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

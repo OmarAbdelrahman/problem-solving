@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Next Round" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ANextRound" cppPath="tasks/ANextRound.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="8 5&#10;10 9 8 7 7 7 5 5&#10;" output="6&#10;" active="true" />
-      <test input="4 2&#10;0 0 0 0&#10;" output="0&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

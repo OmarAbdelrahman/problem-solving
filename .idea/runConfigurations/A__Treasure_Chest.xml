@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Treasure Chest" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ATreasureChest" cppPath="tasks/ATreasureChest.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="3&#10;5 7 2&#10;10 5 0&#10;5 8 2&#10;" output="7&#10;10&#10;9&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

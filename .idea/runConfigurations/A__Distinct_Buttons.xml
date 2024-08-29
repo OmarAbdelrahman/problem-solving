@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Distinct Buttons" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ADistinctButtons" cppPath="tasks/ADistinctButtons.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="6&#10;3&#10;1 -1&#10;0 0&#10;1 -1&#10;4&#10;-3 -2&#10;-3 -1&#10;-3 0&#10;-3 1&#10;4&#10;1 1&#10;-1 -1&#10;1 -1&#10;-1 1&#10;6&#10;-4 14&#10;-9 -13&#10;-14 5&#10;14 15&#10;-8 -4&#10;19 9&#10;6&#10;82 64&#10;39 91&#10;3 46&#10;87 83&#10;74 21&#10;7 25&#10;1&#10;100 -100&#10;" output="YES&#10;YES&#10;NO&#10;NO&#10;YES&#10;YES&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

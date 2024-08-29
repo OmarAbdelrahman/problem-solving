@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Divisibility Problem" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ADivisibilityProblem" cppPath="tasks/ADivisibilityProblem.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="5&#10;10 4&#10;13 9&#10;100 13&#10;123 456&#10;92 46&#10;" output="2&#10;5&#10;4&#10;333&#10;0&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

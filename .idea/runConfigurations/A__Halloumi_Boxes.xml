@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Halloumi Boxes" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AHalloumiBoxes" cppPath="tasks/AHalloumiBoxes.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="5&#10;3 2&#10;1 2 3&#10;3 1&#10;9 9 9&#10;4 4&#10;6 4 2 1&#10;4 3&#10;10 3 830 14&#10;2 1&#10;3 1&#10;" output="YES&#10;YES&#10;YES&#10;YES&#10;NO&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

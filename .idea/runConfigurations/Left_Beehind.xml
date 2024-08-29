@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Left Beehind" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="LeftBeehind" cppPath="tasks/LeftBeehind.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="17 3&#10;13 14&#10;8 5&#10;44 44&#10;0 0&#10;" output="To the convention.&#10;Left beehind.&#10;Never speak again.&#10;Undecided.&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

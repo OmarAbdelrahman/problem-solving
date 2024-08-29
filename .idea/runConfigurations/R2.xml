@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="R2" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="R2" cppPath="tasks/R2.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="11 15&#10;" output="19&#10;" active="true" />
-      <test input="4 3&#10;" output="2&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

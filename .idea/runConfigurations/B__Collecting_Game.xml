@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="B. Collecting Game" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BCollectingGame" cppPath="tasks/BCollectingGame.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="4&#10;5&#10;20 5 1 4 2&#10;3&#10;1434 7 1442&#10;1&#10;1&#10;5&#10;999999999 999999999 999999999 1000000000 1000000000&#10;" output="4 3 0 3 1&#10;1 0 2&#10;0&#10;4 4 4 4 4&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

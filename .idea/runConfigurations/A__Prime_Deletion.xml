@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Prime Deletion" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="APrimeDeletion" cppPath="tasks/APrimeDeletion.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="4&#10;123456789&#10;987654321&#10;243567918&#10;576318429&#10;" output="167&#10;53&#10;3571&#10;57638429&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

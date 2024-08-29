@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="B. Chemistry" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="BChemistry" cppPath="tasks/BChemistry.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="14&#10;1 0&#10;a&#10;2 0&#10;ab&#10;2 1&#10;ba&#10;3 1&#10;abb&#10;3 2&#10;abc&#10;6 2&#10;bacacd&#10;6 2&#10;fagbza&#10;6 2&#10;zwaafa&#10;7 2&#10;taagaak&#10;14 3&#10;ttrraakkttoorr&#10;5 3&#10;debdb&#10;5 4&#10;ecadc&#10;5 3&#10;debca&#10;5 3&#10;abaac&#10;" output="YES&#10;NO&#10;YES&#10;YES&#10;YES&#10;YES&#10;NO&#10;NO&#10;YES&#10;YES&#10;YES&#10;YES&#10;NO&#10;YES&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

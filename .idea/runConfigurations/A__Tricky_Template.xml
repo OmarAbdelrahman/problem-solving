@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Tricky Template" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="ATrickyTemplate" cppPath="tasks/ATrickyTemplate.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="4&#10;1&#10;a&#10;b&#10;c&#10;2&#10;aa&#10;bb&#10;aa&#10;10&#10;mathforces&#10;luckforces&#10;adhoccoder&#10;3&#10;acc&#10;abd&#10;abc&#10;" output="YES&#10;NO&#10;YES&#10;NO&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

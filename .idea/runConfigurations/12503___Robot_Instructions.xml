@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="12503 - Robot Instructions" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="RobotInstructions" cppPath="tasks/RobotInstructions.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="2&#10;3&#10;LEFT&#10;RIGHT&#10;SAME AS 2&#10;5&#10;LEFT&#10;SAME AS 1&#10;SAME AS 2&#10;SAME AS 1&#10;SAME AS 4&#10;" output="1&#10;-5&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

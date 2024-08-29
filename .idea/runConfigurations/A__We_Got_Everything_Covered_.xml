@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. We Got Everything Covered!" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AWeGotEverythingCovered" cppPath="tasks/AWeGotEverythingCovered.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="4&#10;1 2&#10;2 1&#10;2 2&#10;2 3&#10;" output="ab&#10;aa&#10;baab&#10;abcbac&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

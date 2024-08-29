@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="A. Goals of Victory" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="AGoalsOfVictory" cppPath="tasks/AGoalsOfVictory.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="2&#10;4&#10;3 -4 5&#10;11&#10;-30 12 -57 7 0 -81 -68 41 -89 0&#10;" output="-4&#10;265&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>

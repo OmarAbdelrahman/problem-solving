@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Lost Lineup" type="name.admitriev.jhelper.configuration.TaskConfigurationType" className="LostLineup" cppPath="tasks/LostLineup.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
-    <tests>
-      <test input="2&#10;0&#10;" output="1 2&#10;" active="true" />
-      <test input="4&#10;1 2 0&#10;" output="1 4 2 3&#10;" active="true" />
-    </tests>
-    <method v="2" />
-  </configuration>
-</component>
