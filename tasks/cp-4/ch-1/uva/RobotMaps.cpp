@@ -4,7 +4,7 @@
 #include <tuple>
 
 #include "../../../../library/adhoc_utils.hpp"
-#include "../../../../library/array_io.hpp"
+#include "../../../../library/array_utils.hpp"
 
 class RobotMaps {
 public:
