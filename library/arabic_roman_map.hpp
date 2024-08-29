@@ -1,4 +1,5 @@
 struct arabic_roman_map {
+
   arabic_roman_map() {
     m_arabic[""] = 0;
     m_roman[1] = "I", m_roman[5] = "V";
@@ -49,29 +50,13 @@ struct arabic_roman_map {
     }
   }
 
-  const int& operator[](const std::string& roman) const {
-    return m_arabic.at(roman);
-  }
+  const int& operator[](const std::string& roman) const { return m_arabic.at(roman); }
+  int& operator[](const std::string& roman) { return m_arabic[roman]; }
+  const std::string& operator[](const int arabic) const { return m_roman.at(arabic); }
+  std::string& operator[](const int arabic) { return m_roman[arabic]; }
 
-  int& operator[](const std::string& roman) {
-    return m_arabic[roman];
-  }
-
-  const std::string& operator[](const int arabic) const {
-    return m_roman.at(arabic);
-  }
-
-  std::string& operator[](const int arabic) {
-    return m_roman[arabic];
-  }
-
-  bool roman_exists(const std::string& roman) {
-    return m_arabic.find(roman) != m_arabic.end();
-  }
-
-  bool arabic_exists(const int arabic) {
-    return m_roman.find(arabic) != m_roman.end();
-  }
+  inline bool roman_exists(const std::string& roman) const { return m_arabic.find(roman) != m_arabic.end(); }
+  inline bool arabic_exists(const int arabic) const { return m_roman.find(arabic) != m_roman.end(); }
 
 private:
   std::unordered_map<int, std::string> m_roman;
