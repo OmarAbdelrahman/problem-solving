@@ -169,6 +169,17 @@ struct matrix {
     return contains_pos(std::get<0>(t), std::get<1>(t));
   }
 
+  inline bool position_on_edge(const int i, const int j) const {
+    assert(!values.empty());
+    return i == 0 || i == rows - 1 || j == 0 || j == cols - 1;
+  }
+  inline bool position_on_edge(const std::pair<int, int>& p) const {
+    return position_on_edge(p.first, p.second);
+  }
+  inline bool position_on_edge(const std::tuple<int, int>& t) const {
+    return position_on_edge(std::get<0>(t), std::get<1>(t));
+  }
+
   void transpose() {
     if (is_square()) {
       for (int i = 0; i < rows; i++)
