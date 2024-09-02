@@ -1,4 +1,4 @@
-template<class T>
+template<typename T>
 inline static T power(const T a, const T b) {
   assert(b >= 0);
   T x = a, res = 1;
@@ -11,7 +11,7 @@ inline static T power(const T a, const T b) {
   return res;
 }
 
-template<class T>
+template<typename T>
 inline static T gcd(T a, T b) {
   while (b > 0) {
     T t = a % b;
@@ -74,7 +74,7 @@ struct fraction_t {
     q = _q;
   }
 
-  fraction_t& operator += (const fraction_t& other) {
+  fraction_t& operator+=(const fraction_t& other) {
     p += other.p;
     q += other.q;
     return *this;
@@ -84,7 +84,7 @@ struct fraction_t {
     return fraction_t(p + f.p, q + f.q);
   }
 
-  bool operator < (const fraction_t& other) const {
+  bool operator<(const fraction_t& other) const {
     return p * other.q < other.p * q;
   }
 };

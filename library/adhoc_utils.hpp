@@ -20,7 +20,7 @@ inline bool inside(const int i, const int j, const int height, const int width) 
   return i >= 0 && i < height && j >= 0 && j < width;
 }
 
-template<class Fun>
+template<typename Fun>
 void for_each_knight(const int x, const int y, const int height, const int width, Fun&& f) {
   for (int dx = -2; dx <= 2; dx++) {
     for (int dy = -2; dy <= 2; dy++) {
@@ -34,7 +34,7 @@ void for_each_knight(const int x, const int y, const int height, const int width
   }
 }
 
-template<class Fun>
+template<typename Fun>
 void for_each_direction(const int x, const int y, const int height, const int width, const directions& dirs, Fun&& f) {
   for (const auto& dir : dirs) {
     const int nx = x + dir.first;

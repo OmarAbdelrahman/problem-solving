@@ -1,4 +1,4 @@
-template<class T>
+template<typename T>
 struct matrix {
 
   static matrix<T> Identity(const int n) {
@@ -11,7 +11,7 @@ struct matrix {
     init(_rows, _cols);
   }
 
-  template<class U>
+  template<typename U>
   matrix(const int _rows, const int _cols, const U value) {
     init(_rows, _cols, value);
   }
@@ -20,7 +20,7 @@ struct matrix {
     init(_values);
   }
 
-  template<class U>
+  template<typename U>
   explicit matrix(const std::vector<std::vector<U>>& _values) {
     init(_values);
   }
@@ -31,7 +31,7 @@ struct matrix {
     values.assign(rows, std::vector<T>(cols, 0));
   }
 
-  template<class U>
+  template<typename U>
   void init(const int _rows, const int _cols, const U value) {
     rows = _rows;
     cols = _cols;
@@ -49,32 +49,32 @@ struct matrix {
     cols = _cols;
   }
 
-  template<class U>
+  template<typename U>
   void init(const std::vector<std::vector<U>>& _values) {
     values = _values;
     rows = values.size();
     cols = values[0].size();
   }
 
-  template<class U>
+  template<typename U>
   inline void fill(const U value) {
     for (auto& row : values)
       std::fill(row.begin(), row.end(), value);
   }
 
-  template<class Fun>
+  template<typename Fun>
   inline void for_each(Fun&& f) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         f(values[i][j]);
   }
-  template<class Fun>
+  template<typename Fun>
   inline void for_each_with_indices(Fun&& f) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         f(i, j, values[i][j]);
   }
-  template<class Pred>
+  template<typename Pred>
   inline bool for_all(Pred&& pred) const {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
@@ -82,7 +82,7 @@ struct matrix {
           return false;
     return true;
   }
-  template<class Pred>
+  template<typename Pred>
   inline bool for_all_with_indices(Pred&& pred) const {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
@@ -90,7 +90,7 @@ struct matrix {
           return false;
     return true;
   }
-  template<class Pred>
+  template<typename Pred>
   inline bool any_of(Pred&& pred) const {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
@@ -98,7 +98,7 @@ struct matrix {
           return true;
     return false;
   }
-  template<class Pred>
+  template<typename Pred>
   inline bool any_of_with_indices(Pred&& pred) const {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
@@ -113,7 +113,7 @@ struct matrix {
       cnt += std::count(row.begin(), row.end(), value);
     return cnt;
   }
-  template<class Pred>
+  template<typename Pred>
   inline int count_if(Pred&& pred) const {
     int cnt = 0;
     for (int i = 0; i < rows; i++)
@@ -121,7 +121,7 @@ struct matrix {
         cnt += pred(values[i][j]);
     return cnt;
   }
-  template<class Pred>
+  template<typename Pred>
   inline int count_if_with_indices(Pred&& pred) const {
     int cnt = 0;
     for (int i = 0; i < rows; i++)
@@ -137,7 +137,7 @@ struct matrix {
           return {i, j};
     return {-1, -1};
   }
-  template<class Pred>
+  template<typename Pred>
   std::pair<int, int> find_first_if(Pred&& pred) const {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
@@ -145,7 +145,7 @@ struct matrix {
           return {i, j};
     return {-1, -1};
   }
-  template<class Pred>
+  template<typename Pred>
   std::pair<int, int> find_first_if_with_indices(Pred&& pred) const {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
@@ -209,36 +209,36 @@ struct matrix {
     std::reverse(values.begin(), values.end());
   }
 
-  template<class U> matrix<T>& operator+=(const U u) {
+  template<typename U> matrix<T>& operator+=(const U u) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         values[i][j] += u;
     return *this;
   }
-  template<class U> matrix<T>& operator-=(const U u) {
+  template<typename U> matrix<T>& operator-=(const U u) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         values[i][j] -= u;
     return *this;
   }
-  template<class U> matrix<T>& operator*=(const U u) {
+  template<typename U> matrix<T>& operator*=(const U u) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         values[i][j] *= u;
     return *this;
   }
-  template<class U> matrix<T>& operator/=(const U u) {
+  template<typename U> matrix<T>& operator/=(const U u) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         values[i][j] /= u;
     return *this;
   }
-  template<class U> matrix<T> operator+(const U u) const { return matrix<T>(*this) += u; }
-  template<class U> matrix<T> operator-(const U u) const { return matrix<T>(*this) -= u; }
-  template<class U> matrix<T> operator*(const U u) const { return matrix<T>(*this) *= u; }
-  template<class U> matrix<T> operator/(const U u) const { return matrix<T>(*this) /= u; }
+  template<typename U> matrix<T> operator+(const U u) const { return matrix<T>(*this) += u; }
+  template<typename U> matrix<T> operator-(const U u) const { return matrix<T>(*this) -= u; }
+  template<typename U> matrix<T> operator*(const U u) const { return matrix<T>(*this) *= u; }
+  template<typename U> matrix<T> operator/(const U u) const { return matrix<T>(*this) /= u; }
 
-  template<class U>
+  template<typename U>
   matrix<T>& operator+=(const matrix<U>& other) {
     assert(rows == other.rows && cols == other.cols);
     for (int i = 0; i < rows; i++)
@@ -246,7 +246,7 @@ struct matrix {
         values[i][j] += other[i][j];
     return *this;
   }
-  template<class U>
+  template<typename U>
   matrix<T>& operator-=(const matrix<U>& other) const {
     assert(rows == other.rows && cols == other.cols);
     for (int i = 0; i < rows; i++)
@@ -254,7 +254,7 @@ struct matrix {
         values[i][j] -= other[i][j];
     return *this;
   }
-  template<class U>
+  template<typename U>
   matrix<T>& operator/=(const matrix<U>& other) const {
     assert(rows == other.rows && cols == other.cols);
     for (int i = 0; i < rows; i++)
@@ -263,11 +263,11 @@ struct matrix {
     return *this;
   }
 
-  template<class U> matrix<T> operator+(const matrix<U>& other) const { return matrix<T>(*this) += other; }
-  template<class U> matrix<T> operator-(const matrix<U>& other) const { return matrix<T>(*this) -= other; }
-  template<class U> matrix<T> operator/(const matrix<U>& other) const { return matrix<T>(*this) /= other; }
+  template<typename U> matrix<T> operator+(const matrix<U>& other) const { return matrix<T>(*this) += other; }
+  template<typename U> matrix<T> operator-(const matrix<U>& other) const { return matrix<T>(*this) -= other; }
+  template<typename U> matrix<T> operator/(const matrix<U>& other) const { return matrix<T>(*this) /= other; }
 
-  template<class U>
+  template<typename U>
   matrix<T> operator*(const matrix<U>& other) const {
     assert(cols == other.cols);
     matrix<T> product(rows, other.cols);
@@ -278,11 +278,11 @@ struct matrix {
             product[i][k] += values[i][j] * other[j][k];
     return product;
   }
-  template<class U>
+  template<typename U>
   matrix<T>& operator*=(const matrix<U>& other) {
     return *this = *this * other;
   }
-  template<class U>
+  template<typename U>
   std::vector<T> operator*(const std::vector<U>& column) const {
     assert(cols == int(column.size()));
     std::vector<T> product(rows);
@@ -313,7 +313,7 @@ struct matrix {
   T& operator[](const std::tuple<int, int>& at) { return values[std::get<0>(at)][std::get<1>(at)]; }
   const T& operator[](const std::tuple<int, int>& at) const { return values[std::get<0>(at)][std::get<1>(at)]; }
 
-  template<class U>
+  template<typename U>
   inline bool operator==(const matrix<U>& other) const {
     return values == other.values;
   }

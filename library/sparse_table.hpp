@@ -1,6 +1,5 @@
 template <typename T, class F = std::function<T(const T&, const T&)>>
-class sparse_table {
-public:
+struct sparse_table {
   sparse_table(const std::vector<T>& a, F f) : func(std::move(f)) {
     n = a.size();
     int max_log = 32 - __builtin_clz(n);
