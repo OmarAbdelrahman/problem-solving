@@ -8,6 +8,15 @@
 #include "../../../../library/adhoc_utils.hpp"
 #include "../../../../library/matrix.hpp"
 
+/*
+ * Do as described in the problem statement.
+ * It will be easier if you converted the map to integers and worked with them.
+ * Then go for each ring number starting from 0.
+ *   on every iteration of the ring number, if the current position does not belong to a ring,
+ *   check if any of the neighbors belong to the current ring iteration, if yes, then assign the current position
+ *   to 'ring + 1'.
+ * Positions on edges will always belong to ring 1.
+ */
 class Rings {
 public:
   void solve() {
