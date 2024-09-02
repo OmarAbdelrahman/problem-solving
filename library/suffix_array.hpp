@@ -2,14 +2,14 @@ class suffix_array_t {
 public:
   suffix_array_t() = default;
 
-  explicit suffix_array_t(const std::string& _s) {
-    initialize(_s);
+  explicit suffix_array_t(const std::string& _s, const bool with_lcp = false) {
+    initialize(_s, with_lcp);
   }
 
   std::string longest_common_substring(const std::string& a, const std::string& b) {
-    initialize(a + char(DELIM - 1) + b);
+    initialize(a + char(DELIM - 1) + b, true);
     auto belong_to_different_strings = [&](const int ai, const int bi) -> bool {
-      const uint32_t an = std::size(a);
+      const std::size_t an = a.size();
       return (ai <= an) != (bi <= an);
     };
     std::string r;
@@ -24,7 +24,7 @@ public:
   }
 
   int find_first_of(const std::string& substring) {
-    const uint32_t m = std::size(substring);
+    const std::size_t m = substring.size();
     int l = 0, r = size() - 1;
     while (l < r) {
       int mid = (l + r) >> 1;
@@ -46,7 +46,7 @@ public:
     if (i == -1) {
       return {-1, -1};
     }
-    const uint32_t m = std::size(substring);
+    const std::size_t m = substring.size();
     int l = 0, r = size() - 1;
     while (l < r) {
       int mid = (l + r) >> 1;
@@ -64,7 +64,7 @@ public:
   }
 
   int occurrences_of(const std::string& substring) {
-    const std::pair<int, int> interval = find_interval_of(substring);
+    const auto interval = find_interval_of(substring);
     if (interval.first == -1) return 0;
     return interval.second - interval.first + 1;
   }
@@ -80,8 +80,8 @@ public:
 
   std::string longest_repeated_substring() {
     assert(!lcp.empty() && !p.empty());
-    const auto where = max_element(std::begin(lcp), std::end(lcp));
-    const auto at = where - std::begin(lcp);
+    const auto where = std::max_element(lcp.begin(), lcp.end());
+    const auto at = where - lcp.begin();
     return s.substr(p[at], *where);
   }
 
@@ -89,7 +89,6 @@ public:
     assert(!p.empty());
     return s.substr(p[at]);
   }
-
   inline int suffix_pos(const int& at) const {
     assert(!c.empty());
     return c[at];
@@ -99,20 +98,13 @@ public:
   [[nodiscard]] inline const std::vector<int>& _lcp() const { return lcp; }
   [[nodiscard]] inline const std::vector<int>& _c() const { return c; }
   [[nodiscard]] inline const std::vector<int>& _p() const { return p; }
-  [[nodiscard]] inline int size() const { return static_cast<int>(std::ssize(s)); }
+  [[nodiscard]] inline int size() const { return static_cast<int>(s.size()); }
 
-  int& operator[](const int& at) {
-    assert(!p.empty() && at >= 0 && at < size());
-    return p[at];
-  }
-
-  const int& operator[](const int& at) const {
-    assert(!p.empty() && at >= 0 && at < size());
-    return p[at];
-  }
+  int& operator[](const int& at) { return p[at]; }
+  const int& operator[](const int& at) const { return p[at]; }
 
 private:
-  void initialize(const std::string& _s) {
+  void initialize(const std::string& _s, const bool with_lcp = false) {
     s = _s + DELIM;
     p = std::vector<int>(size());
     c = std::vector<int>(size());
@@ -120,7 +112,7 @@ private:
     for (const char& si: s) {
       count[si]++;
     }
-    for (int i = 1; i < std::size(count); i++) {
+    for (int i = 1; i < count.size(); i++) {
       count[i] += count[i - 1];
     }
     for (int i = size() - 1; i >= 0; i--) {
@@ -131,7 +123,7 @@ private:
       c[p[i]] = c[p[i - 1]] + (int) (s[p[i]] != s[p[i - 1]]);
     }
     build();
-    build_lcp();
+    if (with_lcp) build_lcp();
   }
 
   void build() {
@@ -156,7 +148,7 @@ private:
     assert(!c.empty() || !p.empty());
     lcp = std::vector<int>(size());
     int k = 0;
-    for (int i = 0; i < std::size(lcp); i++) {
+    for (int i = 0; i < lcp.size(); i++) {
       int pi = c[i];
       if (pi == 0) continue;
       int j = p[pi - 1];
