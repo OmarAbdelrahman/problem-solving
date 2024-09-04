@@ -1,6 +1,13 @@
 template<typename T>
 struct matrix {
 
+  using container = std::vector<std::vector<T>>;
+
+  container::iterator begin() { return values.begin(); };
+  container::const_iterator begin() const { return values.begin(); }
+  container::iterator end() { return values.end(); }
+  container::const_iterator end() const { return values.end(); }
+
   static matrix<T> Identity(const int n) {
     matrix<T> identity(n);
     for (int i = 0; i < n; i++) identity[i][i] = 1;
