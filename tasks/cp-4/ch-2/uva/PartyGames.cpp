@@ -4,8 +4,14 @@
 #include <algorithm>
 #include <cstddef>
 
-#include "../library/vector_utils.hpp"
+#include "../../../../library/vector_utils.hpp"
 
+/*
+ * I was getting WA when using
+ *  `std::nth_element(names.begin(), names.begin() + (m - 1), names.end())`
+ *  `std::nth_element(names.begin(), names.begin() + m, names.end())`
+ * Got it accepted when changed to std::sort ..., not sure why still, but the idea is the same
+ */
 class PartyGames {
 public:
   void solve() {
