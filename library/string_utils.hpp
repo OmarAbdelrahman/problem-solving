@@ -15,3 +15,9 @@ std::vector<std::string> split_at_space(const std::string& line) {
   for (std::string part; sin >> part; parts.emplace_back(part));
   return parts;
 }
+
+template<typename Fun>
+void foreach_token_split_at_space(const std::string& line, Fun&& f) {
+  std::stringstream sin(line);
+  for (std::string token; sin >> token; f(token));
+}
