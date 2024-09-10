@@ -1,3 +1,6 @@
+#ifndef DEQUE_UTILS
+#define DEQUE_UTILS
+
 template<typename T, typename U> inline void operator+=(std::deque<T>& ts, const U u) { for (T& t : ts) t += u; }
 template<typename T, typename U> inline void operator-=(std::deque<T>& ts, const U u) { for (T& t : ts) t -= u; }
 template<typename T, typename U> inline void operator*=(std::deque<T>& ts, const U u) { for (T& t : ts) t *= u; }
@@ -85,3 +88,5 @@ inline void deque_pretty_print(std::ostream& out, const std::deque<T>& ts, const
   out << ']';
   if (new_line) out << '\n';
 }
+
+#endif

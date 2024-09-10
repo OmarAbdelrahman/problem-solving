@@ -1,3 +1,6 @@
+#ifndef PAIR_UTILS
+#define PAIR_UTILS
+
 template<typename U, typename V, typename T>
 inline std::pair<U, V> operator+(const std::pair<U, V>& v, const T x) { return {v.first + x, v.second + x}; }
 template<typename U, typename V, typename T>
@@ -42,3 +45,5 @@ void print_pretty_pair(std::ostream& out, const std::pair<U, V>& p, const bool n
   out << '(' << p.first << ", " << p.second << ')';
   if (new_line) out << '\n';
 }
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef VECTOR_UTILS
+#define VECTOR_UTILS
+
 template<typename T, typename U> inline void operator+=(std::vector<T>& ts, const U u) { for (T& t : ts) t += u; }
 template<typename T, typename U> inline void operator-=(std::vector<T>& ts, const U u) { for (T& t : ts) t -= u; }
 template<typename T, typename U> inline void operator*=(std::vector<T>& ts, const U u) { for (T& t : ts) t *= u; }
@@ -85,3 +88,5 @@ inline void vector_pretty_print(std::ostream& out, const std::vector<T>& ts, con
   out << ']';
   if (new_line) out << '\n';
 }
+
+#endif

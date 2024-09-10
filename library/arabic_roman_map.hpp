@@ -1,3 +1,6 @@
+#ifndef ARABIC_ROMAN_MAP
+#define ARABIC_ROMAN_MAP
+
 struct arabic_roman_map {
 
   arabic_roman_map() {
@@ -64,3 +67,5 @@ private:
 
   const std::string numerals = "IVXLCDM";
 };
+
+#endif

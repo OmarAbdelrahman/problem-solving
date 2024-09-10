@@ -1,3 +1,6 @@
+#ifndef DEBUG_HPP
+#define DEBUG_HPP
+
 template<typename T, std::size_t size = std::tuple_size<T>::value>
 std::string to_debug(T, std::string s = "") requires(not std::ranges::range<T>);
 std::string to_debug(const auto& x) requires requires(std::ostream& os) { os << x; } {
@@ -14,3 +17,5 @@ std::string to_debug(T x, std::string s) requires(not std::ranges::range<T>) {
 }
 
 #define debug(...) std::cerr << __FILE__ ":" << __LINE__ << ": (" #__VA_ARGS__ ") = " << to_debug(std::tuple(__VA_ARGS__)) << "\n"
+
+#endif

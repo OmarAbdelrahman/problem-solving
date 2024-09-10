@@ -1,3 +1,6 @@
+#ifndef STRING_UTILS
+#define STRING_UIILS
+
 std::vector<std::string> substrings_slow(const std::string& str) {
   const std::size_t n = str.length();
   std::vector<std::string> subs;
@@ -21,3 +24,5 @@ void foreach_token_split_at_space(const std::string& line, Fun&& f) {
   std::stringstream sin(line);
   for (std::string token; sin >> token; f(token));
 }
+
+#endif

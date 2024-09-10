@@ -1,3 +1,6 @@
+#ifndef ADHOC_UTILS
+#define ADHOC_UTILS
+
 using direction = std::pair<int, int>;
 using position = std::pair<int, int>;
 using directions = std::vector<direction>;
@@ -43,3 +46,5 @@ void for_each_direction(const int x, const int y, const int height, const int wi
       f(nx, ny);
   }
 }
+
+#endif

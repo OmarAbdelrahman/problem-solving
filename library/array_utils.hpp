@@ -1,3 +1,6 @@
+#ifndef ARRAY_UTILS
+#define ARRAY_UTILS
+
 template<typename T, std::size_t _t_size, typename U>
 inline void operator+=(std::array<T, _t_size>& ts, const U u) { for (T& t : ts) t += u; }
 template<typename T, std::size_t _t_size, typename U>
@@ -92,3 +95,5 @@ inline void array_pretty_print(std::ostream& out, const std::array<T, _t_size>& 
   });
   out << "]\n";
 }
+
+#endif

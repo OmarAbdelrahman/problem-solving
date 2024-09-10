@@ -1,3 +1,6 @@
+#ifndef SUFFIX_ARRAY
+#define SUFFIX_ARRAY
+
 class suffix_array_t {
 public:
   suffix_array_t() = default;
@@ -181,3 +184,5 @@ private:
 
   const char DELIM = char(31);
 };
+
+#endif

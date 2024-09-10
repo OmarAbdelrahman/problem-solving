@@ -1,3 +1,6 @@
+#ifndef DATE_T
+#define DATE_T
+
 struct date_t {
   int month, day, year;
 
@@ -47,3 +50,5 @@ struct date_t {
     return in;
   }
 };
+
+#endif

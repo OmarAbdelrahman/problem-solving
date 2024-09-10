@@ -1,3 +1,6 @@
+#ifndef MATH_UTILS
+#define MATH_UTILS
+
 template<typename T>
 inline static T power(const T a, const T b) {
   assert(b >= 0);
@@ -88,3 +91,5 @@ struct fraction_t {
     return p * other.q < other.p * q;
   }
 };
+
+#endif

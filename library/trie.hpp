@@ -1,3 +1,6 @@
+#ifndef TRIE
+#define TRIE
+
 struct trie_node_t {
   char alphabet;
   bool exist;
@@ -58,3 +61,5 @@ public:
 private:
   trie_node_t* root;
 };
+
+#endif

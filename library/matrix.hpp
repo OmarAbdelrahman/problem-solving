@@ -1,3 +1,6 @@
+#ifndef MATRIX
+#define MATRIX
+
 template<typename T>
 struct matrix {
 
@@ -395,3 +398,5 @@ private:
   std::vector<std::vector<T>> values;
   int rows, cols;
 };
+
+#endif

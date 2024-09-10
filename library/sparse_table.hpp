@@ -1,3 +1,6 @@
+#ifndef SPARSE_TABLE
+#define SPARSE_TABLE
+
 template <typename T, class F = std::function<T(const T&, const T&)>>
 struct sparse_table {
   sparse_table(const std::vector<T>& a, F f) : func(std::move(f)) {
@@ -24,3 +27,5 @@ private:
   std::vector<std::vector<T>> mat;
   F func;
 };
+
+#endif
