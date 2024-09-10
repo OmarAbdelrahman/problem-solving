@@ -1,18 +1,3 @@
-template<typename T>
-inline std::istream& operator>>(std::istream& in, std::vector<T>& ts) {
-  for (T& t : ts) in >> t;
-  return in;
-}
-template<typename T>
-inline std::ostream& operator<<(std::ostream& out, const std::vector<T>& ts) {
-  const std::size_t n = ts.size();
-  for (std::size_t i = 0; i < n; i++) {
-    if (i > 0) out << ' ';
-    out << ts[i];
-  }
-  return out;
-}
-
 template<typename T, typename U> inline void operator+=(std::vector<T>& ts, const U u) { for (T& t : ts) t += u; }
 template<typename T, typename U> inline void operator-=(std::vector<T>& ts, const U u) { for (T& t : ts) t -= u; }
 template<typename T, typename U> inline void operator*=(std::vector<T>& ts, const U u) { for (T& t : ts) t *= u; }
@@ -91,11 +76,12 @@ template<typename T, typename F> inline void vector_for_each_with_index(const st
 }
 
 template<typename T>
-inline void vector_pretty_print(std::ostream& out, const std::vector<T>& ts) {
+inline void vector_pretty_print(std::ostream& out, const std::vector<T>& ts, const bool new_line = true) {
   out << '[';
   vector_for_each_with_index(ts, [&](const std::size_t at, const T& t) {
     out << t;
     if (at < ts.size() - 1) out << ", ";
   });
-  out << "]\n";
+  out << ']';
+  if (new_line) out << '\n';
 }

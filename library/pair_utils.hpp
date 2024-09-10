@@ -1,8 +1,3 @@
-template<typename U, typename V>
-std::istream& operator>>(std::istream& in, std::pair<U, V>& p) { return in >> p.first >> p.second; }
-template<typename U, typename V>
-std::ostream& operator<<(std::ostream& out, const std::pair<U, V>& p) { return out << p.first << ' ' << p.second; }
-
 template<typename U, typename V, typename T>
 inline std::pair<U, V> operator+(const std::pair<U, V>& v, const T x) { return {v.first + x, v.second + x}; }
 template<typename U, typename V, typename T>

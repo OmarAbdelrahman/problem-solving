@@ -1,17 +1,3 @@
-template<typename T, std::size_t _t_size>
-inline std::istream& operator>>(std::istream& in, std::array<T, _t_size>& ts) {
-  for (T& t : ts) in >> t;
-  return in;
-}
-template<typename T, std::size_t _t_size>
-inline std::ostream& operator<<(std::ostream& out, const std::array<T, _t_size>& ts) {
-  for (std::size_t i = 0; i < _t_size; i++) {
-    if (i > 0) out << ' ';
-    out << ts[i];
-  }
-  return out;
-}
-
 template<typename T, std::size_t _t_size, typename U>
 inline void operator+=(std::array<T, _t_size>& ts, const U u) { for (T& t : ts) t += u; }
 template<typename T, std::size_t _t_size, typename U>
