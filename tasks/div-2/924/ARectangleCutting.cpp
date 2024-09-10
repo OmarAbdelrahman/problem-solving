@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 
-#include "../../../library/io_utils.hpp"
 using namespace std;
 
 class ARectangleCutting {

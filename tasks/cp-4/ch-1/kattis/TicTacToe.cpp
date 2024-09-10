@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 
-#include "../../../../library/vector_utils.hpp"
-#include "../../../../library/io_utils.hpp"
+#include "../../../../library/io.hpp"
+
 using namespace std;
+using namespace io;
 
 class TicTacToe {
 public:
@@ -45,6 +46,11 @@ public:
     int nt;
     in >> nt;
     while (nt--) solveOne();
+  }
+
+  template<typename T = std::string>
+  void print_conditional(std::ostream& o, const bool condition, const std::array<T, 2>& options, const bool new_line = true) {
+    o << options[condition] << (new_line ? '\n' : char());
   }
 
   TicTacToe(istream& in, ostream& out)

@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 
-#include "../../../../library/io_utils.hpp"
 using namespace std;
 
 class WhatIsTheCard {
@@ -65,6 +64,11 @@ public:
 
   inline int f(const string& card) {
     return isdigit(card[0]) ? card[0] - '0' : 10;
+  }
+
+  template<typename T>
+  void print_case(std::ostream& o, const int case_i, const T& result, const bool new_line = true) {
+    o << "Case " << case_i << ": " << result << (new_line ? '\n' : char());
   }
 
   WhatIsTheCard(istream& in, ostream& out)

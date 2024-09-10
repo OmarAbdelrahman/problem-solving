@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include "../../../../library/io_utils.hpp"
 using namespace std;
 
 class Filip {
@@ -10,6 +9,11 @@ public:
     reverse(begin(a), end(a));
     reverse(begin(b), end(b));
     print_conditional(out, a > b, {b, a});
+  }
+
+  template<typename T = std::string>
+  void print_conditional(std::ostream& o, const bool condition, const std::array<T, 2>& options, const bool new_line = true) {
+    o << options[condition] << (new_line ? '\n' : char());
   }
 
   Filip(istream& in, ostream& out)

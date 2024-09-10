@@ -1,7 +1,9 @@
 #include <bits/stdc++.h>
-#include "../../../../library/vector_utils.hpp"
-#include "../../../../library/io_utils.hpp"
+
+#include "../../../../library/io.hpp"
+
 using namespace std;
+using namespace io;
 
 class BasicProgramming1 {
 public:
@@ -53,6 +55,11 @@ public:
         i = a[i];
       }
     }
+  }
+
+  template<typename T = std::string>
+  T value_conditional(const bool condition, const std::array<T, 2>& options) {
+    return options[condition];
   }
 
   BasicProgramming1(istream& in, ostream& out)

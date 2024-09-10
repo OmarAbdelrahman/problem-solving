@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../../../../library/io_utils.hpp"
+
 using namespace std;
 
 class PackingForHoliday {
@@ -12,6 +12,11 @@ public:
       in >> a >> b >> c;
       print_conditional(out, a <= 20 && b <= 20 && c <= 20, {"bad", "good"});
     }
+  }
+
+  template<typename T = std::string>
+  void print_conditional(std::ostream& o, const bool condition, const std::array<T, 2>& options, const bool new_line = true) {
+    o << options[condition] << (new_line ? '\n' : char());
   }
 
   PackingForHoliday(istream& in, ostream& out)

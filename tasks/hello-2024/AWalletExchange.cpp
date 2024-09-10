@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../../library/io_utils.hpp"
+
 using namespace std;
 
 class AWalletExchange {
@@ -16,6 +16,11 @@ public:
     for (int _ = 0; _ < nt; _++) {
       solveOne();
     }
+  }
+
+  template<typename T = std::string>
+  void print_conditional(std::ostream& o, const bool condition, const std::array<T, 2>& options, const bool new_line = true) {
+    o << options[condition] << (new_line ? '\n' : char());
   }
 
   AWalletExchange(istream& in, ostream& out)

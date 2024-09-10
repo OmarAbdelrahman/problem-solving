@@ -1,7 +1,9 @@
 #include <bits/stdc++.h>
-#include "../../../../library/pair_utils.hpp"
-#include "../../../../library/io_utils.hpp"
+
+#include "../../../../library/io.hpp"
+
 using namespace std;
+using namespace io;
 
 class TariffPlan {
 public:
@@ -28,6 +30,11 @@ public:
         print_case<pair<string, int>>(out, _ + 1, {MILE + ' ' + JUICE, j});
       }
     }
+  }
+
+  template<typename T>
+  void print_case(std::ostream& o, const int case_i, const T& result, const bool new_line = true) {
+    o << "Case " << case_i << ": " << result << (new_line ? '\n' : char());
   }
 
   TariffPlan(istream& in, ostream& out)
