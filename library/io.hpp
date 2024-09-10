@@ -92,7 +92,7 @@ namespace io {
   inline void delim_print(std::ostream& out, const char* delim, const std::pair<U, V>& p) {
     delim_print(out, delim, p.first);
     out << delim;
-    delim_print(out, delim, p.first);
+    delim_print(out, delim, p.second);
   }
   template<typename T>
   inline void delim_print(std::ostream& out, const char* delim, const std::vector<T>& ts) {
