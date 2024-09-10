@@ -6,6 +6,11 @@
 #include <deque>
 #include <array>
 #include <cstdint>
+#include <cstdio>
+#include <string>
+#include <algorithm>
+#include <unordered_map>
+#include <sstream>
 
 namespace io {
 

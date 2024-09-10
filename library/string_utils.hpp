@@ -25,4 +25,11 @@ void foreach_token_split_at_space(const std::string& line, Fun&& f) {
   for (std::string token; sin >> token; f(token));
 }
 
+template<typename Fun>
+void foreach_token_split_at_space_with_index(const std::string& line, Fun&& f) {
+  std::stringstream sin(line);
+  int pos = 0;
+  for (std::string token; sin >> token; f(pos++, token));
+}
+
 #endif
