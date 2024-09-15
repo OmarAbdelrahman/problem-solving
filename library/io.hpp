@@ -63,10 +63,12 @@ namespace io {
   template<typename U, typename V>
   std::ostream& operator<<(std::ostream& out, const std::pair<U, V>& p) { return out << p.first << ' ' << p.second; }
 
+#if __cplusplus >= 201703L
   template<typename... Ts>
   inline void std_read(std::istream& in, Ts&... ts) {
     (in >> ... >> ts);
   }
+#endif
 
   template<typename T>
   inline void std_print(std::ostream& out, const T& t) { out << t; }
