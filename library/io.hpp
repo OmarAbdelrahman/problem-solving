@@ -11,6 +11,7 @@
 #include <algorithm>
 #include <unordered_map>
 #include <sstream>
+#include <utility>
 
 namespace io {
 
@@ -71,9 +72,9 @@ namespace io {
 #endif
 
   template<typename T>
-  inline void std_print(std::ostream& out, const T& t) { out << t; }
+  inline void std_print(std::ostream& out, T&& t) { out << t; }
   template<typename H, typename... T>
-  inline void std_print(std::ostream& out, const H& h, const T&... t) {
+  inline void std_print(std::ostream& out, H&& h, T&&... t) {
     std_print(out, h);
     out << '\n';
     std_print(out, t...);
@@ -94,7 +95,7 @@ namespace io {
   inline void delim_print(std::ostream& out, const char*, const float f)        { out << f; }
   inline void delim_print(std::ostream& out, const char*, const std::string& s) { out << s; }
   template<typename T>
-  inline void delim_print(std::ostream& out, const char*, const T& t) { out << t; }
+  inline void delim_print(std::ostream& out, const char*, T&& t) { out << t; }
   template<typename U, typename V>
   inline void delim_print(std::ostream& out, const char* delim, const std::pair<U, V>& p) {
     delim_print(out, delim, p.first);
@@ -118,7 +119,7 @@ namespace io {
     }
   }
   template<typename H, typename... T>
-  inline void delim_print(std::ostream& out, const char* delim, const H& h, const T&... t) {
+  inline void delim_print(std::ostream& out, const char* delim, H&& h, T&&... t) {
     delim_print(out, delim, h);
     out << delim;
     delim_print(out, delim, t...);

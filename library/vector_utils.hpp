@@ -1,28 +1,28 @@
 #ifndef VECTOR_UTILS
 #define VECTOR_UTILS
 
-template<typename T, typename U> inline void operator+=(std::vector<T>& ts, const U u) { for (T& t : ts) t += u; }
-template<typename T, typename U> inline void operator-=(std::vector<T>& ts, const U u) { for (T& t : ts) t -= u; }
-template<typename T, typename U> inline void operator*=(std::vector<T>& ts, const U u) { for (T& t : ts) t *= u; }
-template<typename T, typename U> inline void operator/=(std::vector<T>& ts, const U u) { for (T& t : ts) t /= u; }
+template<typename T, typename U> inline void operator+=(std::vector<T>& ts, U&& u) { for (T& t : ts) t += u; }
+template<typename T, typename U> inline void operator-=(std::vector<T>& ts, U&& u) { for (T& t : ts) t -= u; }
+template<typename T, typename U> inline void operator*=(std::vector<T>& ts, U&& u) { for (T& t : ts) t *= u; }
+template<typename T, typename U> inline void operator/=(std::vector<T>& ts, U&& u) { for (T& t : ts) t /= u; }
 
 template<typename T, typename U>
-inline std::vector<T> operator+(const std::vector<T>& ts, const U u) {
+inline std::vector<T> operator+(const std::vector<T>& ts, U&& u) {
   std::vector<T> uts(ts);
   return uts += u, uts;
 }
 template<typename T, typename U>
-inline std::vector<T> operator-(const std::vector<T>& ts, const U u) {
+inline std::vector<T> operator-(const std::vector<T>& ts, U&& u) {
   std::vector<T> uts(ts);
   return uts -= u, uts;
 }
 template<typename T, typename U>
-inline std::vector<T> operator*(const std::vector<T>& ts, const U u) {
+inline std::vector<T> operator*(const std::vector<T>& ts, U&& u) {
   std::vector<T> uts(ts);
   return uts *= u, uts;
 }
 template<typename T, typename U>
-inline std::vector<T> operator/(const std::vector<T>& ts, const U u) {
+inline std::vector<T> operator/(const std::vector<T>& ts, U&& u) {
   std::vector<T> uts(ts);
   return uts /= u, uts;
 }

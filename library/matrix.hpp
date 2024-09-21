@@ -67,9 +67,9 @@ struct matrix {
   }
 
   template<typename U>
-  inline void fill(const U value) {
+  inline void fill(U&& value) {
     for (auto& row : values)
-      std::fill(row.begin(), row.end(), value);
+      std::fill(row.begin(), row.end(), std::forward<U>(value));
   }
 
   template<typename Fun>
@@ -117,10 +117,11 @@ struct matrix {
     return false;
   }
 
-  inline int count(const T value) const {
+  template<typename U>
+  inline int count(U&& value) const {
     int cnt = 0;
     for (const auto& row : values)
-      cnt += std::count(row.begin(), row.end(), value);
+      cnt += std::count(row.begin(), row.end(), std::forward<U>(value));
     return cnt;
   }
   template<typename Pred>
@@ -219,34 +220,34 @@ struct matrix {
     std::reverse(values.begin(), values.end());
   }
 
-  template<typename U> matrix<T>& operator+=(const U u) {
+  template<typename U> matrix<T>& operator+=(U&& u) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         values[i][j] += u;
     return *this;
   }
-  template<typename U> matrix<T>& operator-=(const U u) {
+  template<typename U> matrix<T>& operator-=(U&& u) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         values[i][j] -= u;
     return *this;
   }
-  template<typename U> matrix<T>& operator*=(const U u) {
+  template<typename U> matrix<T>& operator*=(U&& u) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         values[i][j] *= u;
     return *this;
   }
-  template<typename U> matrix<T>& operator/=(const U u) {
+  template<typename U> matrix<T>& operator/=(U&& u) {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         values[i][j] /= u;
     return *this;
   }
-  template<typename U> matrix<T> operator+(const U u) const { return matrix<T>(*this) += u; }
-  template<typename U> matrix<T> operator-(const U u) const { return matrix<T>(*this) -= u; }
-  template<typename U> matrix<T> operator*(const U u) const { return matrix<T>(*this) *= u; }
-  template<typename U> matrix<T> operator/(const U u) const { return matrix<T>(*this) /= u; }
+  template<typename U> matrix<T> operator+(U&& u) const { return matrix<T>(*this) += u; }
+  template<typename U> matrix<T> operator-(U&& u) const { return matrix<T>(*this) -= u; }
+  template<typename U> matrix<T> operator*(U&& u) const { return matrix<T>(*this) *= u; }
+  template<typename U> matrix<T> operator/(U&& u) const { return matrix<T>(*this) /= u; }
 
   template<typename U>
   matrix<T>& operator+=(const matrix<U>& other) {

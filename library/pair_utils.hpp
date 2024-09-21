@@ -2,18 +2,18 @@
 #define PAIR_UTILS
 
 template<typename U, typename V, typename T>
-inline std::pair<U, V> operator+(const std::pair<U, V>& v, const T x) { return {v.first + x, v.second + x}; }
+inline std::pair<U, V> operator+(const std::pair<U, V>& v, T&& x) { return {v.first + x, v.second + x}; }
 template<typename U, typename V, typename T>
-inline std::pair<U, V> operator-(const std::pair<U, V>& v, const T x) { return {v.first - x, v.second - x}; }
+inline std::pair<U, V> operator-(const std::pair<U, V>& v, T&& x) { return {v.first - x, v.second - x}; }
 template<typename U, typename V, typename T>
-inline std::pair<U, V> operator*(const std::pair<U, V>& v, const T x) { return {v.first * x, v.second * x}; }
+inline std::pair<U, V> operator*(const std::pair<U, V>& v, T&& x) { return {v.first * x, v.second * x}; }
 template<typename U, typename V, typename T>
-inline std::pair<U, V> operator/(const std::pair<U, V>& v, const T x) { return {v.first / x, v.second / x}; }
+inline std::pair<U, V> operator/(const std::pair<U, V>& v, T&& x) { return {v.first / x, v.second / x}; }
 
-template<typename U, typename V, typename T> inline void operator+=(std::pair<U, V>& v, const T x) { v.first += x, v.second += x; }
-template<typename U, typename V, typename T> inline void operator-=(std::pair<U, V>& v, const T x) { v.first -= x, v.second -= x; }
-template<typename U, typename V, typename T> inline void operator*=(std::pair<U, V>& v, const T x) { v.first *= x, v.second *= x; }
-template<typename U, typename V, typename T> inline void operator/=(std::pair<U, V>& v, const T x) { v.first /= x, v.second /= x; }
+template<typename U, typename V, typename T> inline void operator+=(std::pair<U, V>& v, T&& x) { v.first += x, v.second += x; }
+template<typename U, typename V, typename T> inline void operator-=(std::pair<U, V>& v, T&& x) { v.first -= x, v.second -= x; }
+template<typename U, typename V, typename T> inline void operator*=(std::pair<U, V>& v, T&& x) { v.first *= x, v.second *= x; }
+template<typename U, typename V, typename T> inline void operator/=(std::pair<U, V>& v, T&& x) { v.first /= x, v.second /= x; }
 
 template<typename U, typename V, typename A, typename B>
 inline std::pair<U, V> operator+(const std::pair<U, V>& l, const std::pair<A, B>& r) { return {l.first + r.first, l.second + r.second}; }

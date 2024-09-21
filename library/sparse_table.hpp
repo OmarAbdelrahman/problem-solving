@@ -1,9 +1,9 @@
 #ifndef SPARSE_TABLE
 #define SPARSE_TABLE
 
-template <typename T, class F = std::function<T(const T&, const T&)>>
+template <typename T, class F = std::function<T(T&&, T&&)>>
 struct sparse_table {
-  sparse_table(const std::vector<T>& a, F f) : func(std::move(f)) {
+  sparse_table(const std::vector<T>& a, F&& f) : func(std::forward<F>(f)) {
     n = a.size();
     int max_log = 32 - __builtin_clz(n);
     mat.resize(max_log);

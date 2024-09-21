@@ -2,31 +2,31 @@
 #define ARRAY_UTILS
 
 template<typename T, std::size_t _t_size, typename U>
-inline void operator+=(std::array<T, _t_size>& ts, const U u) { for (T& t : ts) t += u; }
+inline void operator+=(std::array<T, _t_size>& ts, U&& u) { for (T& t : ts) t += u; }
 template<typename T, std::size_t _t_size, typename U>
-inline void operator-=(std::array<T, _t_size>& ts, const U u) { for (T& t : ts) t -= u; }
+inline void operator-=(std::array<T, _t_size>& ts, U&& u) { for (T& t : ts) t -= u; }
 template<typename T, std::size_t _t_size, typename U>
-inline void operator*=(std::array<T, _t_size>& ts, const U u) { for (T& t : ts) t *= u; }
+inline void operator*=(std::array<T, _t_size>& ts, U&& u) { for (T& t : ts) t *= u; }
 template<typename T, std::size_t _t_size, typename U>
-inline void operator/=(std::array<T, _t_size>& ts, const U u) { for (T& t : ts) t /= u; }
+inline void operator/=(std::array<T, _t_size>& ts, U&& u) { for (T& t : ts) t /= u; }
 
 template<typename T, std::size_t _t_size, typename U>
-inline std::array<T, _t_size> operator+(const std::array<T, _t_size>& ts, const U u) {
+inline std::array<T, _t_size> operator+(const std::array<T, _t_size>& ts, U&& u) {
   std::array<T, _t_size> us(ts);
   return us += u, us;
 }
 template<typename T, std::size_t _t_size, typename U>
-inline std::array<T, _t_size> operator-(const std::array<T, _t_size>& ts, const U u) {
+inline std::array<T, _t_size> operator-(const std::array<T, _t_size>& ts, U&& u) {
   std::array<T, _t_size> us(ts);
   return us -= u, us;
 }
 template<typename T, std::size_t _t_size, typename U>
-inline std::array<T, _t_size> operator*(const std::array<T, _t_size>& ts, const U u) {
+inline std::array<T, _t_size> operator*(const std::array<T, _t_size>& ts, U&& u) {
   std::array<T, _t_size> us(ts);
   return us *= u, us;
 }
 template<typename T, std::size_t _t_size, typename U>
-inline std::array<T, _t_size> operator/(const std::array<T, _t_size>& ts, const U u) {
+inline std::array<T, _t_size> operator/(const std::array<T, _t_size>& ts, U&& u) {
   std::array<T, _t_size> us(ts);
   return us /= u, us;
 }
