@@ -4,12 +4,16 @@
 template<typename T>
 struct matrix {
 
-  using container = std::vector<std::vector<T>>;
+  template<typename O>
+  using container = std::vector<std::vector<O>>;
 
-  container::iterator begin() { return values.begin(); };
-  container::const_iterator begin() const { return values.begin(); }
-  container::iterator end() { return values.end(); }
-  container::const_iterator end() const { return values.end(); }
+  template<typename O>
+  using enable_if_convertible = typename std::enable_if<std::is_convertible<O, T>::value>::type;
+
+  container<T>::iterator begin() { return values.begin(); };
+  container<T>::const_iterator begin() const { return values.begin(); }
+  container<T>::iterator end() { return values.end(); }
+  container<T>::const_iterator end() const { return values.end(); }
 
   static matrix<T> Identity(const int n) {
     matrix<T> identity(n);
@@ -21,9 +25,9 @@ struct matrix {
     init(_rows, _cols);
   }
 
-  template<typename U>
-  matrix(const int _rows, const int _cols, const U value) {
-    init(_rows, _cols, value);
+  template<typename U, typename = enable_if_convertible<U>>
+  matrix(const int _rows, const int _cols, U&& value) {
+    init(_rows, _cols, std::forward<U>(value));
   }
 
   matrix(const std::vector<std::string>& _values) {
@@ -31,7 +35,7 @@ struct matrix {
   }
 
   template<typename U>
-  explicit matrix(const std::vector<std::vector<U>>& _values) {
+  explicit matrix(const container<U>& _values) {
     init(_values);
   }
 
@@ -41,17 +45,17 @@ struct matrix {
     values.assign(rows, std::vector<T>(cols, 0));
   }
 
-  template<typename U>
-  void init(const int _rows, const int _cols, const U value) {
+  template<typename U, typename = enable_if_convertible<U>>
+  void init(const int _rows, const int _cols, U&& value) {
     rows = _rows;
     cols = _cols;
-    values.assign(rows, std::vector<T>(cols, value));
+    values.assign(rows, std::vector<T>(cols, std::forward<U>(value)));
   }
 
   void init(const std::vector<std::string>& _values) {
     const int _rows = _values.size();
     const int _cols = _values[0].size();
-    values = std::vector<std::vector<char>>(_rows);
+    values = container<char>(_rows);
     for (int i = 0; i < _rows; i++) {
       values[i] = std::vector<char>(_values[i].begin(), _values[i].end());
     }
@@ -60,13 +64,13 @@ struct matrix {
   }
 
   template<typename U>
-  void init(const std::vector<std::vector<U>>& _values) {
+  void init(const container<U>& _values) {
     values = _values;
     rows = values.size();
     cols = values[0].size();
   }
 
-  template<typename U>
+  template<typename U, typename = enable_if_convertible<U>>
   inline void fill(U&& value) {
     for (auto& row : values)
       std::fill(row.begin(), row.end(), std::forward<U>(value));
@@ -117,7 +121,7 @@ struct matrix {
     return false;
   }
 
-  template<typename U>
+  template<typename U, typename = enable_if_convertible<U>>
   inline int count(U&& value) const {
     int cnt = 0;
     for (const auto& row : values)
@@ -141,7 +145,7 @@ struct matrix {
     return cnt;
   }
 
-  std::pair<int, int> find_first_of(const T value) const {
+  std::pair<int, int> find_first_of(const T& value) const {
     for (int i = 0; i < rows; i++)
       for (int j = 0; j < cols; j++)
         if (values[i][j] == value)
