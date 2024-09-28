@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <sstream>
 #include <utility>
+#include <numeric>
 
 namespace io {
 
